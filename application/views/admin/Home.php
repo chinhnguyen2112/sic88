@@ -273,8 +273,8 @@ class Home extends CI_Controller
     {
         error_reporting(0);
         require_once(APPPATH . 'libraries/PHPExcel.php');
-        if (isset($_FILES["url_blog"]["name"])) {
-            $path = $_FILES["url_blog"]["tmp_name"];
+        if (isset($_FILES["file"]["name"])) {
+            $path = $_FILES["file"]["tmp_name"];
             $object = PHPExcel_IOFactory::load($path);
             foreach ($object->getWorksheetIterator() as $worksheet) {
                 $highestRow = $worksheet->getHighestRow();
@@ -286,10 +286,10 @@ class Home extends CI_Controller
                         'alias' =>  $url
                     ];
                     $blog = $this->Madmin->get_by($where_blog, 'blogs');
-                    if ($blog == null) {
-                        echo $url_old . '<br>';
-                        // die;
-                    }
+                    // if ($blog = null) {
+                    echo $url_old . '---- ' . $blog['alias'] . '/ ,  ';
+                    // die;
+                    // }
                 }
                 //var_dump($re_cv);die();
             }
@@ -303,18 +303,5 @@ class Home extends CI_Controller
                 echo $val['id'] . '-' . $val['image'] . '  https://fic88.info/' . $val['alias'] . '/<br>';
             }
         }
-    }
-    public function replace_blog()
-    {
-        $blog = $this->Madmin->query_sql("SELECT alias,title,sapo,content,meta_title,meta_key,meta_des FROM blogs ");
-        foreach ($blog as $val) {
-            $blog_update = str_replace('fic88.info', 'sic88.org', $val);
-            $blog_update = str_replace('fic88', 'sic88', $blog_update);
-            $blog_update = str_replace('Fic88', 'Sic88', $blog_update);
-            $blog_update = str_replace('Anda', 'andarsss', $blog_update);
-            $insert = $this->Madmin->update(['alias' => $val['alias']], $blog_update, 'blogs');
-            var_dump($insert);
-        }
-        // var_dump($blogs);
     }
 }

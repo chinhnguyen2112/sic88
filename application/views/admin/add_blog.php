@@ -172,7 +172,7 @@
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Keyword</label>
-        <input type="text" name="meta_key" id="meta_key" value="<?= (isset($blog)) ? $blog['meta_key'] : ''; ?>" oninput="show_alias(this.value)" class="form-control">
+        <input type="text" name="meta_key" id="meta_key" value="<?= (isset($blog)) ? $blog['meta_key'] : ''; ?>" class="form-control">
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Đường dẫn thân thiện</label>
@@ -276,7 +276,7 @@
         },
         messages: {
             "image": {
-                required: 'chưa chọn ảnh đại diện',
+                required: "Chưa chọn ảnh đại diện",
             },
             "title": {
                 required: "Chưa nhập H1 bài viết",
