@@ -362,6 +362,7 @@
   @media only screen and (max-width: 1024px) {
     .container {
       width: 1024px;
+      padding-top: 85px;
     }
     .lottery {
       padding: 30px 20px;
