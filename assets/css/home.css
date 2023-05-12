@@ -1,7 +1,6 @@
 .container {
     padding-top: 144px;
     background: #fff;
-    width: 1440px;
     margin: auto;
   }
   .banner {
@@ -124,7 +123,7 @@
   }
   /* all_tabs  */
   .all_tabs {
-    height: 700px;
+    height: max-content;
     margin: auto;
     padding: 0 150px;
     background-image: url(/images/icons/bg_all_tabs.png);
@@ -313,7 +312,7 @@
   }
   /* infor  */
   .all_infor {
-    padding: 20px 165px;
+    padding: 30px 20px;
     display: flex;
     justify-content: space-between;
   }
@@ -326,7 +325,7 @@
     padding-bottom: 18px;
   }
   .img_item {
-    height: 103px;
+    height: max-content;
     line-height: 10;
   }
   .title_item {
@@ -346,7 +345,7 @@
     color: #000;
     padding: 12px 20px;
     margin: 0;
-    min-height: 56px;
+    min-height: 90px;
   }
   .item_infor a {
     font-style: normal;
@@ -361,7 +360,6 @@
   /* 1024  */
   @media only screen and (max-width: 1024px) {
     .container {
-      width: 1024px;
       padding-top: 85px;
     }
     .lottery {
@@ -439,6 +437,29 @@
     .slick-next {
       right: 20px;
     }
+    .left_tabs {
+      width: 35%;
+    }
+    .right_tabs {
+      width: calc(100% - 35%)
+    }
+    .content_tabs_left {
+      width: 100%;
+    }
+    .btn_join {
+      text-align: center;
+    }
+    .content_tabs_right img {
+      display: none;
+    }
+    .all_infor {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .item_infor {
+      width: 36%;
+      margin-top: 30px;
+    }
   }
   @media only screen and (max-width: 540px) {
     .container {
@@ -461,6 +482,7 @@
       width: 100%;
       flex-direction: column;
       padding: 20px 0;
+      text-align: center;
     }
     .lottery_left, .lottery_right {
       width: 100%;
@@ -469,7 +491,7 @@
       padding: 0 15px;
     }
     .lottery_left img {
-      width: 100%;
+      width: 65%;
     }
     .name_lottery, .infor_more {
       font-size: 12px;

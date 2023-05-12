@@ -1,11 +1,11 @@
-<div class="header ">
-    <div class="header_width body_width">
-        <div class="header_top" id="header_top">
+<div class="header">
+    <div class="header_width ">
+        <div class="header_top body_width" id="header_top">
             <div class="header_scroll">
                 <img src="/images/menu_mb.svg" alt="show menu" class="img_show_menu" onclick="show_menu(this,1)">
-                <div class="logo_header">
+                <a href ="/" class="logo_header">
                     <img src="/images/icons/logo.png">
-                </div>
+                </a>
                 <div class="search">
                     <img class="img_search" src="/images/icons/icons8-search-30.png">
                     <input placeholder="Search..." />
@@ -17,12 +17,11 @@
                 <img class="search_nonpc" src="/images/icons/icons8-search-25.png">
             </div>
         </div>
-        <div class="header_menu">
-            <div class="list_menu">
-                <div class="menu" id="menu">
+        <div class="header_menu ">
+                <div class="menu body_width" id="menu">
                     <ul class="list_menu">
                         <li class="item_menu">
-                            <a class="item_home" href="#">
+                            <a class="item_home" href="/">
                                 <img class="logo_home" src="/images/icons/icons_home.png">
                                 <p>TRANG CHỦ</p>
                             </a>
@@ -54,9 +53,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
         </div>
-        <div class="header_bot" id="header_bot">
+        <div class="header_bot body_width" id="header_bot">
             <div class="header_scroll">
                 <div class="left_noti">
                     <img src="/images/icons/icons_tb.png">

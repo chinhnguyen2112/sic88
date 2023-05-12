@@ -1,4 +1,5 @@
 <div class="container">
+  <div class="content body_width">
       <div class="banner">
         <div class="slider">
           <div class="slide"><img src="/images/img_slick/slick_01.jpeg"></div>
@@ -398,3 +399,4 @@
         </div>
       </div>
     </div>
+</div>

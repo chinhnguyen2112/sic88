@@ -4,11 +4,11 @@ if (count($menu_cate_parent) > 2) {
     $count_line =  count($menu_cate_parent) - 2;
 } ?>
     <div class="footer">
-      <div class="footer_width">
+      <div class="footer_width body_width">
         <div class="content_footer">
           <div class="item_ft01">
             <div class="logo_ft">
-              <img src="images/icons/logo.png">
+              <img src="/images/icons/logo.png">
             </div>
             <div class="introduce">
               <p class="title_intro">Giới Thiệu</p>
