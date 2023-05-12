@@ -1,9 +1,9 @@
 function show_menu(e, type) {
 	if (type == 1) {
-		$(".header_menu").show();
+		$(".header_menu").show(200);
 		$(e).attr("onclick", "show_menu(this,2)");
 	} else {
-		$(".header_menu").hide();
+		$(".header_menu").hide(200);
 		$(e).attr("onclick", "show_menu(this,1)");
 	}
 }
