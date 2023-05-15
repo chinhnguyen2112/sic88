@@ -191,9 +191,9 @@
                   <p>Sảnh bài online độc quyền tại Việt Nam</p>
                 </div>
                 <div class="content_tabs">
-                  <p>Đến với game đánh bài online Fic88 , bạn có thể giải trí với những trò chơi với mức thưởng cực khủng, thủ tục rút nạp luôn nhanh gọn và dễ dàng.</p>
-                  <p>Đội ngũ tư vấn viên luôn luôn hỗ trợ người chơi 24/7. Trong quá trình chơi game, nếu có bất cứ vấn đề cần thắc mắc hoặc giúp đỡ, hãy liên hệ với đội ngũ hỗ trợ của Fic88 để nhận được hỗ trợ tốt nhất.</p>
-                  <p>Còn chờ gì nữa cùng khám phá ngay những game đánh bài online hot nhất trên Fic88 ngay tại đây.</p>
+                  <p>Đến với game đánh bài online Sic88 , bạn có thể giải trí với những trò chơi với mức thưởng cực khủng, thủ tục rút nạp luôn nhanh gọn và dễ dàng.</p>
+                  <p>Đội ngũ tư vấn viên luôn luôn hỗ trợ người chơi 24/7. Trong quá trình chơi game, nếu có bất cứ vấn đề cần thắc mắc hoặc giúp đỡ, hãy liên hệ với đội ngũ hỗ trợ của Sic88 để nhận được hỗ trợ tốt nhất.</p>
+                  <p>Còn chờ gì nữa cùng khám phá ngay những game đánh bài online hot nhất trên Sic88 ngay tại đây.</p>
                 </div>
                 <div class="all_icons">
                   <img class="icon_game" src="/images/icons/icon_game01.png">
@@ -217,9 +217,9 @@
                   <p>Sảnh bài online độc quyền tại Việt Nam</p>
                 </div>
                 <div class="content_tabs">
-                  <p>Với thời đại 4.0 như hiện nay thì có thể nói Casino online đang trở thành xu hướng. Chỉ cần có máy tính hoặc điện thoại thông minh là bạn có thể kết nối với Casino online uy tín hàng đầu từ Fic88.</p>
-                  <p>Bạn có thể vào casino online vào bất kỳ giờ nào trong ngày. Ngoài ra không thể không nhắc đến các khoản khuyến mãi hấp dẫn khi bạn đăng ký mở tài khoản và nạp tiền tại Fic88.</p>
-                  <p>Với những casino trực tuyến từ Fic88 bạn có thể chơi những mức cược phù hợp với túi tiền của mình mà không phải ngại ngùng hay lo sợ điều gì.</p>
+                  <p>Với thời đại 4.0 như hiện nay thì có thể nói Casino online đang trở thành xu hướng. Chỉ cần có máy tính hoặc điện thoại thông minh là bạn có thể kết nối với Casino online uy tín hàng đầu từ Sic88.</p>
+                  <p>Bạn có thể vào casino online vào bất kỳ giờ nào trong ngày. Ngoài ra không thể không nhắc đến các khoản khuyến mãi hấp dẫn khi bạn đăng ký mở tài khoản và nạp tiền tại Sic88.</p>
+                  <p>Với những casino trực tuyến từ Sic88 bạn có thể chơi những mức cược phù hợp với túi tiền của mình mà không phải ngại ngùng hay lo sợ điều gì.</p>
                 </div>
                 <div class="all_icons">
                   <img class="icon_game" src="/images/icons/icon_game01.png">
@@ -243,9 +243,9 @@
                   <p>Sảnh bài online độc quyền tại Việt Nam</p>
                 </div>
                 <div class="content_tabs">
-                  <p>Cá cược thể thao tại Fic88 vô cùng uy tín sẽ tạo cho người chơi những cảm xúc hồi hộp, phấn khích. </p>
-                  <p>Tại Fic88 bạn có thể lựa chọn một hay nhiều hình thức cá cược thể thao bao gồm rất nhiều trò khác nhau với tỷ lệ trả thưởng cực cao và hấp dẫn.</p>
-                  <p>Fic88 liên tục ra những chương trình ưu đãi với những voucher, khuyến mãi tặng quà, tặng tiền từ nhà cái. Những chương trình ưu đãi dành cho người chơi mới, người chơi hiện hữu và có cả chính sách ưu đãi cho các đại lý.</p>
+                  <p>Cá cược thể thao tại Sic88 vô cùng uy tín sẽ tạo cho người chơi những cảm xúc hồi hộp, phấn khích. </p>
+                  <p>Tại Sic88 bạn có thể lựa chọn một hay nhiều hình thức cá cược thể thao bao gồm rất nhiều trò khác nhau với tỷ lệ trả thưởng cực cao và hấp dẫn.</p>
+                  <p>Sic88 liên tục ra những chương trình ưu đãi với những voucher, khuyến mãi tặng quà, tặng tiền từ nhà cái. Những chương trình ưu đãi dành cho người chơi mới, người chơi hiện hữu và có cả chính sách ưu đãi cho các đại lý.</p>
                 </div>
                 <div class="all_icons">
                   <img class="icon_game" src="/images/icons/icon_game01.png">
@@ -269,9 +269,9 @@
                   <p>Sảnh bài online độc quyền tại Việt Nam</p>
                 </div>
                 <div class="content_tabs">
-                  <p>Tại Fic88 chúng tôi có những tựa game dân gian vô cùng ấn tượng mà không phải nhà cái nào cũng có. Hình thức và cách chơi gần gũi và quen thuộc với tất cả mọi người.</p>
-                  <p>Fic88 có rất nhiều hình thức nạp tiền để người chơi có thể lựa chọn.</p>
-                  <p>Khác biệt với hình thức cá cược thể thao truyền thống, từ khâu đặt cược cho đến nhận tiền thắng cược đều sẽ khá rườm rà. Với Fic88 thủ tục nạp rút sẽ diễn ra vô cùng nhanh gọn.</p>
+                  <p>Tại Sic88 chúng tôi có những tựa game dân gian vô cùng ấn tượng mà không phải nhà cái nào cũng có. Hình thức và cách chơi gần gũi và quen thuộc với tất cả mọi người.</p>
+                  <p>Sic88 có rất nhiều hình thức nạp tiền để người chơi có thể lựa chọn.</p>
+                  <p>Khác biệt với hình thức cá cược thể thao truyền thống, từ khâu đặt cược cho đến nhận tiền thắng cược đều sẽ khá rườm rà. Với Sic88 thủ tục nạp rút sẽ diễn ra vô cùng nhanh gọn.</p>
                 </div>
                 <div class="all_icons">
                   <img class="icon_game" src="/images/icons/icon_game01.png">
@@ -295,9 +295,9 @@
                   <p>Sảnh bài online độc quyền tại Việt Nam</p>
                 </div>
                 <div class="content_tabs">
-                  <p>Fic88 là một trong những nhà cái cung cấp các game nổ hũ uy tín nhất hiện nay. Game nổ hũ Fic88 có giá trị tiền thưởng cực kỳ lớn, lối chơi đơn giản. Chính lẽ đó, số lượng người chơi tham gia nổ hũ online trên Fic88 ngày càng gia tăng.</p>
+                  <p>Sic88 là một trong những nhà cái cung cấp các game nổ hũ uy tín nhất hiện nay. Game nổ hũ Sic88 có giá trị tiền thưởng cực kỳ lớn, lối chơi đơn giản. Chính lẽ đó, số lượng người chơi tham gia nổ hũ online trên Sic88 ngày càng gia tăng.</p>
                   <p>Người chơi được tùy chọn thời điểm quay hũ nên sẽ tăng xác xuất những hũ nổ lớn hơn nhiều. Việc này sẽ giúp bạn chọn được khung giờ có nhiều người chơi nhất.</p>
-                  <p>Lựa chọn chơi nổ hũ tại Fic88 với những ưu điểm vượt trội khiến người chơi an tâm đó là: độ uy tín và bảo mật thông tin cực cao, thủ tục nạp rút nhanh gọn, tiện lợi. </p>
+                  <p>Lựa chọn chơi nổ hũ tại Sic88 với những ưu điểm vượt trội khiến người chơi an tâm đó là: độ uy tín và bảo mật thông tin cực cao, thủ tục nạp rút nhanh gọn, tiện lợi. </p>
                 </div>
                 <div class="all_icons">
                   <img class="icon_game" src="/images/icons/icon_game01.png">
@@ -321,8 +321,8 @@
                   <p>Sảnh bài online độc quyền tại Việt Nam</p>
                 </div>
                 <div class="content_tabs">
-                  <p>Fic88 là một trong những nhà cái cá cược đá gà cung cấp hàng trăm trận thi đấu đá gà chuyên nghiệp từ những bồ gà uy tín.</p>
-                  <p>Mọi thông tin khách hàng tham gia đều được fic88 báo mật bằng nhiều lớp mã hóa, bạn hoàn toàn yên tâm thông tin chắc chắn không bị rỏ rỉ. Điều này, giúp người chơi có thể thoải mái hơn khi tham gia.</p>
+                  <p>Sic88 là một trong những nhà cái cá cược đá gà cung cấp hàng trăm trận thi đấu đá gà chuyên nghiệp từ những bồ gà uy tín.</p>
+                  <p>Mọi thông tin khách hàng tham gia đều được Sic88 báo mật bằng nhiều lớp mã hóa, bạn hoàn toàn yên tâm thông tin chắc chắn không bị rỏ rỉ. Điều này, giúp người chơi có thể thoải mái hơn khi tham gia.</p>
                   <p>Việc nạp và rút tiền nhanh chóng cũng là điều mà nhiều người quan tâm, khi đặt cược online thì cập nhật tài khoản sẽ giúp bạn có khả năng thắng cược. Trường hợp không chơi nữa bạn chỉ cần một thao tác đơn giản rút tiền về chỉ dưới 10 phút là xong.</p>
                 </div>
                 <div class="all_icons">
@@ -396,7 +396,7 @@
             <img src="images/icons/icon_infor04.png">
           </div>
           <p class="title_item">Hỗ Trợ 24/7</p>
-          <p class="text_infor">Dịch vụ chăm sóc khách hàng tại FIC88 luôn sẵn sàng phục vụ 24/7.</p>
+          <p class="text_infor">Dịch vụ chăm sóc khách hàng tại Sic88 luôn sẵn sàng phục vụ 24/7.</p>
           <a href="#">Liên Hệ Ngay</a>
         </div>
       </div>
