@@ -84,3 +84,7 @@ $(".show_ml").click(function () {
 	}
 	++check_click;
 });
+
+var width_img = $(".img_blog_same").width();
+var height_img = width_img / 1.73;
+$(".img_blog_same").css("height", height_img);

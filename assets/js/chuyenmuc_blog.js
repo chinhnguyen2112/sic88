@@ -147,3 +147,6 @@ $(".hide_show_content").click(function () {
 	}
 	++check_click;
 });
+var width_img = $(".this_train a img").width();
+var height_img = width_img / 1.73;
+$(".this_train a img").css("height", height_img);
