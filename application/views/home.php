@@ -125,8 +125,8 @@
           </div>
         </div>
       </div>
-      <div class="all_tabs body_width">
-        <div class="tabs_content">
+      <div class="all_tabs">
+        <div class="tabs_content body_width">
           <div class="left_tabs">
             <div class="name_tabs active" data-id="1">
               <div class="left_btn_tabs">
@@ -342,24 +342,26 @@
           </div>
         </div>
       </div>
-      <div class="qr_app body_width">
-        <div class="qr_left">
-          <img class="img_app" src="images/icons/img_app.png">
-        </div>
-        <div class="qr_right">
-          <div class="qr_right_top">
-            <p class="title_qr">tải ứng dụng</p>
-            <img class="logo" src="images/icons/logo.png">
-            <p class="text">Cược mọi lúc - Thắng mọi nơi</p>
+      <div class="qr_app">
+        <div class="qr body_width">
+          <div class="qr_left">
+            <img class="img_app" src="images/icons/img_app.png">
           </div>
-          <div class="qr_bot">
-            <div class="item_qr_01 qr_item">
-              <img class="qr" src="images/icons/qr.png">
-              <p>Tải về IOS</p>
+          <div class="qr_right">
+            <div class="qr_right_top">
+              <p class="title_qr">tải ứng dụng</p>
+              <img class="logo" src="images/icons/logo.png">
+              <p class="text">Cược mọi lúc - Thắng mọi nơi</p>
             </div>
-            <div class="item_qr_02 qr_item">
-              <img class="qr" src="images/icons/qr.png">
-              <p>Tải về Android</p>
+            <div class="qr_bot">
+              <div class="item_qr_01 qr_item">
+                <img class="qr" src="images/icons/qr.png">
+                <p>Tải về IOS</p>
+              </div>
+              <div class="item_qr_02 qr_item">
+                <img class="qr" src="images/icons/qr.png">
+                <p>Tải về Android</p>
+              </div>
             </div>
           </div>
         </div>

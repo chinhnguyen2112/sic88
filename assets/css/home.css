@@ -276,10 +276,12 @@
   
   /* qr  */
   .qr_app {
+    padding: 0px;
+    background: #F3F7FA;
+  }
+  .qr {
     display: flex;
     justify-content: space-between;
-    padding: 0 102px;
-    background: #F3F7FA;
   }
   .qr_right {
     text-align: center;
