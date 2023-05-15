@@ -31,10 +31,10 @@
     content: '' !important;
   }
   .slick-next {
-    right: 150px;
+    right: 30px;
   }
   .slick-prev {
-    left: 150px;
+    left: 30px;
   }
   /* lottery  */
   .lottery {

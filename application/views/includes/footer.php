@@ -43,34 +43,34 @@ if (count($menu_cate_parent) > 2) {
             <p class="title_item_ft">THỂ LOẠI GAME</p>
             <ul class="list_game_ft">
               <li class="item_game_ft">
-                <a href="#">Xổ Số</a>
+              <a href="/casino-online/">Casino Online</a>
               </li>
               <li class="item_game_ft">
-                <a href="#">Bắn Cá</a>
+                <a href="/no-hu/">Nổ Hũ</a>
               </li>
               <li class="item_game_ft">
-                <a href="#">Đá Gà Trực Tiếp</a>
+              <a href="/game-bai/">Game Bài</a>
               </li>
               <li class="item_game_ft">
-                <a href="#">Casino Online</a>
+                <a href="/tai-xiu/">Tài Xỉu</a>
               </li>
               <li class="item_game_ft">
-                <a href="#">Cá Cược Esport</a>
+                <a href="/game-slot-doi-thuong/">Game Đổi Thưởng</a>
               </li>
               <li class="item_game_ft">
-                <a href="#">Nổ Hũ</a>
+                <a href="/ban-ca/">Bắn Cá</a>
               </li>
               <li class="item_game_ft">
-                <a href="#">Game Bài</a>
+                <a href="/da-ga-truc-tiep/">Đá Gà Trực Tiếp</a>
               </li>
               <li class="item_game_ft">
-                <a href="#">Lô Đề Online</a>
+                <a href="/co-ca-ngua/">Cờ Cá Ngựa</a>
               </li>
               <li class="item_game_ft">
-                <a href="#">Cá Cược Online</a>
+                <a href="/lo-de-online/">Lô Đề Online</a>
               </li>
               <li class="item_game_ft">
-                <a href="#">Tài Xỉu</a>
+                <a href="/https:fic88.infoban-ca/">Bắn Cá</a>
               </li>
             </ul>
           </div>
@@ -96,6 +96,11 @@ if (count($menu_cate_parent) > 2) {
       <div class="coppy_right">
         <p class="text_cr">© 2023 - sic88. All Rights Reserved.</p>
       </div>
+      <div class="back_to_top">
+        <a id="btn_to_top" class="btn_to_top">
+          <img src="/images/icons/icons8-arrow-50.png">
+        </a>
+      </div>
       <div class="footer_btn">
         <div class="content_ft_btn">
           <a class="btn_ft_regis">Đăng Ký Tài Khoản</a>
@@ -103,3 +108,16 @@ if (count($menu_cate_parent) > 2) {
         </div>
       </div>
     </div>
+    <script>
+      $(window).scroll(function() {
+          if ($(this).scrollTop()) {
+              $('#btn_to_top').fadeIn();
+          } else {
+              $('#btn_to_top').fadeOut();
+          }
+      });
+      $("#btn_to_top").click(function () {
+        $("html, body").animate({scrollTop: 0}, 1000);
+        document.getElementById("btn_to_top").style.display = 'none';
+      });
+    </script>
