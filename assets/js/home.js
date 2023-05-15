@@ -32,8 +32,8 @@ $('.slider').slick({
 	autoplay:true,
 	autoplaySpeed: 1000,
 	arrows:true,
-	// prevArrow:'<button type="button" class="slick-prev"><img src="/images/icons/icon_prev.png"></button>',
-	// nextArrow:'<button type="button" class="slick-next"><img src="/images/icons/icon_next.png"></button>',
+	prevArrow:'<button type="button" class="slick-prev"><img src="/images/icons/icon_prev.png"></button>',
+	nextArrow:'<button type="button" class="slick-next"><img src="/images/icons/icon_next.png"></button>',
 	centerMode:true,
 	slidesToShow:1,
 });
