@@ -69,9 +69,6 @@ if (count($menu_cate_parent) > 2) {
           <li class="item_game_ft">
             <a href="/lo-de-online/">Lô Đề Online</a>
           </li>
-          <li class="item_game_ft">
-            <a href="/https:fic88.infoban-ca/">Bắn Cá</a>
-          </li>
         </ul>
       </div>
       <div class="item_ft03">
