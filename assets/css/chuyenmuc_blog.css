@@ -1,5 +1,5 @@
 .content {
-    padding-top: 20px;
+    padding-top: 155px;
     background: #fff;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .train_content {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 30px;
     padding-right: 15px;
@@ -291,7 +291,7 @@
     }
 
     .content {
-        padding-top: 0;
+        padding-top: 90px;
     }
 
     .title_blog a {
