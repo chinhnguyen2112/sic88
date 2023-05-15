@@ -27,17 +27,6 @@ $(".load_more").click(function () {
 		},
 	});
 });
-window.onscroll = function() {scrollFunction()};
-      function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-          document.getElementById("header_top").style.display = "none";
-          document.getElementById("header_bot").style.display = "none";
-
-        } else {
-          document.getElementById("header_top").style.display = "block";
-          document.getElementById("header_bot").style.display = "block";
-        }
-      }
 
 $('.slider').slick({
 	autoplay:true,
