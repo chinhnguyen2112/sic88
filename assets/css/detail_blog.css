@@ -118,7 +118,7 @@ h6 p {
 
 .main_content_blog {
     display: flex;
-    padding-top: 30px;
+    padding-top: 140px;
     justify-content: space-between;
 }
 
@@ -538,7 +538,7 @@ td:first-child {
     .main_content_blog {
         display: flex;
         flex-direction: column;
-        padding-top: 0;
+        padding-top: 103px;
     }
 
     .blog_content {
@@ -551,7 +551,7 @@ td:first-child {
     .main_content_blog {
         display: flex;
         flex-direction: column;
-        padding-top: 0;
+        /* padding-top: 0; */
     }
 
     .blog_content {
@@ -571,7 +571,7 @@ td:first-child {
 
     .box_data_blog {
         flex-direction: column-reverse;
-        margin-top: 24px;
+        margin-top: 15px;
         gap: 16px;
     }
 
