@@ -24,7 +24,7 @@
               <p class="name_lottery">Xổ số siêu tốc</p>
               <p class="infor_more">Hệ thống xổ số nhanh uy tín</p>
             </div>
-            <div class="content_lottery fast">
+            <div class="content_lottery">
               <a href="#" class="item_lottery">
                 <img src="/images/icons/icon_lottery.png">
                 <p class="item_title">1 giây</p>
@@ -64,7 +64,7 @@
               <p class="name_lottery">Xổ số truyền thống</p>
               <p class="infor_more">Đa dạng kiểu cược, tỉ lệ cao nhất</p>
             </div>
-            <div class="content_lottery tradi">
+            <div class="content_lottery">
               <a href="#" class="item_lottery">
                 <div class="item_traditional">
                   <img src="images/icons/icon_lottery.png">
