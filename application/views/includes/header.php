@@ -8,8 +8,10 @@
                     <img src="/images/icons/logo.png">
                 </a>
                 <div class="search">
-                    <img class="img_search" src="/images/icons/icons8-search-30.png">
-                    <input placeholder="Search..." />
+                    <form id="search" method="get" action="/search">
+                        <img class="img_search" src="/images/icons/icons8-search-30.png">
+                        <input placeholder="Search..." />
+                    </form>
                 </div>
                 <div class="all_btn_acc">
                     <a class="btn_acc btn_login" href="#">Đăng Nhập</a>
@@ -63,7 +65,7 @@
                     <p class="title_noti">Thông Báo:</p>
                 </div>
                 <marquee>
-                    <a class="text_noti" href="#">Khuyến mãi khủng nhất trong năm từ Fic88 duy nhất chỉ có trong đợt
+                    <a class="text_noti" href="#">Khuyến mãi khủng nhất trong năm từ Sic88 duy nhất chỉ có trong đợt
                         nghỉ lễ 30/4-1/5 nhanh tay nào các game thủ</a>
                 </marquee>
             </div>

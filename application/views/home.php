@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="content body_width">
+  <div class="content">
       <div class="banner">
         <div class="slider">
           <div class="slide"><img src="/images/img_slick/slick_01.jpeg"></div>
@@ -14,7 +14,7 @@
           <div class="slide"><img src="/images/img_slick/slick_10.jpeg"></div>
         </div>
       </div>
-      <div class="lottery">
+      <div class="lottery body_width">
         <div class="lottery_left">
           <img src="/images/icons/img_lottery.png">
         </div>
@@ -125,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="all_tabs">
+      <div class="all_tabs body_width">
         <div class="tabs_content">
           <div class="left_tabs">
             <div class="name_tabs active" data-id="1">
@@ -342,7 +342,7 @@
           </div>
         </div>
       </div>
-      <div class="qr_app">
+      <div class="qr_app body_width">
         <div class="qr_left">
           <img class="img_app" src="images/icons/img_app.png">
         </div>
@@ -364,7 +364,7 @@
           </div>
         </div>
       </div>
-      <div class="all_infor">
+      <div class="all_infor body_width">
         <div class="item_infor">
           <div class="img_item">
             <img src="images/icons/icon_infor01.png">

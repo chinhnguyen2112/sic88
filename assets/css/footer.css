@@ -3,7 +3,7 @@
     background: #000;
   }
   .footer_width {
-    padding: 20px 165px;
+    padding: 20px 0px;
     display: flex;
     flex-direction: column;
   }
@@ -64,7 +64,7 @@
   .item_game_ft {
     list-style: none;
     width: 50%;
-    padding: 5px 0;
+    padding: 10px 0 5px 0;
   }
   .item_game_ft a {
     text-decoration: none;
@@ -109,6 +109,31 @@
   }
   .footer_btn {
     display: none;
+  }
+  .back_to_top {
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+  }
+  .btn_to_top {
+    display: block;
+    width: 44px;
+    border-radius: 5px;
+    height: 44px;
+    line-height: 44px;
+    background: hsla(0,0%,70.6%,.15);
+    border: 1px solid rgba(0,0,0,.11);
+    box-shadow: inset 0 0 0 1px hsla(0,0%,100%,.1), 0 2px 6px rgba(0,0,0,.1);
+    text-align: center;
+    opacity: .8;
+  }
+  .btn_to_top img {
+    width: 25px;
+    height: 25px;
+    padding-right: 4px;
+  }
+  .btn_to_top:hover {
+    background: hsl(0deg 0% 100% / 24%);
   }
   @media only screen and (max-width: 1024px) {
     .footer_width {
