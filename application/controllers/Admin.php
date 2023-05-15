@@ -178,6 +178,7 @@
             $cate = $this->input->post('category');
             $data['meta_title'] = $this->input->post('meta_title');
             $data['meta_des'] = $this->input->post('meta_des');
+            $data['content'] = $this->input->post('content');
             $data['level'] = 0;
             $data['parent'] = 0;
             if ($cate > 0) {

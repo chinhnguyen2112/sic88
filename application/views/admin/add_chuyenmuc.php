@@ -180,12 +180,20 @@
         <label class="label" for="name">Meta Description</label>
         <textarea type="text" style="height:110px" name="meta_des" id="meta_des" class="form-control"><?= (isset($chuyenmuc)) ? $chuyenmuc['meta_des'] : ''; ?></textarea>
     </div>
+    <div class="form-group mb-3">
+        <label class="label" for="name">Nội dung</label>
+        <textarea name="content" id="editor"><?= (isset($chuyenmuc) && $chuyenmuc['content'] != '') ? $chuyenmuc['content'] : '' ?></textarea>
+    </div>
     <div class="form-group">
         <button type="submit" class="form-control btn btn-primary submit px-3"><?= (isset($id)) ? "Sửa" : "Thêm mới" ?></button>
     </div>
 </form>
 <script src="/assets/js/jquery.validate.min.js"></script>
 <script src="/assets/js/sweetalert.min.js"></script>
+<script src="/ckeditor/ckeditor.js"></script>
+<script defer type="text/javascript">
+    CKEDITOR.replace('editor');
+</script>
 <script type="text/javascript">
     function get_alias(str) {
         str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
@@ -232,6 +240,7 @@
         },
         submitHandler: function(form) {
             var data = new FormData($("#form")[0]);
+            data.append("content", CKEDITOR.instances.editor.getData());
             $.ajax({
                 url: '/ajax_add_chuyenmuc',
                 type: "POST",
