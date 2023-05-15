@@ -83,7 +83,6 @@
 }
 
 .content_lottery {
-  display: flex;
   justify-content: space-evenly;
   padding: 15px 15px 40px 40px;
   background: #EDEAEB;
