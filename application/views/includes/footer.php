@@ -14,14 +14,28 @@ if (count($menu_cate_parent) > 2) {
               <p class="title_intro">Giới Thiệu</p>
               <div class="content_intro">
                 <p class="infor_01">
-                  <a href="#">Fic88</a>
-                  là trung tâm giải trí có trụ sở tại Phillippines, với các trò chơi hấp dẫn như Lô Đề Online, Casino Live, Cá Độ Bóng Đá, Đá Gà,… thì Fic88 hiện đang thực sự là trung tâm giải trí hàng đầu Đông Nam Á.
+                  <a href="#">Sic88</a>
+                  là trung tâm giải trí có trụ sở tại Phillippines, với các trò chơi hấp dẫn như Lô Đề Online, Casino Live, Cá Độ Bóng Đá, Đá Gà,… thì sic88 hiện đang thực sự là trung tâm giải trí hàng đầu Đông Nam Á.
                 </p>
                 <p class="infor_01">Địa chỉ: 24 ngõ 18 đường Phan Đình Giót, Tổ 2 La Khê, Hà Đông, Hà Nội</p>
-                <p class="infor_01">Email: nhacaific88@gmail.com</p>
+                <p class="infor_01">Email: nhacaisic88@gmail.com</p>
               </div>
               <div class="icons_contact">
-
+                <div class="item_icons">
+                  <a href="#">
+                    <img src="/images/icons/icons8-facebook-30.png">
+                  </a>
+                </div>
+                <div class="item_icons">
+                  <a href="#">
+                  <img src="/images/icons/icons8-instagram-30.png">
+                  </a>
+                </div>
+                <div class="item_icons">
+                  <a href="#">
+                  <img src="/images/icons/icons8-youtube-30.png">
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -64,22 +78,28 @@ if (count($menu_cate_parent) > 2) {
             <p class="title_item_ft">HƯỚNG DẪN</p>
             <ul class="list_guide">
               <li class="item_game_ft">
-                <a href="#">Đăng ký Fic88</a>
+                <a href="#">Đăng ký sic88</a>
               </li>
               <li class="item_game_ft">
-                <a href="#">Rút tiền Fic88</a>
+                <a href="#">Rút tiền sic88</a>
               </li>
               <li class="item_game_ft">
-                <a href="#">Nạp tiền Fic88</a>
+                <a href="#">Nạp tiền sic88</a>
               </li>
               <li class="item_game_ft">
-                <a href="#">Đăng nhập Fic88</a>
+                <a href="#">Đăng nhập sic88</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="coppy_right">
-        <p class="text_cr">© 2023 - FIC88. All Rights Reserved.</p>
+        <p class="text_cr">© 2023 - sic88. All Rights Reserved.</p>
+      </div>
+      <div class="footer_btn">
+        <div class="content_ft_btn">
+          <a class="btn_ft_regis">Đăng Ký Tài Khoản</a>
+          <a class="btn_ft_login">Đăng Nhập</a>
+        </div>
       </div>
     </div>

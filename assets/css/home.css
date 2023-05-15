@@ -1,5 +1,8 @@
+.body_width {
+  max-width: unset;
+}
 .container {
-    padding-top: 144px;
+    padding-top: 141px;
     background: #fff;
     margin: auto;
   }
@@ -23,6 +26,9 @@
     background: none;
     top: 170px;
     cursor: pointer;
+  }
+  .slick-arrow:before {
+    content: '' !important;
   }
   .slick-next {
     right: 150px;
@@ -210,8 +216,8 @@
     text-transform: uppercase;
     font-style: normal;
     font-weight: 700 !important;
-    font-size: 36px !important;
-    line-height: 42px !important;
+    font-size: 30px !important;
+    line-height: 38px !important;
     color: #275D86 !important;
     margin: 0;
   }
@@ -224,7 +230,8 @@
     margin: 0;
   }
   .content_tabs {
-    width: 75.76%;
+    width: 100%;
+    height: 330px;
   }
   .content_tabs p {
     font-style: normal;
@@ -233,14 +240,15 @@
     line-height: 21px;
     color: #000000;
     margin: 0;
-    padding-top: 25px;
+    padding-top: 15px;
+    text-align: justify;
   }
   /* .content_tabs_right {
     position: relative; 
   } */
   .all_icons {
     margin-top: 15px;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -312,7 +320,7 @@
   }
   /* infor  */
   .all_infor {
-    padding: 30px 20px;
+    padding: 30px 150px;
     display: flex;
     justify-content: space-between;
   }
@@ -362,6 +370,12 @@
     .container {
       padding-top: 85px;
     }
+    .slick-next {
+      right: 20px;
+    }
+    .slick-prev {
+      left: 20px;
+    }
     .lottery {
       padding: 30px 20px;
     }
@@ -374,6 +388,10 @@
     .content_lottery {
       padding: 15px 15px 20px 30px;
     }
+    .item_title {
+      font-size: 24px;
+      top: 76px;
+    }
     .item_traditional {
       width: 90px;
       height: 90px;
@@ -382,8 +400,8 @@
       width: 100%;
     }
     .title_tradi {
-      top: 73px;
-      font-size: 20px;
+      top: 65px;
+      font-size: 18px;
     }
     .date {
       padding-top: 15px;
@@ -402,16 +420,17 @@
       width: 25.9%;
     }
     .title_content {
-      font-size: 25px !important;
+      font-size: 24px !important;
     }
     .heading_content p {
       font-size: 20px;
     }
     .content_tabs p {
       font-size: 15px;
+      padding-top: 15px;
     }
     .content_tabs_right img {
-      width: 450px;
+      width: 48%;
       height: auto;
       position: absolute;
       right: 0;
@@ -429,6 +448,9 @@
     .all_infor {
       padding: 20px 30px;
     }
+    .item_infor {
+      width: 23%;
+    }
   }
   @media only screen and (max-width: 768px) {
     .slick-prev {
@@ -436,6 +458,22 @@
     }
     .slick-next {
       right: 20px;
+    }
+    .lottery {
+      flex-direction: column;
+    }
+    .lottery_left {
+      margin: auto;
+    }
+    .lottery_right {
+      width: 100%;
+    }
+    .content_lottery {
+      padding: 15px 15px 20px 70px;
+    }
+    .date {
+      text-align: justify;
+      padding-left: 12px;
     }
     .left_tabs {
       width: 35%;
@@ -511,7 +549,7 @@
       flex-direction: row;
     }
     .left_tabs {
-      width:19%;
+      width: 22%;
       margin:auto;
       justify-content: space-between;
     }
@@ -519,7 +557,7 @@
       width: 100%;
       flex-direction: column;
       height: max-content;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .text_left_tabs {
       display: none;
@@ -537,14 +575,16 @@
       text-align: justify;
     }
     .title_content {
-      font-size: 17px !important;
+      font-size: 15px !important;
+      line-height: 20px !important;
+      display: block !important;
     }
     .heading_content p {
-      font-size: 15px;
+      display: none;
     }
     .content_tabs p {
       font-size: 15px;
-      padding-top: 15px;
+      padding-top: 10px;
     }
     .icon_game {
       width: 50px;
@@ -552,9 +592,24 @@
     .btn_join {
       width: 100%;
       text-align: center;
+      margin-top: 15px;
+    }
+    .btn_join a {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 15px;
+      line-height: 20px;
+      color: #FFFFFF;
+      padding: 10px 15px;
+      background: #F1BD2B;
+      border-radius: 9px;
+      text-decoration: none;
     }
     .content_tabs, .all_icons {
       width: 100%;
+    }
+    .content_tabs {
+      height: 440px;
     }
     .content_tabs_right  {
       display: none;

@@ -2,7 +2,8 @@
     <div class="header_width ">
         <div class="header_top body_width" id="header_top">
             <div class="header_scroll">
-                <img src="/images/menu_mb.svg" alt="show menu" class="img_show_menu" onclick="show_menu(this,1)">
+                <img src="/images/menu_mb.svg" alt="show menu" class="img_show_menu" id="open_menu" onclick="show_menu(this,1)">
+                <img src="/images/icons/icons8-cancel-30 .png" alt="close menu" class="img_show_menu close_menu" id="close_menu" onclick="show_menu(this,2)">
                 <a href ="/" class="logo_header">
                     <img src="/images/icons/logo.png">
                 </a>
@@ -14,10 +15,11 @@
                     <a class="btn_acc btn_login" href="#">Đăng Nhập</a>
                     <a class="btn_acc btn_register" href="#">Đăng Ký</a>
                 </div>
-                <img class="search_nonpc" src="/images/icons/icons8-search-25.png">
+                <img class="search_nonpc"  id="open" src="/images/icons/icons8-search-25.png" onclick="show_search(this,1)">
+                <img class="search_nonpc cancel" id="cancel" src="/images/icons/icons8-cancel-30 .png" onclick="show_search(this,2)">
             </div>
         </div>
-        <div class="header_menu ">
+        <div class="header_menu">
                 <div class="menu body_width" id="menu">
                     <ul class="list_menu">
                         <li class="item_menu">
