@@ -87,6 +87,9 @@ if (count($menu_cate_parent) > 2) {
             <a href="/dang-nhap-sic88/">Đăng nhập sic88</a>
           </li>
         </ul>
+        <div class="div_dmca">
+          <a href="https://www.dmca.com/Protection/Status.aspx?ID=edfe211c-add0-4955-8a3c-0b6973cd7020&amp;refurl=https://sic88.org/"><img src="https://images.dmca.com/Badges/_dmca_premi_badge_2.png?ID=edfe211c-add0-4955-8a3c-0b6973cd7020" alt="DMCA.com Protection Status"></a>
+        </div>
       </div>
     </div>
   </div>

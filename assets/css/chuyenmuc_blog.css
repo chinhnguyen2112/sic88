@@ -434,7 +434,7 @@ a.H4abc {
 }
 
 .blog_content {
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 @media only screen and (max-width: 1024px) {

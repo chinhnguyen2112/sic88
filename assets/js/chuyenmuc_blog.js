@@ -143,7 +143,7 @@ $(".hide_show_content").click(function () {
 	} else {
 		$(".hide_show_text").text("Xem thêm");
 		$(".list_img_arrow").css("rotate", "90deg");
-		$(".content_blog").css("height", "150px");
+		$(".content_blog").css("height", "70px");
 	}
 	++check_click;
 });

@@ -6,26 +6,26 @@
                 <span> / </span>
                 <span class="this_breadcrumb"><?= $title_page ?></span>
             </div>
-            <?php if (isset($content_cate) && $content_cate != '') { ?>
-                <div class="blog_content">
-                    <div class="left_detail">
-                        <div class="content_blog" id="content_blog">
-                            <?= $content_cate ?>
-                        </div>
-                        <div class="hide_show_content">
-                            <p class="hide_show_text">Xem thêm</p>
-                            <div class="list_img_arrow">
-                                <img src="/images/arrow.svg" alt="xem thêm">
-                                <img src="/images/arrow.svg" alt="xem thêm">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <?php } ?>
         </div>
         <div class="train_content">
             <div class="top_blog">
                 <div class="top_left">
+                    <?php if (isset($content_cate) && $content_cate != '') { ?>
+                        <div class="blog_content">
+                            <div class="left_detail">
+                                <div class="content_blog" id="content_blog">
+                                    <?= $content_cate ?>
+                                </div>
+                                <div class="hide_show_content">
+                                    <p class="hide_show_text">Xem thêm</p>
+                                    <div class="list_img_arrow">
+                                        <img src="/images/arrow.svg" alt="xem thêm">
+                                        <img src="/images/arrow.svg" alt="xem thêm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
                     <div class="list_blog_top">
                         <div class="left_blog">
                             <div class="blog_top">

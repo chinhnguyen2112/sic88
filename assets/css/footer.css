@@ -1,224 +1,277 @@
 .footer {
-    color: #fff;
-    background: #000;
-  }
+  color: #fff;
+  background: #000;
+}
+
+.footer_width {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item_ft01,
+.item_ft02,
+.item_ft03 {
+  width: 30%;
+  text-align: left;
+}
+
+.content_intro {
+  padding-bottom: 10px;
+}
+
+.content_intro p {
+  padding-top: 10px;
+  margin: 0;
+  font-size: 13px;
+}
+
+.title_intro {
+  color: #FBFBFB;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.infor_01 a {
+  color: #339966;
+  text-decoration: none;
+}
+
+.icons_contact {
+  display: flex;
+}
+
+.item_icons {
+  border: 0.1rem solid #ccc;
+  padding: 3px 6px;
+  border-radius: 0.2rem;
+  margin-right: 7px;
+}
+
+.item_icons img {
+  width: 15px;
+  height: 15px;
+}
+
+.item_icons a {
+  --icon-padding: 0em;
+}
+
+.title_item_ft {
+  padding: 0.4rem;
+  color: #FBFBFB;
+  background: #c2060d;
+  font-size: 17px !important;
+  width: max-content;
+  font-weight: 400 !important;
+}
+
+.list_game_ft {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.item_game_ft {
+  list-style: none;
+  width: 50%;
+  padding: 10px 0 5px 0;
+}
+
+.item_game_ft a {
+  text-decoration: none;
+  padding: 5px 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Roboto", Sans-serif !important;
+}
+
+.item_game_ft:before {
+  content: " > ";
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.item_game_ft:after {
+  display: block;
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: #eee !important;
+}
+
+.list_guide {
+  padding: 0;
+}
+
+.link_ft a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #F1BD2B;
+}
+
+.coppy_right {
+  text-align: center;
+  padding: 10px;
+  z-index: 9;
+  background: #eeeaea24;
+}
+
+.text_cr {
+  margin: 0;
+}
+
+.footer_btn {
+  display: none;
+}
+
+.back_to_top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.btn_to_top {
+  display: block;
+  width: 44px;
+  border-radius: 5px;
+  height: 44px;
+  line-height: 44px;
+  background: hsla(0, 0%, 70.6%, .15);
+  border: 1px solid rgba(0, 0, 0, .11);
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, .1), 0 2px 6px rgba(0, 0, 0, .1);
+  text-align: center;
+  opacity: .8;
+}
+
+.btn_to_top img {
+  width: 25px;
+  height: 25px;
+  padding-right: 4px;
+}
+
+.btn_to_top:hover {
+  background: hsl(0deg 0% 100% / 24%);
+}
+
+.div_dmca {
+  width: max-content;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
   .footer_width {
-    padding: 20px 0px;
-    display: flex;
-    flex-direction: column;
+    padding: 20px 30px;
   }
+}
+
+@media only screen and (max-width: 768px) {
   .content_footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  .item_ft01, .item_ft02, .item_ft03 {
-    width: 30%;
-    text-align: left;
-  }
-  .content_intro {
-    padding-bottom: 10px;
-  }
-  .content_intro p {
-    padding-top: 10px;
-    margin: 0;
-    font-size: 13px;
-  }
-  .title_intro {
-    color: #FBFBFB;
-    font-size: 1.3rem;
-    font-weight: 600;
-  }
-  .infor_01 a {
-    color: #339966;
-    text-decoration: none;
-  }
-  .icons_contact {
-    display: flex;
-  }
-  .item_icons {
-    border: 0.1rem solid #ccc;
-    padding: 3px 6px;
-    border-radius: 0.2rem;
-    margin-right: 7px;
-  }
-  .item_icons img {
-    width: 15px;
-    height: 15px;
-  }
-  .item_icons a {
-    --icon-padding: 0em;
-  }
-  .title_item_ft {
-    padding: 0.4rem;
-    color: #FBFBFB;
-    background: #c2060d;
-    font-size: 17px !important;
-    width: max-content;
-    font-weight: 400 !important;
-  }
-  .list_game_ft {
-    display: flex;
     flex-wrap: wrap;
-    padding: 0;
   }
-  .item_game_ft {
-    list-style: none;
-    width: 50%;
-    padding: 10px 0 5px 0;
+
+  .item_ft01 {
+    width: 100%;
+    margin-bottom: 20px;
   }
-  .item_game_ft a {
-    text-decoration: none;
-    padding: 5px 0;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 600;
-    font-family: "Roboto", Sans-serif !important;
-  }
-  .item_game_ft:before {
-    content: " > ";
-    color: #fff;
-    margin-right: 0.5rem;
-  }
-  .item_game_ft:after {
-    display: block;
-    content: "";
-    width: 90%;
-    height: 1px;
-    background: #eee !important;
-  }
-  .list_guide {
-    padding: 0;
-  }
-  
-  .link_ft a {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    color: #F1BD2B;
-  }
-  .coppy_right {
+
+  .logo_ft {
     text-align: center;
-    padding: 10px;
-    z-index: 9;
-    background: #eeeaea24;
   }
-  .text_cr {
-    margin: 0;
+
+  .item_ft02 {
+    width: 65%;
   }
+
+  .item_ft03 {
+    width: 35%;
+  }
+
+  .item_ft03 .item_game_ft {
+    width: 100%;
+  }
+
   .footer_btn {
     display: none;
   }
-  .back_to_top {
-    position:fixed;
-    bottom: 30px;
-    right: 30px;
+}
+
+@media only screen and (max-width: 540px) {
+
+  .item_ft02,
+  .item_ft03 {
+    width: 100%;
+    padding-bottom: 20px;
   }
-  .btn_to_top {
+
+  .title_item_ft {
+    padding: 0.2rem;
+    font-size: 15px !important;
+  }
+
+  .footer_btn {
     display: block;
-    width: 44px;
-    border-radius: 5px;
-    height: 44px;
-    line-height: 44px;
-    background: hsla(0,0%,70.6%,.15);
-    border: 1px solid rgba(0,0,0,.11);
-    box-shadow: inset 0 0 0 1px hsla(0,0%,100%,.1), 0 2px 6px rgba(0,0,0,.1);
+    position: fixed;
+    z-index: 9999;
+    bottom: 0px;
+    width: 100%;
+    line-height: 50px;
+    background: #e23430;
     text-align: center;
-    opacity: .8;
   }
-  .btn_to_top img {
-    width: 25px;
-    height: 25px;
-    padding-right: 4px;
+
+  .content_ft_btn {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
   }
-  .btn_to_top:hover {
-    background: hsl(0deg 0% 100% / 24%);
+
+  .footer_btn a {
+    min-width: 175px;
+    font-weight: 700;
+    border: none;
+    color: #fff;
+    border-radius: 0;
+    outline: 0;
+    height: auto;
+    line-height: 1.4;
+    padding: 6px 4px;
   }
-  @media only screen and (max-width: 1024px) {
-    .footer_width {
-      padding: 20px 30px;
-    }
+
+  .btn_ft_regis {
+    background-color: #d93;
+    margin-right: 20px;
   }
-  @media only screen and (max-width: 768px) {
-    .content_footer {
-      flex-wrap: wrap;
-    }
-    .item_ft01 {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    .logo_ft {
-      text-align: center;
-    }
-    .item_ft02 {
-      width: 65%;
-    }
-    .item_ft03 {
-      width: 35%;
-    }
-    .item_ft03 .item_game_ft {
-      width: 100%;
-    }
-    .footer_btn {
-      display: none;
-    }
+
+  .btn_ft_login {
+    background-color: #5cb85c;
   }
-  @media only screen and (max-width: 540px) {
-    .item_ft02, .item_ft03 {
-      width: 100%;
-      padding-bottom: 20px;
-    }
-    .title_item_ft {
-      padding: 0.2rem;
-      font-size: 15px !important;
-    }
-    .footer_btn {
-      display: block;
-      position: fixed;
-      z-index: 9999;
-      bottom: 0px;
-      width: 100%;
-      line-height: 50px;
-      background: #e23430;
-      text-align: center;
-    }
-    .content_ft_btn {
-      display: flex;
-      justify-content: center;
-      padding: 0.5rem 0;
-    }
-    .footer_btn a {
-      min-width: 175px;
-      font-weight: 700;
-      border: none;
-      color: #fff;
-      border-radius: 0;
-      outline: 0;
-      height: auto;
-      line-height: 1.4;
-      padding: 6px 4px;
-    }
-    .btn_ft_regis {
-      background-color: #d93;
-      margin-right: 20px;
-    }
-    .btn_ft_login {
-      background-color: #5cb85c;
-    }
-    .back_to_top {
-      display: none;
-    }
+
+  .back_to_top {
+    display: none;
   }
-  @media only screen and (max-width: 414px) {
-    .footer_btn a {
-      font-size: 12px;
-      min-width: 150px;
-    }
-    .btn_ft_regis {
-      margin-right: 10px;
-    }
-    .back_to_top {
-      display: none;
-    }
+}
+
+@media only screen and (max-width: 414px) {
+  .footer_btn a {
+    font-size: 12px;
+    min-width: 150px;
   }
+
+  .btn_ft_regis {
+    margin-right: 10px;
+  }
+
+  .back_to_top {
+    display: none;
+  }
+}
