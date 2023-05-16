@@ -45,15 +45,19 @@
                         </div>
                         <?php } ?>
                         <li class="item_menu">
-                            <a class="link_special" href="#">
-                                <img src="/images/icons/icons_km.png">
-                                <p>KHUYẾN MÃI</p>
-                            </a>
+                            <span>
+                                <a class="link_special" href="#">
+                                    <img src="/images/icons/icons_km.png">
+                                    <p>KHUYẾN MÃI</p>
+                                </a>
+                            </span>
                         </li>
                         <li class="item_menu">
-                            <a href="#">
-                                <img src="/images/icons/icons_vip.png">
-                            </a>
+                            <span>
+                                <a href="#">
+                                    <img src="/images/icons/icons_vip.png">
+                                </a>
+                            </span>
                         </li>
                     </ul>
                 </div>
