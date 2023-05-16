@@ -21,21 +21,15 @@ if (count($menu_cate_parent) > 2) {
             <p class="infor_01">Email: nhacaisic88@gmail.com</p>
           </div>
           <div class="icons_contact">
-            <div class="item_icons">
-              <a href="#">
-                <img src="/images/icons/icons8-facebook-30.png">
-              </a>
-            </div>
-            <div class="item_icons">
-              <a href="#">
-                <img src="/images/icons/icons8-instagram-30.png">
-              </a>
-            </div>
-            <div class="item_icons">
-              <a href="#">
-                <img src="/images/icons/icons8-youtube-30.png">
-              </a>
-            </div>
+            <a href="#" class="item_icons">
+              <img src="/images/icons/icons8-facebook-30.png">
+            </a>
+            <a href="#" class="item_icons">
+              <img src="/images/icons/icons8-instagram-30.png">
+            </a>
+            <a href="#" class="item_icons">
+              <img src="/images/icons/icons8-youtube-30.png">
+            </a>
           </div>
         </div>
       </div>
