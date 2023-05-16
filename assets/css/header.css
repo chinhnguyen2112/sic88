@@ -164,18 +164,18 @@ body {
 
   
   .item_menu img {
-    width: 25px;
+    width: 19px;
   }
   .link_special {
     align-items: center;
     display: flex;
     background: #2A5B84;
     border-radius: 5px;
-    padding: 3px 8px;
   }
   .link_special img {
     height: 100%;
     margin-right: 10px;
+    width: 23.23px !important;
   }
   .link_special p {
     margin: 0;
@@ -316,6 +316,11 @@ body {
     }
     .left_noti {
         width: 19%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .img_search {
+      right: 60px;
     }
   }
   @media only screen and (max-width: 540px) {
