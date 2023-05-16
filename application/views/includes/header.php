@@ -10,7 +10,7 @@
                 <div class="search">
                     <form id="search" method="get" action="/search">
                         <img class="img_search" src="/images/icons/icons8-search-30.png">
-                        <input placeholder="Search..." />
+                        <input id="search_input" autocomplete="off" name="search" placeholder="Search..." />
                     </form>
                 </div>
                 <div class="all_btn_acc">
@@ -33,16 +33,16 @@
                         <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 20 AND id != 22 AND id != 24 AND id != 25');
                             foreach ($menu_cate_parent as $val) {
                                 $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
-                        <div class="item_menu">
-                            <span><a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a></span>
+                        <li class="item_menu" onclick="show_submenu(this,1)">
+                            <span><a id="val_a" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a></span>
                             <?php if ($menu_cate != null) { ?>
                             <div class="sub_menu">
                                 <?php foreach ($menu_cate as $val1) { ?>
-                                <p><a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a></p>
+                                    <p><a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a></p>
                                 <?php } ?>
                             </div>
                             <?php } ?>
-                        </div>
+                        </li>
                         <?php } ?>
                         <li class="item_menu">
                             <span>
@@ -70,7 +70,7 @@
                 </div>
                 <marquee>
                     <a class="text_noti" href="#">Khuyến mãi khủng nhất trong năm từ Sic88 duy nhất chỉ có trong đợt
-                        nghỉ lễ 30/4-1/5 nhanh tay nào các game thủ</a>
+                        nghỉ lễ 30/4 - 1/5 nhanh tay nào các game thủ</a>
                 </marquee>
             </div>
         </div>
