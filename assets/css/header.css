@@ -38,7 +38,7 @@ body {
     width: 39.65%;
   }
   .search input {
-    width: 88%;
+    width: 90%;
     padding: 7.5px 35px 7.5px 15px;
     font-size: 15px;
     border-radius: 10px;
@@ -54,7 +54,7 @@ body {
     cursor: pointer;
     top: 8px;
     width: 20px;
-    right: 15px;
+    right: 10px;
     position: absolute;
   }
   .btn_acc {
@@ -87,7 +87,7 @@ body {
     transition: all .5s;
   }
   .list_menu {
-    align-items: center;
+    align-items: flex-start;
     margin: 0;
     padding: 2px;
     display: flex;
@@ -115,13 +115,9 @@ body {
     width: 12px !important;
   }
   .sub_menu {
-      -webkit-transition: height 1s linear 0s;
-      -moz-transition: height 1s linear 0s;
-      -ms-transition: height 1s linear 0s;
-      -o-transition: height 1s linear 0s;
-      transition: height 1s linear 0s;
       height: 0px;
       position: absolute;
+      transition: 0.5s;
       background: #fff;
       list-style: none;
       overflow:hidden;
@@ -129,32 +125,25 @@ body {
       min-width: 15em;
       margin: 0;
       padding: 0;
+      overflow: hidden;
       box-shadow: 0 0 2px rgba(0,0,0,.1), 0 20px 40px rgba(0,0,0,.18);
   }
-  .list_menu .item_menu:hover .sub_menu {
+  .item_menu:hover .sub_menu {
     height: max-content;
-    -webkit-transition: height 1s linear 0s;
-    -moz-transition: height 1s linear 0s;
-    -ms-transition: height 1s linear 0s;
-    -o-transition: height 1s linear 0s;
-    transition: height 1s linear 0s;
   }
   .sub_menu p {
     padding: 5px;
     border-bottom: 1px solid #eee;
-  }
-  .sub_menu p:hover {
-    background: #f0ecec;
-    color: #000;
-  }
-  .sub_menu p {
     padding: 8px 16px;
     font-size: 13px !important;
     line-height: 37px !important;
     font-weight: bold !important;
     color: #000 !important;
   }
-  
+  .sub_menu p:hover {
+    background: #f0ecec;
+    color: #000;
+  }
   .item_menu a {
     text-decoration: none;
     font-size: 13px;
@@ -247,6 +236,17 @@ body {
         width: 50px;
         height: auto;
     }
+    .sub_menu {
+      position:static;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      transition: 0.5s;
+      height: 0px;
+    }
+    .sub_menu p {
+      width: 100px;
+    }
     .link_special img {
       width: 23.23px !important;
     }
@@ -278,7 +278,7 @@ body {
       margin: auto;
     }
     .img_search {
-      right: 90px;
+      right: 70px;
     }
     .header_menu {
       width: 100%;
@@ -311,9 +311,11 @@ body {
       font-size: 14px;
       line-height: 24px;
       text-transform: uppercase;
-      background: none repeat scroll 0 0 #f0f0f0;
       width:max-content;
       margin:auto;
+    }
+    .link_special {
+      background: none repeat scroll 0 0 #f0f0f0;
     }
     .link_special p {
       color: #000;
@@ -327,6 +329,7 @@ body {
     .left_noti {
         width: 19%;
     }
+    
   }
   @media only screen and (max-width: 768px) {
     .img_search {
@@ -351,5 +354,8 @@ body {
     }
     .title_noti {
       display: none;
+    }
+    .sub_menu {
+      min-width: auto !important;
     }
   }

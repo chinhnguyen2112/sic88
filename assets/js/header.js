@@ -23,6 +23,7 @@ function show_menu(e, type) {
 		document.getElementById("close_menu").style.display = 'none';
 	}
 }
+
 function show_search(e, type) {
 	if (type == 1) {
 		$(".search").show(200);
@@ -39,6 +40,16 @@ function show_search(e, type) {
 
 	}
 }
+function show_submenu(e, type) {
+	if (type == 1) {
+		$(".sub_menu").show(200);
+		$(e).attr("onclick", "show_submenu(this,2)");
+	} else {
+		$(".sub_menu").hide(200);
+		$(e).attr("onclick", "show_submenu(this,1)");
+	}
+} 
+
 // function show_menu1(e) {
 // 	$(".box_menu").show();
 // }
