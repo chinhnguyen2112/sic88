@@ -165,7 +165,7 @@ body {
 
   
   .item_menu img {
-    width: 19px;
+    width: 25px;
   }
   .link_special {
     align-items: center;
@@ -176,6 +176,7 @@ body {
   .link_special img {
     height: 100%;
     margin-right: 10px;
+    width: 19px !important
   }
   .link_special p {
     margin: 0;
@@ -251,6 +252,9 @@ body {
     }
     .item_menu a {
       padding: 0 !important;
+    }
+    .item_menu img {
+      width: 19px;
     }
     .header_top {
         padding: 10px 25px;
