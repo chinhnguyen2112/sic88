@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="heading_left">
+    <div class="heading_left body_width">
         <p>Kết quả tìm kiếm với từ khóa : <?= $key_search ?></p>
     </div>
     <div class="result_content body_width">

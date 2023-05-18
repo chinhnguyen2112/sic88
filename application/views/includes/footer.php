@@ -105,15 +105,15 @@ if (count($menu_cate_parent) > 2) {
 <script>
   $(window).scroll(function() {
     if ($(this).scrollTop()) {
-      $('#btn_to_top').fadeIn();
+      $('#btn_to_top').fadeIn(500);
     } else {
-      $('#btn_to_top').fadeOut();
+      $('#btn_to_top').fadeOut(500);
     }
   });
   $("#btn_to_top").click(function() {
     $("html, body").animate({
       scrollTop: 0
-    }, 1000);
+    }, 2000);
     document.getElementById("btn_to_top").style.display = 'none';
   });
 </script>
