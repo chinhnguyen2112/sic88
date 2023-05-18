@@ -70,7 +70,7 @@
                 </div>
                 <marquee>
                     <a class="text_noti" href="#">Khuyến mãi khủng nhất trong năm từ Sic88 duy nhất chỉ có trong đợt
-                        nghỉ lễ 30/4 - 1/5 nhanh tay nào các game thủ</a>
+                        nghỉ lễ 30/4 - 1/5 nhanh tay nào các game thủ.</a>
                 </marquee>
             </div>
         </div>

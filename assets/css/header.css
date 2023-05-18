@@ -294,7 +294,7 @@ body {
     .item_home p {
       margin: auto;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 24px;
     }
     .item_menu {
@@ -308,7 +308,7 @@ body {
     }
     .item_menu a {
       font-weight: 400;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 24px;
       text-transform: uppercase;
       width:max-content;
@@ -319,6 +319,7 @@ body {
     }
     .link_special p {
       color: #000;
+      font-size: 12px;
     }
     .item_menu span {
       width: 100%;
@@ -334,6 +335,9 @@ body {
   @media only screen and (max-width: 768px) {
     .img_search {
       right: 60px;
+    }
+    .search input {
+      width: 87%;
     }
   }
   @media only screen and (max-width: 540px) {
@@ -357,5 +361,9 @@ body {
     }
     .sub_menu {
       min-width: auto !important;
+    }
+    .sub_menu p {
+      text-align: left;
+      padding: 0 16px;
     }
   }

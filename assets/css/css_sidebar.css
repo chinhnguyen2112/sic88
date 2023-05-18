@@ -1,23 +1,11 @@
-/* sidebar */
-
 .sidebar_content {
     width: 300px;
 }
-
-.sidebar_box {
-    margin-bottom: 20px;
-}
-
 .box_heading {
     text-align: center;
     padding: 4px 10px;
-    background: #ea9912;
+    background: #2b5b84;
 }
-
-.box_heading img {
-    width: 22px;
-}
-
 .box_heading a {
     color: #fff;
     text-transform: uppercase;
@@ -25,68 +13,68 @@
     font-weight: 600;
     display: block;
 }
-
-.box_content_sidebar {
+.box_heading img {
+    width: 22px;
+}
+.box_content {
     background-color: #f3f3f3;
 }
-
 .item_content_sidebar {
     font-size: 14px;
     font-weight: 600;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 10px;
+    padding: 8px 0 8px 15px;
     position: relative;
     border: 1px solid #dedede;
 }
-
 .icon_li {
-    margin-right: 10px;
+    margin-right: 4px;
     width: 13px;
 }
-
 .item_content_sidebar a {
     text-transform: uppercase;
-    color: #cb0030;
     font-size: 14px;
+    color: transparent;
+    background: linear-gradient(90deg,#2b5b84 0,#4c83b4 0,#12416a 100%);
+    -webkit-background-clip: text;
 }
-
 .item_hot_news {
     display: block;
-    padding: 8px 10px;
+    padding: 13px 18px;
     position: relative;
     border: 1px solid #dedede;
 }
-
 .item_hot_news a {
-    font-weight: 500;
+    font-size: 16px;
     line-height: 22px;
     color: #333;
-    font-size: 14px;
+    transition: 0.5s;
 }
-
 .item_hot_news a:hover {
-    color: #ea9912;
+    color: #2b5b84;
 }
-
-.btn_see_more {
-    background: #533c94;
-    border: none;
-    width: 100%;
-    text-align: center;
+.btn_more {
+    position: relative;
+    background: linear-gradient(90deg,#2b5b84 0,#4c83b4 0,#12416a 100%);
     cursor: pointer;
-    transition: all .4s ease 0s, transform .4s ease 0s, visibility .4s linear 0s !important;
+    width: 100%;
+    z-index: 1;
 }
-
-.btn_see_more:hover {
-    background: #eeebeb;
+.btn_more::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg,#12416a 0,#12416a 0,#3e77a9 100%);
+    z-index: -1;
+    transition: opacity .7s linear;
+    opacity: 0;
 }
-
-.btn_see_more:hover a {
-    color: #333;
+.btn_more:hover::before {
+    opacity: 1;
 }
-
-.btn_see_more a {
+.btn_more a {
     color: #fff;
     text-transform: uppercase;
     font-size: 13px;
@@ -94,11 +82,9 @@
     font-weight: 500;
     display: block;
 }
-
 @media only screen and (max-width: 768px) {
     .sidebar_content {
         width: 100%;
         margin-top: 20px;
     }
-
 }
