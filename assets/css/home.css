@@ -503,7 +503,22 @@
   .slick-prev {
     left: 20px;
   }
+  /* three step  */
+  .item_step img {
+    width: 58px;
+    height: 58px;
+  }
+  .item_step_content {
+    margin-left: 10px;
+  }
+  .first_text_item {
+    font-size: 16px;
+  }
+  .arrow_step {
+    width: 28px;
+  }
 
+  /* lottery  */
   .lottery {
     padding: 30px 20px;
   }
