@@ -46,7 +46,7 @@
                         <?php } ?>
                         <li class="item_menu">
                             <span>
-                                <a class="link_special" href="#">
+                                <a class="link_special" href="/khuyen-mai/">
                                     <img src="/images/icons/icons_km.png">
                                     <p>KHUYẾN MÃI</p>
                                 </a>
@@ -65,7 +65,7 @@
         <div class="header_bot body_width" id="header_bot">
             <div class="header_scroll">
                 <div class="left_noti">
-                    <img src="/images/icons/icons_tb.png">
+                    <img src="/images/icons/icons_tb.png" alt="icon thông báo">
                     <p class="title_noti">Thông Báo:</p>
                 </div>
                 <marquee>
