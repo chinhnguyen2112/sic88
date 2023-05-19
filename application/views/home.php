@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="three_step">
-      <div class="three_step_content">
+      <div class="three_step_content body_width">
         <a href="#" class="item_step">
           <img src="/images/icons/icon_step_01.png" alt="step 1">
           <div class="item_step_content">
