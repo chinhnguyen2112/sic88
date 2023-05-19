@@ -23,7 +23,7 @@
         <a href="#" class="item_step">
           <img src="/images/icons/icon_step_01.png" alt="step 1">
           <div class="item_step_content">
-            <p class="first_text_item">ĐĂNG KÝ M88</p>
+            <p class="first_text_item">ĐĂNG KÝ SIC88</p>
             <p class="sec_text_item">Nhanh chóng và dễ dàng!</p>
           </div>
         </a>
