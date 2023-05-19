@@ -11,7 +11,6 @@ if (count($menu_cate_parent) > 2) {
           <img src="/images/icons/logo.png">
         </div>
         <div class="introduce">
-          <p class="title_intro">Giới Thiệu</p>
           <div class="content_intro">
             <p class="infor_01">
               <a href="/">Sic88</a>
@@ -34,7 +33,6 @@ if (count($menu_cate_parent) > 2) {
         </div>
       </div>
       <div class="item_ft02">
-        <p class="title_item_ft">THỂ LOẠI GAME</p>
         <ul class="list_game_ft">
           <li class="item_game_ft">
             <a href="/casino-online/">Casino Online</a>
@@ -66,7 +64,6 @@ if (count($menu_cate_parent) > 2) {
         </ul>
       </div>
       <div class="item_ft03">
-        <p class="title_item_ft">HƯỚNG DẪN</p>
         <ul class="list_guide">
           <li class="item_game_ft">
             <a href="/dang-ky-sic88/">Đăng ký sic88</a>
