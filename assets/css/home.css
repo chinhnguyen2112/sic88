@@ -703,6 +703,9 @@
   .banner {
     margin: 0 auto;
   }
+  .banner .slick-list {
+    padding: 0 !important;
+  }
 
   .slick-prev,
   .slick-next {
