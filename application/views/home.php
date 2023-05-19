@@ -23,8 +23,8 @@
         <a href="#" class="item_step">
           <img src="/images/icons/icon_step_01.png" alt="step 1">
           <div class="item_step_content">
-            <p class="first_text_item">Join M88</p>
-            <p class="sec_text_item">It's quick and easy</p>
+            <p class="first_text_item">ĐĂNG KÝ M88</p>
+            <p class="sec_text_item">Nhanh chóng và dễ dàng!</p>
           </div>
         </a>
         <div class="arrow_step">
@@ -33,8 +33,8 @@
         <a href="#" class="item_step">
           <img src="/images/icons/icon_step_02.png" alt="step 2">
           <div class="item_step_content">
-            <p class="first_text_item">Deposit</p>
-            <p class="sec_text_item">Secure with the fastest deposit times</p>
+            <p class="first_text_item">GỬI TIỀN</p>
+            <p class="sec_text_item">An toàn và thời gian gửi tiền nhanh nhất</p>
           </div>
         </a>
         <div class="arrow_step">
@@ -43,8 +43,8 @@
         <a href="#" class="item_step">
           <img src="/images/icons/icon_step_03.png" alt="step 3">
           <div class="item_step_content">
-            <p class="first_text_item">Play</p>
-            <p class="sec_text_item">Start your winning journey now!</p>
+            <p class="first_text_item">THAM GIA</p>
+            <p class="sec_text_item">Bắt đầu hành trình chiến thắng của bạn ngay!</p>
           </div>
         </a>
       </div>
