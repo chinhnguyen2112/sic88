@@ -216,7 +216,10 @@
 }
 .right_content {
     /* padding-left: 30px; */
-    width: 30.1%;
+    width: 300px;
+}
+.sidebar_box {
+    margin-bottom: 20px;
 }
 .box_heading {
     text-align: center;

@@ -109,7 +109,7 @@ body {
     transition: all .5s;
   }
   .list_menu {
-    align-items: flex-start;
+    align-items: center;
     margin: 0;
     padding: 2px;
     display: flex;
@@ -171,12 +171,12 @@ body {
     font-size: 13px;
     font-weight: bold;
     color: #000000;
-    padding: 3px 8px;
+    padding: 5px 8px;
   }
 
   
   .item_menu img {
-    width: 25px;
+    width: 30px;
   }
   .link_special {
     align-items: center;
