@@ -99,6 +99,30 @@
                                 <a href="/tai-xiu/">Tài Xỉu</a>
                             </strong>
                         </li>
+                        <li class="item_content_sidebar">
+                            <img class="icon_li" src="/images/icons/icons8-star-15.png" />
+                            Phiên Bản
+                            <strong>
+                                <a href="/ban-ca/">Bắn Cá</a>
+                            </strong>
+                            Hấp Dẫn
+                        </li>
+                        <li class="item_content_sidebar">
+                            <img class="icon_li" src="/images/icons/icons8-star-15.png" />
+                            Phiên Bản
+                            <strong>
+                                <a href="/no-hu/">Nổ Hũ</a>
+                            </strong>
+                            Chào 2023
+                        </li>
+                        <li class="item_content_sidebar">
+                            <img class="icon_li" src="/images/icons/icons8-star-15.png" />
+                            Game
+                            <strong>
+                                <a href="/baccarat/">Baccarat</a>
+                            </strong>
+                            Beginner Guide
+                        </li>
                     </ul>
                 </div>
             </div>
