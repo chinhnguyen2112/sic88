@@ -26,12 +26,34 @@ body {
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
+    padding: 10px 0;
+  }
+  .logo_header {
+    display: flex;
+    padding-top: 5px;
+  }
+  .logo_header p {
+    margin: 0;
+  }
+  .fic {
+    color: #F6C042;
+    font-size: 45px;
+    font-weight: bold;
+  }
+  .number_logo {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 7px;
+    margin-left: 2px !important;
   }
   .logo_header img {
     width: 97px;
     height: 50px;
     padding: 5px;
 }
+
   .search {
     position:relative;
   
@@ -172,7 +194,7 @@ body {
     color: #fff;
   }
   .header_bot {
-    padding: 10px 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     transition: 0.5s;
@@ -220,6 +242,9 @@ body {
         z-index: 9;
         position: fixed;
     }
+    .header_scroll {
+      padding: 0px 0 0 10px;
+    }
     .header_menu {
       transition: 0.5s;
       padding: 5px 0;
@@ -257,7 +282,7 @@ body {
       width: 19px;
     }
     .header_top {
-        padding: 10px 25px;
+        padding: 10px 25px 5px 25px;
         box-shadow: 0 2px 6px rgb(255 255 255 / 10%);
         position: relative;
     }
@@ -273,7 +298,7 @@ body {
 
     }
     .search {
-      top: 60px;
+      top: 70px;
       width: 100%;
       margin: auto;
     }
@@ -328,7 +353,7 @@ body {
         padding: 10px 25px;
     }
     .left_noti {
-        width: 19%;
+        width: 13%;
     }
     
   }
@@ -339,8 +364,17 @@ body {
     .search input {
       width: 87%;
     }
+    .left_noti {
+      width: 19%;
+    }
   }
   @media only screen and (max-width: 540px) {
+    .header_scroll {
+      padding: 0;
+    }
+    .header_top {
+      padding: 10px 25px;
+    }
     .item_menu {
       width: 45%;
     }

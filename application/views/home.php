@@ -23,7 +23,7 @@
         <a href="#" class="item_step">
           <img src="/images/icons/icon_step_01.png" alt="step 1">
           <div class="item_step_content">
-            <p class="first_text_item">ĐĂNG KÝ SIC88</p>
+            <p class="first_text_item">ĐĂNG KÝ</p>
             <p class="sec_text_item">Nhanh chóng và dễ dàng!</p>
           </div>
         </a>
@@ -66,19 +66,19 @@
               </div>
             </a>
             <a href="#" class="item_lottery">
-            <div class="sub_item">
+              <div class="sub_item">
                 <img src="/images/icons/icon_lottery.png">
                 <p class="item_title">45 giây</p>
               </div>
             </a>
             <a href="#" class="item_lottery">
-            <div class="sub_item">
+              <div class="sub_item">
                 <img src="/images/icons/icon_lottery.png">
                 <p class="item_title">1 phút</p>
               </div>
             </a>
             <a href="#" class="item_lottery">
-            <div class="sub_item">
+              <div class="sub_item">
                 <img src="/images/icons/icon_lottery.png">
                 <p class="item_title">1,5 phút</p>
               </div>
@@ -90,19 +90,19 @@
               </div>
             </a>
             <a href="#" class="item_lottery">
-            <div class="sub_item">
+              <div class="sub_item">
                 <img src="/images/icons/icon_lottery.png">
                 <p class="item_title">45 giây</p>
               </div>
             </a>
             <a href="#" class="item_lottery">
-            <div class="sub_item">
+              <div class="sub_item">
                 <img src="/images/icons/icon_lottery.png">
                 <p class="item_title">1 phút</p>
               </div>
             </a>
             <a href="#" class="item_lottery">
-            <div class="sub_item">
+              <div class="sub_item">
                 <img src="/images/icons/icon_lottery.png">
                 <p class="item_title">1,5 phút</p>
               </div>
@@ -346,7 +346,7 @@
               <div class="content_tabs">
                 <p>Sic88 tự hào là một trong những nhà cái cung cấp các game nổ hũ uy tín nhất hiện nay trên thị trường Đông Nam Á. Game nổ hũ Sic88 có giá trị tiền thưởng cực kỳ lớn, lối chơi đơn giản, giao diện đẹp mắt.</p>
                 <p>Người chơi được tùy chọn thời điểm quay hũ nên sẽ tăng xác xuất những hũ nổ lớn hơn nhiều. Việc này sẽ giúp bạn chọn được khung giờ có nhiều người chơi nhất và đây cũng là thời điểm thuận lợi nhất để nổ hũ.</p>
-                <p>Rất nhiều người lựa chọn chơi nổ hũ tại Sic88 với những ưu điểm vượt trội khiến người chơi an tâm đó là: độ uy tín và bảo mật thông tin tại Sic88 cực cao,  là nhà cái có khả năng tài chính tối ưu, đảm bảo tốt về vấn đề thanh toán cho người chơi khi tham gia. Đơn vị liên kết với nhiều tổ chức tài chính, cho phép thanh toán bằng nhiều hình thức khác nhau.</p>
+                <p>Rất nhiều người lựa chọn chơi nổ hũ tại Sic88 với những ưu điểm vượt trội khiến người chơi an tâm đó là: độ uy tín và bảo mật thông tin tại Sic88 cực cao, là nhà cái có khả năng tài chính tối ưu, đảm bảo tốt về vấn đề thanh toán cho người chơi khi tham gia. Đơn vị liên kết với nhiều tổ chức tài chính, cho phép thanh toán bằng nhiều hình thức khác nhau.</p>
               </div>
               <div class="all_icons">
                 <img class="icon_game" src="/images/icons/icon_game01.png">

@@ -5,7 +5,9 @@
                 <img src="/images/menu_mb.svg" alt="show menu" class="img_show_menu" id="open_menu" onclick="show_menu(this,1)">
                 <img src="/images/icons/icons8-cancel-30 .png" alt="close menu" class="img_show_menu close_menu" id="close_menu" onclick="show_menu(this,2)">
                 <a href ="/" class="logo_header">
-                    <img src="/images/icons/logo.png">
+                    <!-- <img src="/images/icons/logo.png"> -->
+                    <p class="fic">SIC</p>
+                    <p class="number_logo">88</p>
                 </a>
                 <div class="search">
                     <form id="search" method="get" action="/search">
@@ -69,8 +71,8 @@
                     <p class="title_noti">Thông Báo:</p>
                 </div>
                 <marquee>
-                    <a class="text_noti" href="#">Khuyến mãi khủng nhất trong năm từ Sic88 duy nhất chỉ có trong đợt
-                        nghỉ lễ 30/4 - 1/5 nhanh tay nào các game thủ.</a>
+                    <p class="text_noti">Khuyến mãi khủng nhất trong năm từ Sic88 duy nhất chỉ có trong đợt
+                        nghỉ lễ 30/4 - 1/5 nhanh tay nào các game thủ.</p>
                 </marquee>
             </div>
         </div>
