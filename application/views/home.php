@@ -116,56 +116,56 @@
           <div class="content_lottery">
             <a href="#" class="item_lottery">
               <div class="item_traditional">
-                <img src="images/icons/icon_lottery.png">
+                <img src="/images/icons/icon_lottery.png">
                 <p class="item_title title_tradi">Miền Bắc</p>
               </div>
 
             </a>
             <a href="#" class="item_lottery">
               <div class="item_traditional">
-                <img src="images/icons/icon_lottery.png">
+                <img src="/images/icons/icon_lottery.png">
                 <p class="item_title title_tradi">Bến Tre</p>
               </div>
 
             </a>
             <a href="#" class="item_lottery">
               <div class="item_traditional">
-                <img src="images/icons/icon_lottery.png">
+                <img src="/images/icons/icon_lottery.png">
                 <p class="item_title title_tradi">Vũng Tàu</p>
               </div>
 
             </a>
             <a href="#" class="item_lottery">
               <div class="item_traditional">
-                <img src="images/icons/icon_lottery.png">
+                <img src="/images/icons/icon_lottery.png">
                 <p class="item_title title_tradi">Đà Nẵng</p>
               </div>
 
             </a>
             <a href="#" class="item_lottery">
               <div class="item_traditional">
-                <img src="images/icons/icon_lottery.png">
+                <img src="/images/icons/icon_lottery.png">
                 <p class="item_title title_tradi">Miền Bắc</p>
               </div>
 
             </a>
             <a href="#" class="item_lottery">
               <div class="item_traditional">
-                <img src="images/icons/icon_lottery.png">
+                <img src="/images/icons/icon_lottery.png">
                 <p class="item_title title_tradi">Bến Tre</p>
               </div>
 
             </a>
             <a href="#" class="item_lottery">
               <div class="item_traditional">
-                <img src="images/icons/icon_lottery.png">
+                <img src="/images/icons/icon_lottery.png">
                 <p class="item_title title_tradi">Vũng Tàu</p>
               </div>
 
             </a>
             <a href="#" class="item_lottery">
               <div class="item_traditional">
-                <img src="images/icons/icon_lottery.png">
+                <img src="/images/icons/icon_lottery.png">
                 <p class="item_title title_tradi">Đà Nẵng</p>
               </div>
 
@@ -394,21 +394,21 @@
     <div class="qr_app">
       <div class="qr body_width">
         <div class="qr_left">
-          <img class="img_app" src="images/icons/img_app.png">
+          <img class="img_app" src="/images/icons/img_app.png">
         </div>
         <div class="qr_right">
           <div class="qr_right_top">
             <p class="title_qr">tải ứng dụng</p>
-            <img class="logo" src="images/icons/logo.png">
+            <img class="logo" src="/images/icons/logo.png">
             <p class="text">Cược mọi lúc - Thắng mọi nơi</p>
           </div>
           <div class="qr_bot">
             <div class="item_qr_01 qr_item">
-              <img class="qr" src="images/icons/qr.png">
+              <img class="qr" src="/images/icons/qr.png">
               <p>Tải về IOS</p>
             </div>
             <div class="item_qr_02 qr_item">
-              <img class="qr" src="images/icons/qr.png">
+              <img class="qr" src="/images/icons/qr.png">
               <p>Tải về Android</p>
             </div>
           </div>
@@ -418,7 +418,7 @@
     <div class="all_infor body_width">
       <div class="item_infor">
         <div class="img_item">
-          <img src="images/icons/icon_infor01.png">
+          <img src="/images/icons/icon_infor01.png">
         </div>
         <p class="title_item">Đại Lý</p>
         <p class="text_infor">Tham gia chương trình công tác viên dễ dàng và kiếm hoa hồng tiền tỷ.</p>
@@ -426,7 +426,7 @@
       </div>
       <div class="item_infor">
         <div class="img_item">
-          <img src="images/icons/icon_infor02.png">
+          <img src="/images/icons/icon_infor02.png">
         </div>
         <p class="title_item">Khuyến Mãi</p>
         <p class="text_infor">Các chương trình Khuyến Mãi giúp về cược của bạn an toàn hơn và chiến thắng dẽ hơn.</p>
@@ -434,7 +434,7 @@
       </div>
       <div class="item_infor">
         <div class="img_item">
-          <img src="images/icons/icon_infor03.png">
+          <img src="/images/icons/icon_infor03.png">
         </div>
         <p class="title_item">VIP Member</p>
         <p class="text_infor">Nâng cấp Tài Khoản VIP để nhận được những độc quyền.</p>
@@ -442,7 +442,7 @@
       </div>
       <div class="item_infor">
         <div class="img_item">
-          <img src="images/icons/icon_infor04.png">
+          <img src="/images/icons/icon_infor04.png">
         </div>
         <p class="title_item">Hỗ Trợ 24/7</p>
         <p class="text_infor">Dịch vụ chăm sóc khách hàng tại Sic88 luôn sẵn sàng phục vụ 24/7.</p>
