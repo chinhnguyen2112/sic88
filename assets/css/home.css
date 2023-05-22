@@ -18,7 +18,7 @@
 }
 
 .slick-list {
-  padding: 0 !important;
+  padding: 31px 0 0 0 !important;
 }
 
 .slick-arrow {
@@ -90,111 +90,36 @@
 .arrow_step img {
   width: 24px;
 }
-
-/* lottery  */
-.lottery {
-  display: flex;
-  padding: 30px 150px;
+/* comming  */
+.comming_soon {
+  margin: 40px 0;
 }
-
-.lottery_left {
-  width: 50%;
-  margin-top: -53px;
+.comming_content {
+  text-align: center;
 }
-
-.lottery_right {
-  width: 50%;
-}
-
-.lottery_fast {
-  margin-bottom: 30px;
-}
-
-.heading_lottery {
-  color: #fff;
-  display: flex;
-  background: #2E5B85;
-  border-radius: 9px 9px 0 0;
-}
-
-.name_lottery {
+.title_comming {
+  color:  #ffb639;
   text-transform: uppercase;
-  padding: 10px 0 10px 15px;
-  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
 }
-
-.infor_more {
-  padding: 10px;
-  margin: 0;
-}
-
-.content_lottery {
-  justify-content: space-evenly;
-  padding: 15px 15px 40px 40px;
-  background: #EDEAEB;
-  border-radius: 0 0 18px 18px;
-}
-
-.item_lottery {
-  position: relative;
-  cursor: pointer;
-}
-
-.item_title {
-  text-align: center;
-  top: 70px;
-  position: absolute;
+.btn_com {
+  margin-top: 20px;
+  text-decoration: none;
   font-style: normal;
-  font-weight: 900;
-  font-size: 23px;
-  line-height: 32px;
-  width: 80%;
-  color: #D52E31;
-  -webkit-text-stroke: 0.3px white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 6px;
+  color: #fff;
 }
-
-.item_traditional {
-  text-align: center;
-  width: 109px;
-  height: 109px;
+.btn_01 {
+  background: #F6C042;
+  padding: 5px 10px;
 }
-
-.item_traditional img {
-  margin: auto;
-}
-
-.title_tradi {
-  width: 85%;
-  top: 70px;
-  font-size: 20px;
-  line-height: 32px;
-}
-
-.date {
-  text-align: center;
-  color: #000;
-  font-size: 13px;
-  line-height: 15.23px;
-  margin: 0;
-  padding-top: 5px;
-}
-
-.icon-ctrl-lottery img {
-  width: 16px;
-  height: 27px;
-}
-
-.icon-ctrl-lottery {
-  position: absolute;
-  top: 50px;
-}
-
-.lottery-prev {
-  left: 10px;
-}
-
-.lottery-next {
-  right: 10px;
+.btn_02 {
+  background: #2E5B85;
+  padding: 5px 20.64px;
 }
 
 /* all_tabs  */
@@ -221,7 +146,7 @@
     font-size: 28px;
     font-weight: bold;
     padding: 0 5px 5px 0;
-    border-bottom: 13px solid #ffb639;
+    border-bottom: 5px solid #ffb639;
 }
 .text_title_special {
   color: #ffb639 !important;
@@ -494,9 +419,7 @@
   .title_tradi {
     width: 95%;
   }
-  .content_lottery {
-    padding: 15px 24px 40px 29px;
-  }
+
   .content_tabs_left {
     width: 65%;
   }
@@ -513,6 +436,9 @@
 @media only screen and (max-width: 1024px) {
   .container {
     padding-top: 85px;
+  }
+  .slick-list {
+    padding: 9px 0 0 0 !important;
   }
 
   .slick-next {
@@ -537,47 +463,7 @@
     width: 28px;
   }
 
-  /* lottery  */
-  .lottery {
-    padding: 30px 20px;
-  }
-
-  .lottery_left img {
-    width: 90%;
-  }
-
-  .lottery_right {
-    width: 50%;
-  }
-
-  .content_lottery {
-    padding: 15px 15px 20px 30px;
-  }
-
-  .item_title {
-    font-size: 24px;
-    top: 76px;
-    width: 90%;
-  }
-
-  .item_traditional {
-    width: 90px;
-    height: 90px;
-  }
-
-  .item_traditional img {
-    width: 100%;
-  }
-
-  .title_tradi {
-    top: 60px;
-    font-size: 18px;
-  }
-
-  .date {
-    padding-top: 15px;
-  }
-
+  
   .all_tabs {
     padding: 0 20px;
   }
@@ -668,35 +554,7 @@
   .arrow_step {
     width: 20px;
   }
-  /* lottery  */
-  .lottery {
-    flex-direction: column;
-  }
-
-  .lottery_left {
-    margin: auto;
-  }
-
-  .lottery_right {
-    width: 100%;
-  }
-
-  .content_lottery {
-    padding: 15px 15px 20px 70px;
-  }
-  .item_title {
-    width: 65%;
-    top: 70px;
-  }
-  .title_tradi {
-    width: 57%;
-    top: 60px;
-  }
-  .date {
-    text-align: justify;
-    padding-left: 12px;
-  }
-
+  
   .left_tabs {
     width: 35%;
   }
@@ -771,60 +629,50 @@
   .arrow_step {
     width: 20px;
   }
-
-  /* lottery  */
-  .lottery {
-    width: 100%;
-    flex-direction: column;
-    padding: 20px 0;
-    text-align: center;
+  /* comming  */
+  .title_comming {
+    line-height: 32px;
+    font-size: 28px;
   }
-
-  .lottery_left,
-  .lottery_right {
-    width: 100%;
+  .all_btn_com {
+    margin: 15px 0;
   }
-
-  .lottery_fast,
-  .lottery_traditional {
-    padding: 0 15px;
+  .btn_01 {
+    padding: 8px 16px;
+    margin-right: 10px;
   }
-
-  .lottery_left img {
-    width: 65%;
+  .btn_02 {
+    padding: 8px 26.64px;
   }
-
-  .name_lottery,
-  .infor_more {
-    font-size: 12px;
-  }
-  .item_title {
-    width: 53%;
-  }
-  .title_tradi {
-    width: 50%;
-    top: 60px;
-  }
+  
   /* tabs  */
   .all_tabs {
     width: 100%;
     padding: 0;
     height: max-content;
   }
-
+  .title_all_tabs {
+    padding-left: 20px;
+  }
+  .title_all_tabs h2 {
+    margin-bottom: 20px;
+  }
   .tabs_content {
-    flex-direction: row;
+    flex-direction:column;
     justify-content: center;
     padding: 20px 0;
   }
+  .tabs {
+    justify-content: space-evenly;
+  }
 
   .left_tabs {
-    width: 20%;
+    width: 16%;
     justify-content: space-between;
   }
 
   .name_tabs {
-    width: 80%;
+    width: 100%;
     flex-direction: column;
     height: 68px;
     margin-bottom: 15px;
@@ -972,6 +820,20 @@
   .slick-list {
     padding: 0 !important;
   }
+
+  /* comming  */
+  .title_comming {
+    font-size: 28px;
+  }
+  .title_all_tabs {
+    padding-left: 10px;
+  }
+  .title_all_tabs h2 {
+    font-size: 26px;
+  }
+
+
+  /* all_tabs  */
   .title_content {
     font-size: 15px !important;
   }

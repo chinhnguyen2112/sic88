@@ -20,7 +20,12 @@
   width: 30%;
   text-align: left;
 }
-
+.logo_ft {
+  width: 71%;
+}
+.list_game_ft, .list_guide {
+  padding: 125px 0 0 0 !important;
+}
 .content_intro {
   padding-bottom: 10px;
 }
@@ -61,7 +66,6 @@
 .list_game_ft {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
 }
 
 .item_game_ft {
@@ -93,9 +97,7 @@
   background: #eee !important;
 }
 
-.list_guide {
-  padding: 0;
-}
+
 
 .link_ft a {
   font-family: 'Roboto';
@@ -175,6 +177,9 @@
     text-align: center;
   }
 
+  .list_game_ft, .list_guide {
+    padding: 0 !important;
+  }
   .item_ft02 {
     width: 65%;
   }
