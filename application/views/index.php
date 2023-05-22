@@ -25,8 +25,8 @@
   <meta name="twitter:description" content="<?= isset($meta_des) ? $meta_des : '' ?>" />
   <meta name="twitter:title" content="<?= isset($meta_title) ? $meta_title : '' ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-  <link rel="shortcut icon" href="<?= base_url() ?>images/favicon.png">
-  <link data-n-head="ssr" rel="icon" type="image/x-icon" href="<?= base_url() ?>images/favicon.png">
+  <link rel="shortcut icon" href="<?= base_url() ?>images/logo/avata.png">
+  <link data-n-head="ssr" rel="icon" type="image/x-icon" href="<?= base_url() ?>images/logo/avata.png">
   <link rel="stylesheet" href="/assets/css/font.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/header.css">
