@@ -318,4 +318,25 @@ class Home extends CI_Controller
         }
         // var_dump($blogs);
     }
+    public function excel_blog()
+    {
+        $blog = $this->Madmin->query_sql("SELECT alias FROM blogs ");
+        header("Content-type: application/octet-stream");
+        header("Content-Disposition: attachment; filename=URL_sic.xls");
+        header("Pragma: no-cache");
+        header("Expires: 0");
+        echo '<table border="1px solid black">';
+        echo '<tr>';
+        echo '<td><strong> STT </strong></td>';
+        echo '<td><strong> URL bài viết </strong></td>';
+        echo '</tr>';
+        foreach ($blog as $key => $val) {
+            echo '<tr>';
+            echo '<td>' . ++$key . '</td>';
+            echo '<td>' . base_url() . $val['alias'] . '/</td>';
+
+            echo '</tr>';
+        }
+        echo '</table>';
+    }
 }
