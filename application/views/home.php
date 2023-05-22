@@ -57,8 +57,14 @@
           <a class="btn_com btn_02">Đăng Ký</a>
         </div>
         <div class="comming_box">
-          <div class="item_box_com"></div>
-          <div class="item_box_com"></div>
+          <div class="item_box_com">
+            <img src="/images/img_comming_2.jpg">
+          </div>
+          <div class="item_box_com">
+            <div class="text_item_cont">
+              <p>Comming Soons...</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
