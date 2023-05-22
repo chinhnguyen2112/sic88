@@ -49,131 +49,20 @@
         </a>
       </div>
     </div>
-    <div class="lottery body_width">
-      <div class="lottery_left">
-        <img src="/images/icons/img_lottery.png">
-      </div>
-      <div class="lottery_right">
-        <div class="lottery_fast">
-          <div class="heading_lottery">
-            <p class="name_lottery">Xổ số siêu tốc</p>
-          </div>
-          <div class="content_lottery">
-            <a href="#" class="item_lottery">
-              <div class="sub_item">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title">1 giây</p>
-              </div>
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="sub_item">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title">45 giây</p>
-              </div>
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="sub_item">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title">1 phút</p>
-              </div>
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="sub_item">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title">1,5 phút</p>
-              </div>
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="sub_item">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title">1 giây</p>
-              </div>
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="sub_item">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title">45 giây</p>
-              </div>
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="sub_item">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title">1 phút</p>
-              </div>
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="sub_item">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title">1,5 phút</p>
-              </div>
-            </a>
-          </div>
+    <div class="comming_soon">
+      <div class="comming_content body_width">
+        <h1 class="title_comming">SIC88 - Nhà Cái Nạp Rút Trong Vòng 1 Phút</h1>
+        <div class="all_btn_com">
+          <a class="btn_com btn_01">Đăng Nhập</a>
+          <a class="btn_com btn_02">Đăng Ký</a>
         </div>
-        <div class="lottery_traditional">
-          <div class="heading_lottery">
-            <p class="name_lottery">Xổ số truyền thống</p>
-          </div>
-          <div class="content_lottery">
-            <a href="#" class="item_lottery">
-              <div class="item_traditional">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title title_tradi">Miền Bắc</p>
-              </div>
-
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="item_traditional">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title title_tradi">Bến Tre</p>
-              </div>
-
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="item_traditional">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title title_tradi">Vũng Tàu</p>
-              </div>
-
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="item_traditional">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title title_tradi">Đà Nẵng</p>
-              </div>
-
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="item_traditional">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title title_tradi">Miền Bắc</p>
-              </div>
-
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="item_traditional">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title title_tradi">Bến Tre</p>
-              </div>
-
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="item_traditional">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title title_tradi">Vũng Tàu</p>
-              </div>
-
-            </a>
-            <a href="#" class="item_lottery">
-              <div class="item_traditional">
-                <img src="/images/icons/icon_lottery.png">
-                <p class="item_title title_tradi">Đà Nẵng</p>
-              </div>
-
-            </a>
-          </div>
+        <div class="comming_box">
+          <div class="item_box_com"></div>
+          <div class="item_box_com"></div>
         </div>
       </div>
     </div>
+
     <div class="all_tabs">
       <div class="tabs_content body_width">
         <div class="title_all_tabs">
@@ -404,7 +293,7 @@
         </div>
         <div class="qr_right">
           <div class="qr_right_top">
-            <p class="title_qr">tải ứng dụng</p>
+            <h3 class="title_qr">tải ứng dụng</h3>
             <img class="logo" src="/images/logo/logo_content_home.png">
             <p class="text">Cược mọi lúc - Thắng mọi nơi</p>
           </div>
