@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <?php if (isset($indexs) && $index == 1) { ?>
+  <?php if (isset($index) && $index == 1) { ?>
     <meta name="robots" content="index,follow" />
   <?php } else { ?>
     <meta name="robots" content="noindex,nofollow" />
