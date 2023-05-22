@@ -5,9 +5,9 @@
                 <img src="/images/menu_mb.svg" alt="show menu" class="img_show_menu" id="open_menu" onclick="show_menu(this,1)">
                 <img src="/images/icons/icons8-cancel-30 .png" alt="close menu" class="img_show_menu close_menu" id="close_menu" onclick="show_menu(this,2)">
                 <a href ="/" class="logo_header">
-                    <!-- <img src="/images/icons/logo.png"> -->
-                    <p class="fic">SIC</p>
-                    <p class="number_logo">88</p>
+                    <img src="/images/logo/logo_header.png">
+                    <!-- <p class="fic">SIC</p>
+                    <p class="number_logo">88</p> -->
                 </a>
                 <div class="search">
                     <form id="search" method="get" action="/search">

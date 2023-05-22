@@ -8,7 +8,7 @@ if (count($menu_cate_parent) > 2) {
     <div class="content_footer">
       <div class="item_ft01">
         <div class="logo_ft">
-          <img src="/images/icons/logo.png">
+          <img src="/images/logo/logo_header.png" alt="logo">
         </div>
         <div class="introduce">
           <div class="content_intro">
