@@ -333,7 +333,7 @@ class Home extends CI_Controller
         foreach ($blog as $key => $val) {
             echo '<tr>';
             echo '<td>' . ++$key . '</td>';
-            echo '<td>' . base_url() . $val['alias'] . '/</td>';
+            echo '<td><a href="' . base_url() . $val['alias'] . '/">' . base_url() . $val['alias'] . '/</a></td>';
 
             echo '</tr>';
         }
