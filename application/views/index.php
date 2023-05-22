@@ -35,7 +35,6 @@
   <?php if (isset($list_css)) {
     foreach ($list_css as $css) { ?>
       <link rel="stylesheet" href="/assets/css/<?= $css ?>">
-      </link>
   <?php  }
   } ?>
   <script type="text/javascript" src="/assets/js/jquery.min.js"></script><!-- Google tag (gtag.js) -->
