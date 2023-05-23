@@ -417,6 +417,7 @@ body {
 	}
 	.left_noti {
 		width: 8%;
+    padding-left: 5px;
 	}
 	.title_noti {
 		display: none;
