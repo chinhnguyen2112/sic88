@@ -421,6 +421,7 @@ body {
 	}
   .left_noti img {
     height: auto;
+    width: 24px;
   }
 	.title_noti {
 		display: none;
