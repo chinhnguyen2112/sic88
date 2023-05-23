@@ -416,9 +416,12 @@ body {
 		right: 65px;
 	}
 	.left_noti {
-		width: 8%;
+		width: max-content;
     padding-left: 5px;
 	}
+  .left_noti img {
+    height: auto;
+  }
 	.title_noti {
 		display: none;
 	}
