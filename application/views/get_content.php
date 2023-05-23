@@ -1,7 +1,15 @@
 <button style="margin: 100px;" type="submit" class="get_cnt">submit</button>
 <span class="alias_url"><?= $alias_url ?></span>
 <div class="content_get">
-    <?= $data_content ?></div>
+    <?= $data_content ?>
+</div>
+<style>
+    .footer,
+    .header,
+    .header_width {
+        display: none;
+    }
+</style>
 <script>
     $('.get_cnt').focus();
     $('.get_cnt').click(function() {
@@ -10,7 +18,7 @@
         var url_cate_child = $('#breadcrumbs').find('.breadcrumb_last_link').find('a').attr('href');
         var url_cate = $('#breadcrumbs').find('span').eq(1).find('a').attr('href');
         var text_cate = $('#breadcrumbs').find('span').eq(1).find('a').html();
-        var data_content = $('.content-inner').html();
+        var data_content = $('#ftwp-postcontent').html();
         var data_title = $('title').text();
         var des = $('.content_get').find("meta[property='og:description']").attr('content');
         var date = $('.content_get').find("meta[property='article:published_time']").attr('content');
@@ -18,7 +26,7 @@
         var h1 = $('.content_get').find("H1").text();
         var alias = $('.alias_url').text();
         var list_img = [];
-        $('.content-inner').find('img').each(function() {
+        $('#ftwp-postcontent').find('img').each(function() {
             list_img.push($(this).attr('src'));
         })
         var form_data = new FormData();
@@ -61,7 +69,7 @@
 
     //     function swapImages() {
 
-    //         var data_content = $('.content-inner').html();
+    //         var data_content = $('#ftwp-postcontent').html();
     //         var data_title = $('title').text();
     //         console.log('Des:' + $('.content_get').find("meta[property='og:description']").attr('content'));
     //         console.log('Date:' + $('.content_get').find("meta[property='article:published_time']").attr('content'));

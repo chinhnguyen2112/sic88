@@ -206,69 +206,69 @@ class Home extends CI_Controller
         $where_blog = [
             'alias' =>  $alias
         ];
-        $blog = $this->Madmin->get_by($where_blog, 'blogs');
-        if ($blog == null) {
-            $where_cate = [
-                'alias' => $alias_cate,
-                'parent' => 0
-            ];
-            $cate = $this->Madmin->get_by($where_cate, 'category');
-            if ($cate != null) {
-                $id_cate = $cate['id'];
-            } else {
-                $data_insert_cate = [
-                    'name' => $text_cate,
-                    'alias' => $alias_cate,
-                    'meta_title' => $text_cate
-                ];
-                $id_cate = $this->Madmin->insert($data_insert_cate, 'category');
-            }
-            if ($alias_cate_child != '') {
-                $where_cate_child = [
-                    'alias' => $alias_cate_child,
-                    'parent' => $id_cate
-                ];
-                $cate_child = $this->Madmin->get_by($where_cate_child, 'category');
-                if ($cate_child != null) {
-                    $id_cate_child = $cate_child['id'];
-                } else {
-                    $data_insert_cate_child = [
-                        'name' => $text_cate_child,
-                        'alias' => $alias_cate_child,
-                        'parent' => $id_cate,
-                        'meta_title' => $text_cate_child
-                    ];
-                    $id_cate_child = $this->Madmin->insert($data_insert_cate_child, 'category');
-                }
-            } else {
-                $id_cate_child =  $id_cate;
-                $id_cate = 0;
-            }
-            foreach ($list_img as $val) {
-                if ($val != '') {
-                    $this_val = explode('/', $val);
-                    $name_img =  array_pop($this_val);
-                    $new_name = 'assets/img_blog/images/' . $name_img;
-                    copy($val, $new_name);
-                    $content = str_replace($val, '/' . $new_name, $content);
-                }
-            }
-            $data['content'] = $content;
-            $data['chuyenmuc'] = $id_cate_child;
-            $data['cate_parent'] = $id_cate;
-            copy($img, 'upload/blog/' . $alias . '.jpg');
-            $data['image']     =  'upload/blog/' . $alias . '.jpg';
+        // $blog = $this->Madmin->get_by($where_blog, 'blogs');
+        // if ($blog == null) {
+        //     $where_cate = [
+        //         'alias' => $alias_cate,
+        //         'parent' => 0
+        //     ];
+        //     $cate = $this->Madmin->get_by($where_cate, 'category');
+        //     if ($cate != null) {
+        //         $id_cate = $cate['id'];
+        //     } else {
+        //         $data_insert_cate = [
+        //             'name' => $text_cate,
+        //             'alias' => $alias_cate,
+        //             'meta_title' => $text_cate
+        //         ];
+        //         $id_cate = $this->Madmin->insert($data_insert_cate, 'category');
+        //     }
+        //     if ($alias_cate_child != '') {
+        //         $where_cate_child = [
+        //             'alias' => $alias_cate_child,
+        //             'parent' => $id_cate
+        //         ];
+        //         $cate_child = $this->Madmin->get_by($where_cate_child, 'category');
+        //         if ($cate_child != null) {
+        //             $id_cate_child = $cate_child['id'];
+        //         } else {
+        //             $data_insert_cate_child = [
+        //                 'name' => $text_cate_child,
+        //                 'alias' => $alias_cate_child,
+        //                 'parent' => $id_cate,
+        //                 'meta_title' => $text_cate_child
+        //             ];
+        //             $id_cate_child = $this->Madmin->insert($data_insert_cate_child, 'category');
+        //         }
+        //     } else {
+        //         $id_cate_child =  $id_cate;
+        //         $id_cate = 0;
+        //     }
+        //     foreach ($list_img as $val) {
+        //         if ($val != '') {
+        //             $this_val = explode('/', $val);
+        //             $name_img =  array_pop($this_val);
+        //             $new_name = 'assets/img_blog/images/' . $name_img;
+        //             copy($val, $new_name);
+        //             $content = str_replace($val, '/' . $new_name, $content);
+        //         }
+        //     }
+        //     $data['content'] = $content;
+        //     $data['chuyenmuc'] = $id_cate_child;
+        //     $data['cate_parent'] = $id_cate;
+        //     copy($img, 'upload/blog/' . $alias . '.jpg');
+        //     $data['image']     =  'upload/blog/' . $alias . '.jpg';
 
-            $insert_blog = $this->Madmin->insert($data, 'blogs');
-            $response = [
-                'status' => 1,
-            ];
-        } else {
-            $response = [
-                'status' => 0,
-            ];
-        }
-        echo json_encode($response);
+        //     $insert_blog = $this->Madmin->insert($data, 'blogs');
+        //     $response = [
+        //         'status' => 1,
+        //     ];
+        // } else {
+        //     $response = [
+        //         'status' => 0,
+        //     ];
+        // }
+        // echo json_encode($response);
     }
     public function file_excel()
     {
