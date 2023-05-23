@@ -694,6 +694,7 @@
 @media only screen and (max-width: 540px) {
   .container {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   /* banner  */
@@ -996,7 +997,7 @@
     height: 121.03px;
   }
   .heading_content .title_content {
-    font-size: 15.5px !important;
+    font-size: 15px !important;
   }
   .content_tabs {
     height: 520px;
