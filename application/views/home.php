@@ -2,26 +2,17 @@
   <div class="content">
     <div class="banner">
       <div class="slider">
-        <div class="slide"><img src="/images/images_banner/bao-hiem-100-01.jpg" alt="bảo hiểm 100%"></div>
-        <div class="slide"><img src="/images/images_banner/KM-the-thao-01.jpg" alt="khuyến mãi thể thao"></div>
-        <div class="slide"><img src="/images/images_banner/Li-xi-cuoi-tuan-01.jpg" alt="lì xì cuối tuần"></div>
-        <div class="slide"><img src="/images/images_banner/thuong-100-nap-dau-tien-01.jpg" alt="thưởng 100% nạp đầu tiên"></div>
-        <div class="slide"><img src="/images/images_banner/trai-nghiem-58k-01.jpg" alt="trải nghiệm 58k"></div>
-        <!-- <div class="slide"><img src="/images/img_slick/slick_02.jpeg"></div>
-        <div class="slide"><img src="/images/img_slick/slick_03.jpeg"></div>
-        <div class="slide"><img src="/images/img_slick/slick_04.jpeg"></div>
-        <div class="slide"><img src="/images/img_slick/slick_05.jpeg"></div>
-        <div class="slide"><img src="/images/img_slick/slick_06.jpeg"></div>
-        <div class="slide"><img src="/images/img_slick/slick_07.jpeg"></div>
-        <div class="slide"><img src="/images/img_slick/slick_08.jpeg"></div>
-        <div class="slide"><img src="/images/img_slick/slick_09.jpeg"></div>
-        <div class="slide"><img src="/images/img_slick/slick_10.jpeg"></div> -->
+        <div class="slide"><img id="img_slide_01" src="/images/images_banner/pc/bao-hiem-100-01.jpg" alt="bảo hiểm 100%"></div>
+        <div class="slide"><img id="img_slide_02" src="/images/images_banner/pc/KM-the-thao-01.jpg" alt="khuyến mãi thể thao"></div>
+        <div class="slide"><img id="img_slide_03" src="/images/images_banner/pc/Li-xi-cuoi-tuan-01.jpg" alt="lì xì cuối tuần"></div>
+        <div class="slide"><img id="img_slide_04" src="/images/images_banner/pc/thuong-100-nap-dau-tien-01.jpg" alt="thưởng 100% nạp đầu tiên"></div>
+        <div class="slide"><img id="img_slide_05" src="/images/images_banner/pc/trai-nghiem-58k-01.jpg" alt="trải nghiệm 58k"></div>
       </div>
     </div>
     <div class="three_step">
       <div class="three_step_content body_width">
         <a href="#" class="item_step">
-          <img src="/images/icons/icon_step_01.png" alt="step 1">
+          <img src="/images/icons/icon_step_01.png" alt="ảnh step 1">
           <div class="item_step_content">
             <p class="first_text_item">ĐĂNG KÝ</p>
             <p class="sec_text_item">Nhanh chóng và dễ dàng!</p>
@@ -31,7 +22,7 @@
           <!-- <img src="/images/icons/icons8-right-arrow-50.png"> -->
         </div>
         <a href="#" class="item_step">
-          <img src="/images/icons/icon_step_02.png" alt="step 2">
+          <img src="/images/icons/icon_step_02.png" alt="ảnh step 2">
           <div class="item_step_content">
             <p class="first_text_item">GỬI TIỀN</p>
             <p class="sec_text_item">An toàn và thời gian gửi tiền nhanh nhất</p>
@@ -41,7 +32,7 @@
           <!-- <img src="/images/icons/icons8-right-arrow-50.png"> -->
         </div>
         <a href="#" class="item_step">
-          <img src="/images/icons/icon_step_03.png" alt="step 3">
+          <img src="/images/icons/icon_step_03.png" alt="ảnh step 3">
           <div class="item_step_content">
             <p class="first_text_item">THAM GIA</p>
             <p class="sec_text_item">Bắt đầu hành trình chiến thắng của bạn ngay!</p>
@@ -58,11 +49,15 @@
         </div>
         <div class="comming_box">
           <div class="item_box_com">
-            <img src="/images/img_comming_2.jpg">
+            <img src="/images/img_comming_2.jpg" alt="ảnh comming">
           </div>
           <div class="item_box_com">
             <div class="text_item_cont">
-              <p>Comming Soons...</p>
+              <!-- <p>Casino trực tuyến: Đa dạng sảnh chơi, nhận thưởng liền tay</p>
+              <p>Game bài đổi thưởng: Tham gia chiến game vui nhận ngay thưởng lớn</p>
+              <p>SIC88 - Địa chỉ chơi uy tín, công bằng & minh bạch</p> -->
+              <p>NẠP RÚT CỰC NHANH</p>
+              <p>Không giới hạn số tiền và số lần rút</p>
             </div>
           </div>
         </div>
@@ -72,8 +67,10 @@
     <div class="all_tabs">
       <div class="tabs_content body_width">
         <div class="title_all_tabs">
-          <h2>Lối Vào Game</h2>
-          <h2 class="text_title_special">SIC88</h2>
+          <h2>
+            Lối Vào Game
+            <span class="text_title_special">SIC88</span>
+          </h2>
         </div>
         <div class="tabs">
           <div class="left_tabs">
@@ -83,7 +80,7 @@
                 <p class="text_left_tabs">Đánh bài online</p>
               </div>
               <div class="right_btn_tabs">
-                <img src="/images/icons/icon_cards.png">
+                <img src="/images/img_all_tabs/icon-danh-bai-active.png" alt="icons game bài">
               </div>
             </div>
             <div class="name_tabs" data-id="2">
@@ -92,7 +89,7 @@
                 <p class="text_left_tabs">Sòng bài trực tuyến</p>
               </div>
               <div class="right_btn_tabs">
-                <img src="/images/icons/icon_casino.png">
+                <img src="/images/img_all_tabs/icon-casino-live-active.png" alt="icons casino">
               </div>
             </div>
             <div class="name_tabs" data-id="3">
@@ -101,7 +98,7 @@
                 <p class="text_left_tabs">Cá cược uy tín</p>
               </div>
               <div class="right_btn_tabs">
-                <img src="/images/icons/icon_sport.png">
+                <img src="/images/img_all_tabs/icon-the-thao-active.png" alt="icons cá cược thể thao">
               </div>
             </div>
             <div class="name_tabs" data-id="4">
@@ -110,7 +107,7 @@
                 <p class="text_left_tabs">Sân chơi hấp dẫn</p>
               </div>
               <div class="right_btn_tabs">
-                <img src="/images/icons/icon_dice.png">
+                <img src="/images/img_all_tabs/icon-dan-gian-active.png" alt="icons trò chơi dân gian">
               </div>
             </div>
             <div class="name_tabs" data-id="5">
@@ -119,7 +116,7 @@
                 <p class="text_left_tabs">Thưởng siêu lớn</p>
               </div>
               <div class="right_btn_tabs">
-                <img src="/images/icons/icon_777.png">
+                <img src="/images/img_all_tabs/icon-no-hu-active.png" alt="icons nổ hũ">
               </div>
             </div>
             <div class="name_tabs" data-id="6">
@@ -128,7 +125,7 @@
                 <p class="text_left_tabs">Sảnh cược vip</p>
               </div>
               <div class="right_btn_tabs">
-                <img src="/images/icons/icon_chicken.png">
+                <img src="/images/img_all_tabs/icon-da-ga-active.png" alt="icons đá gà">
               </div>
             </div>
           </div>
@@ -145,17 +142,17 @@
                   <p>Còn chờ gì nữa cùng khám phá ngay những game đánh bài online hot nhất trên Sic88 ngay tại đây.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game" src="/images/icons/icon_game01.png">
-                  <img class="icon_game" src="/images/icons/icon_game02.png">
-                  <img class="icon_game" src="/images/icons/icon_game03.png">
-                  <img class="icon_game" src="/images/icons/icon_game04.png">
+                  <img class="icon_game" src="/images/icons/icon_game01.png" alt="icons game bài 01">
+                  <img class="icon_game" src="/images/icons/icon_game02.png" alt="icons game bài 02">
+                  <img class="icon_game" src="/images/icons/icon_game03.png" alt="icons game bài 03">
+                  <img class="icon_game" src="/images/icons/icon_game04.png" alt="icons game bài 04">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
                 </div>
               </div>
               <div class="content_tabs_right">
-                <img src="/images/icons/img_content_tabs.png">
+                <img src="/images/img_all_tabs/bg_boxgame_1.png" alt="ảnh nội dung tabs">
               </div>
             </div>
 
@@ -171,17 +168,18 @@
                   <p>Với những casino trực tuyến từ Sic88 bạn có thể chơi những mức cược phù hợp với túi tiền của mình mà không phải ngại ngùng hay lo sợ điều gì. Bạn không thể cầm vài triệu mà bước vào casino cùng với các đại gia nhưng với casino trực tuyến bạn có thể chơi bất kỳ trò nào mà bạn muốn.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game" src="/images/icons/icon_game01.png">
-                  <img class="icon_game" src="/images/icons/icon_game02.png">
-                  <img class="icon_game" src="/images/icons/icon_game03.png">
-                  <img class="icon_game" src="/images/icons/icon_game04.png">
+                  <img class="icon_game" src="/images/img_all_tabs/casino-1.png" alt="icons casino 01">
+                  <img class="icon_game" src="/images/img_all_tabs/casino-2.png" alt="icons casino 02">
+                  <img class="icon_game" src="/images/img_all_tabs/casino-3.png" alt="icons casino 03">
+                  <img class="icon_game" src="/images/img_all_tabs/casino-4.png" alt="icons casino 04">
+                  <img class="icon_game" src="/images/img_all_tabs/casino-5.png" alt="icons casino 05">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
                 </div>
               </div>
               <div class="content_tabs_right">
-                <img src="/images/icons/img_content_tabs.png">
+                <img src="/images/img_all_tabs/bg_boxgame_2.png" alt="ảnh nội dung tabs">
               </div>
             </div>
 
@@ -197,17 +195,18 @@
                   <p>Sic88 liên tục ra những chương trình ưu đãi với những voucher, khuyến mãi tặng quà, tặng tiền từ nhà cái. Những chương trình ưu đãi dành cho người chơi mới, người chơi hiện hữu và có cả chính sách ưu đãi cho các đại lý.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game" src="/images/icons/icon_game01.png">
-                  <img class="icon_game" src="/images/icons/icon_game02.png">
-                  <img class="icon_game" src="/images/icons/icon_game03.png">
-                  <img class="icon_game" src="/images/icons/icon_game04.png">
+                  <img class="icon_game" src="/images/img_all_tabs/the-thao-1.png" alt="icons thể thao 01">
+                  <img class="icon_game" src="/images/img_all_tabs/the-thao-2.png" alt="icons thể thao 02">
+                  <img class="icon_game" src="/images/img_all_tabs/the-thao-3.png" alt="icons thể thao 03">
+                  <img class="icon_game" src="/images/img_all_tabs/the-thao-4.png" alt="icons thể thao 04">
+                  <img class="icon_game" src="/images/img_all_tabs/the-thao-5.png" alt="icons thể thao 05">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
                 </div>
               </div>
               <div class="content_tabs_right">
-                <img src="/images/icons/img_content_tabs.png">
+                <img src="/images/img_all_tabs/bg_boxgame_3.png" alt="ảnh nội dung tabs">
               </div>
             </div>
 
@@ -223,17 +222,17 @@
                   <p>Khác biệt với hình thức cá cược thể thao truyền thống, từ khâu đặt cược cho đến nhận tiền thắng cược đều sẽ khá rườm rà. Với Sic88 thủ tục nạp rút sẽ diễn ra vô cùng nhanh gọn. Bất cứ khi nào cần hỗ trợ đội ngũ tư vấn của Sic88 sẽ có mặt 24/7 để giúp đỡ các bạn.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game" src="/images/icons/icon_game01.png">
-                  <img class="icon_game" src="/images/icons/icon_game02.png">
-                  <img class="icon_game" src="/images/icons/icon_game03.png">
-                  <img class="icon_game" src="/images/icons/icon_game04.png">
+                  <img class="icon_game" src="/images/img_all_tabs/dan-gian-1.png" alt="icons game dân gian 01">
+                  <img class="icon_game" src="/images/img_all_tabs/dan-gian-2.png" alt="icons game dân gian 02">
+                  <img class="icon_game" src="/images/img_all_tabs/dan-gian-3.png" alt="icons game dân gian 03">
+                  <img class="icon_game" src="/images/img_all_tabs/dan-gian-4.png" alt="icons game dân gian 04">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
                 </div>
               </div>
               <div class="content_tabs_right">
-                <img src="/images/icons/img_content_tabs.png">
+                <img src="/images/img_all_tabs/bg_boxgame_4.png" alt="ảnh nội dung tabs">
               </div>
             </div>
 
@@ -249,17 +248,17 @@
                   <p>Rất nhiều người lựa chọn chơi nổ hũ tại Sic88 với những ưu điểm vượt trội khiến người chơi an tâm đó là: độ uy tín và bảo mật thông tin tại Sic88 cực cao, là nhà cái có khả năng tài chính tối ưu, đảm bảo tốt về vấn đề thanh toán cho người chơi khi tham gia. Đơn vị liên kết với nhiều tổ chức tài chính, cho phép thanh toán bằng nhiều hình thức khác nhau.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game" src="/images/icons/icon_game01.png">
-                  <img class="icon_game" src="/images/icons/icon_game02.png">
-                  <img class="icon_game" src="/images/icons/icon_game03.png">
-                  <img class="icon_game" src="/images/icons/icon_game04.png">
+                  <!-- <img class="icon_game" src="/images/icons/icon_game01.png" alt="icons game bài 01">
+                  <img class="icon_game" src="/images/icons/icon_game02.png" alt="icons game bài 02">
+                  <img class="icon_game" src="/images/icons/icon_game03.png" alt="icons game bài 03">
+                  <img class="icon_game" src="/images/icons/icon_game04.png" alt="icons game bài 04"> -->
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
                 </div>
               </div>
               <div class="content_tabs_right">
-                <img src="/images/icons/img_content_tabs.png">
+                <!-- <img src="/images/icons/img_content_tabs.png" alt="ảnh nội dung tabs"> -->
               </div>
             </div>
 
@@ -275,17 +274,15 @@
                   <p>Việc nạp và rút tiền nhanh chóng cũng là điều mà nhiều người quan tâm, khi đặt cược online thì cập nhật tài khoản sẽ giúp bạn có khả năng thắng cược.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game" src="/images/icons/icon_game01.png">
-                  <img class="icon_game" src="/images/icons/icon_game02.png">
-                  <img class="icon_game" src="/images/icons/icon_game03.png">
-                  <img class="icon_game" src="/images/icons/icon_game04.png">
+                  <img class="icon_game" src="/images/img_all_tabs/da-ga-1.png" alt="icons đá gà 01">
+                  <img class="icon_game" src="/images/img_all_tabs/da-ga-2.png" alt="icons đá gà 02">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
                 </div>
               </div>
               <div class="content_tabs_right">
-                <img src="/images/icons/img_content_tabs.png">
+                <img src="/images/img_all_tabs/bg_boxgame_6.png" alt="ảnh nội dung tabs">
               </div>
             </div>
           </div>
@@ -295,21 +292,21 @@
     <div class="qr_app">
       <div class="qr body_width">
         <div class="qr_left">
-          <img class="img_app" src="/images/icons/img_app.png">
+          <img class="img_app" src="/images/icons/img_app.png" alt="image app">
         </div>
         <div class="qr_right">
           <div class="qr_right_top">
             <h3 class="title_qr">tải ứng dụng</h3>
-            <img class="logo" src="/images/logo/logo_content_home.png">
+            <img class="logo" src="/images/logo/logo_content_home.png" alt="logo">
             <p class="text">Cược mọi lúc - Thắng mọi nơi</p>
           </div>
           <div class="qr_bot">
             <div class="item_qr_01 qr_item">
-              <img class="qr" src="/images/icons/qr.png">
+              <img class="qr" src="/images/icons/qr.png" alt="icons qr ios">
               <p>Tải về IOS</p>
             </div>
             <div class="item_qr_02 qr_item">
-              <img class="qr" src="/images/icons/qr.png">
+              <img class="qr" src="/images/icons/qr.png" alt="icons qr android">
               <p>Tải về Android</p>
             </div>
           </div>
@@ -319,7 +316,7 @@
     <div class="all_infor body_width">
       <div class="item_infor">
         <div class="img_item">
-          <img src="/images/icons/icon_infor01.png">
+          <img src="/images/icons/icon_infor01.png" alt="icons đại ký">
         </div>
         <p class="title_item">Đại Lý</p>
         <p class="text_infor">Tham gia chương trình công tác viên dễ dàng và kiếm hoa hồng tiền tỷ.</p>
@@ -327,15 +324,15 @@
       </div>
       <div class="item_infor">
         <div class="img_item">
-          <img src="/images/icons/icon_infor02.png">
+          <img src="/images/icons/icon_infor02.png" alt="icons khuyến mãi">
         </div>
         <p class="title_item">Khuyến Mãi</p>
         <p class="text_infor">Các chương trình Khuyến Mãi giúp về cược của bạn an toàn hơn và chiến thắng dẽ hơn.</p>
-        <a href="#">Xem Khuyến Mãi</a>
+        <a href="/khuyen-mai">Xem Khuyến Mãi</a>
       </div>
       <div class="item_infor">
         <div class="img_item">
-          <img src="/images/icons/icon_infor03.png">
+          <img src="/images/icons/icon_infor03.png" alt="icons vip member">
         </div>
         <p class="title_item">VIP Member</p>
         <p class="text_infor">Nâng cấp Tài Khoản VIP để nhận được những độc quyền.</p>
@@ -343,7 +340,7 @@
       </div>
       <div class="item_infor">
         <div class="img_item">
-          <img src="/images/icons/icon_infor04.png">
+          <img src="/images/icons/icon_infor04.png" alt="icons hỗ trơ">
         </div>
         <p class="title_item">Hỗ Trợ 24/7</p>
         <p class="text_infor">Dịch vụ chăm sóc khách hàng tại Sic88 luôn sẵn sàng phục vụ 24/7.</p>
