@@ -823,13 +823,6 @@
     width: 100%;
     text-align: justify;
   }
-
-  .title_content {
-    font-size: 20px !important;
-    line-height: 20px !important;
-    display: block !important;
-  }
-
   .heading_content p {
     display: none;
   }
@@ -967,18 +960,12 @@
   }
 
   /* all_tabs  */
-  .title_content {
-    font-size: 15px !important;
-  }
   .content_tabs p {
     font-size: 14px;
     padding-top: 5px;
   }
   .item_title {
     width: 65%;
-  }
-  .title_tradi {
-    width: 61%;
   }
   .left_tabs {
     width: 22%;
@@ -1008,8 +995,11 @@
   .text_item_cont {
     height: 121.03px;
   }
+  .heading_content .title_content {
+    font-size: 15.5px !important;
+  }
   .content_tabs {
-    height: 480px;
+    height: 520px;
   }
   .content_tabs p {
     font-size: 13.5px;

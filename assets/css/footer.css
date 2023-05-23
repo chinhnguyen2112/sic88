@@ -258,6 +258,9 @@
 	.item_game_ft {
 		width: 100%;
 	}
+  .item_game_ft:after {
+    width: 100%;
+  }
 	.div_dmca {
 		width: max-content;
 		margin: 10px auto;

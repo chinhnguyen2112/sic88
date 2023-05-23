@@ -326,10 +326,25 @@ body {
 		display: none;
 	}
 	.list_menu {
-		flex-wrap: wrap;
+    flex-direction: column;
 		padding: 15px 20px;
 		z-index: 3 !important;
 	}
+  .all_item_menu {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .another_item_menu {
+    width: 100%;
+    justify-content: space-between  ;
+  }
+  .all_item_menu .item_menu {
+    margin-right: 0;
+  }
+  .another_item_menu .item_menu {
+    margin-left: 0;
+  }
 	.item_home p {
 		margin: auto;
 		font-weight: 400;
@@ -337,7 +352,7 @@ body {
 		line-height: 24px;
 	}
 	.item_menu {
-		width: 48%;
+		width: 46%;
 		margin-top: 15px;
 		background: none repeat scroll 0 0 #f0f0f0;
 		text-align: center;
