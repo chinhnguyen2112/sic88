@@ -80,6 +80,8 @@ if (mucluc != null && input1 != null) {
 	}
 }
 
+var width_img = $(".this_train a img").width();
+var height_img = width_img / 1.73;
 var page = 2;
 $(".load_more").click(function () {
 	var show_more = $(this);
@@ -105,6 +107,7 @@ $(".load_more").click(function () {
 					$(".load_more").remove();
 				}
 			}
+			$(".this_train a img").css("height", height_img);
 		},
 		error: function () {
 			alert("error");
@@ -147,6 +150,3 @@ $(".hide_show_content").click(function () {
 	}
 	++check_click;
 });
-var width_img = $(".this_train a img").width();
-var height_img = width_img / 1.73;
-$(".this_train a img").css("height", height_img);
