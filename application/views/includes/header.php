@@ -5,7 +5,7 @@
                 <img src="/images/menu_mb.svg" alt="show menu" class="img_show_menu" id="open_menu" onclick="show_menu(this,1)">
                 <img src="/images/icons/icons8-cancel-30 .png" alt="close menu" class="img_show_menu close_menu" id="close_menu" onclick="show_menu(this,2)">
                 <a href ="/" class="logo_header">
-                    <img src="/images/logo/Logo_sic88_2.png" alt="logo">
+                    <img src="/images/logo/Logo_sic88.png" alt="logo">
                     <!-- <p class="fic">SIC</p>
                     <p class="number_logo">88</p> -->
                 </a>

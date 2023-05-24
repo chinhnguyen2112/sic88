@@ -72,6 +72,9 @@
 	width: 50%;
 	padding: 10px 0 5px 0;
 }
+.item_game_ft img {
+	width: 14px;
+}
 
 .item_game_ft a {
 	text-decoration: none;
@@ -82,17 +85,17 @@
 	font-family: "Roboto", Sans-serif !important;
 }
 
-.item_game_ft:before {
+/* .item_game_ft:before {
 	content: " > ";
 	color: #fff;
 	margin-right: 0.5rem;
-}
+} */
 
 .item_game_ft:after {
 	display: block;
 	content: "";
 	width: 90%;
-	height: 1px;
+	height: 0.5px;
 	background: #eee !important;
 }
 
