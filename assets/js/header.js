@@ -5,12 +5,6 @@ if (screen > 768 && screen < 1025)  {
 	$("#img_slide_03").attr("src","/images/images_banner/1024/Li-xi-cuoi-tuan-1024.jpg");
 	$("#img_slide_04").attr("src","/images/images_banner/1024/thuong-nap-100-1024.jpg");
 	$("#img_slide_05").attr("src","/images/images_banner/1024/trai-nghiem-58k-1024.jpg");
-// } else if (screen > 540 && screen < 769 ) {
-// 	$("#img_slide_01").attr("src","/images/images_banner/1024/bao-hiem-100-1024.jpg");
-// 	$("#img_slide_02").attr("src","/images/images_banner/1024/KM-the-thao-1024.jpg");
-// 	$("#img_slide_03").attr("src","/images/images_banner/1024/Li-xi-cuoi-tuan-1024.jpg");
-// 	$("#img_slide_04").attr("src","/images/images_banner/1024/thuong-nap-100-1024.jpg");
-// 	$("#img_slide_05").attr("src","/images/images_banner/1024/trai-nghiem-58k-1024.jpg");
 } else if (screen < 541) {
 	$("#img_slide_01").attr("src","/images/images_banner/768/bao-hiem-100-768.jpg");
 	$("#img_slide_02").attr("src","/images/images_banner/768/KM-the-thao-768.jpg");

@@ -142,10 +142,10 @@
                   <p>Còn chờ gì nữa cùng khám phá ngay những game đánh bài online hot nhất trên Sic88 ngay tại đây.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game" src="/images/icons/icon_game01.png" alt="icons game bài 01">
-                  <img class="icon_game" src="/images/icons/icon_game02.png" alt="icons game bài 02">
-                  <img class="icon_game" src="/images/icons/icon_game03.png" alt="icons game bài 03">
-                  <img class="icon_game" src="/images/icons/icon_game04.png" alt="icons game bài 04">
+                  <img class="icon_game icon_game_small" src="/images/icons/icon_game01.png" alt="icons game bài 01">
+                  <img class="icon_game icon_game_small" src="/images/icons/icon_game02.png" alt="icons game bài 02">
+                  <img class="icon_game icon_game_small" src="/images/icons/icon_game03.png" alt="icons game bài 03">
+                  <img class="icon_game icon_game_small" src="/images/icons/icon_game04.png" alt="icons game bài 04">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
@@ -222,10 +222,10 @@
                   <p>Khác biệt với hình thức cá cược thể thao truyền thống, từ khâu đặt cược cho đến nhận tiền thắng cược đều sẽ khá rườm rà. Với Sic88 thủ tục nạp rút sẽ diễn ra vô cùng nhanh gọn. Bất cứ khi nào cần hỗ trợ đội ngũ tư vấn của Sic88 sẽ có mặt 24/7 để giúp đỡ các bạn.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game" src="/images/img_all_tabs/dan-gian-1.png" alt="icons game dân gian 01">
-                  <img class="icon_game" src="/images/img_all_tabs/dan-gian-2.png" alt="icons game dân gian 02">
-                  <img class="icon_game" src="/images/img_all_tabs/dan-gian-3.png" alt="icons game dân gian 03">
-                  <img class="icon_game" src="/images/img_all_tabs/dan-gian-4.png" alt="icons game dân gian 04">
+                  <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-1.png" alt="icons game dân gian 01">
+                  <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-2.png" alt="icons game dân gian 02">
+                  <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-3.png" alt="icons game dân gian 03">
+                  <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-4.png" alt="icons game dân gian 04">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
@@ -309,6 +309,9 @@
               <img class="qr" src="/images/icons/qr.png" alt="icons qr android">
               <p>Tải về Android</p>
             </div>
+          </div>
+          <div class="qr_btn">
+            <a class="btn_download_qr">Tải Ngay</a>
           </div>
         </div>
       </div>
