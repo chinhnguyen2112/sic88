@@ -29,7 +29,7 @@
                         <div class="all_item_menu">
                             <li class="item_menu">
                                 <a class="item_home" href="/">
-                                    <img class="logo_home" src="/images/icons/icons_home.png">
+                                    <img class="logo_home" src="/images/icons/icons8-home-30.png" alt="icon home">
                                     <p>TRANG CHỦ</p>
                                 </a>
                             </li>
@@ -40,9 +40,11 @@
                                 <span><a id="val_a" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a></span>
                                 <?php if ($menu_cate != null) { ?>
                                 <div class="sub_menu">
-                                    <?php foreach ($menu_cate as $val1) { ?>
-                                        <p><a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a></p>
-                                    <?php } ?>
+                                    <div class="content_submenu">
+                                        <?php foreach ($menu_cate as $val1) { ?>
+                                            <p><a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a></p>
+                                        <?php } ?>
+                                    </div>
                                 </div>
                                 <?php } ?>
                             </li>
