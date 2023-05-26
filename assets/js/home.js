@@ -44,15 +44,7 @@ if (width > 540) {
 } else {
   val = 2;
 }
-$('.content_lottery').slick({
-	autoplay:true,
-	autoplaySpeed: 800,
-	arrows:true,
-	prevArrow:'<button type="button" class="icon-ctrl-lottery lottery-prev"><img src="/images/icons/icon_prev.png"></button>',
-	nextArrow:'<button type="button" class="icon-ctrl-lottery lottery-next"><img src="/images/icons/icon_next.png"></button>',
-	centerMode:true,
-	slidesToShow: val,
-});
+
 
 $(".name_tabs").click(function () {
   var id = $(this).data("id");

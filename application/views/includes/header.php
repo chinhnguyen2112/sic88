@@ -2,7 +2,7 @@
     <div class="header_width ">
         <div class="header_top body_width" id="header_top">
             <div class="header_scroll">
-                <img src="/images/menu_mb.svg" alt="show menu" class="img_show_menu" id="open_menu" onclick="show_menu(this,1)">
+                <img src="/images/icons/menu_mb.svg" alt="show menu" class="img_show_menu" id="open_menu" onclick="show_menu(this,1)">
                 <img src="/images/icons/icons8-cancel-30 .png" alt="close menu" class="img_show_menu close_menu" id="close_menu" onclick="show_menu(this,2)">
                 <a href ="/" class="logo_header">
                     <img src="/images/logo/Logo_sic88.png" alt="logo">
@@ -11,7 +11,7 @@
                 </a>
                 <div class="search">
                     <form id="search" method="get" action="/search">
-                        <img class="img_search" src="/images/icons/icons8-search-30.png">
+                        <img class="img_search" src="/images/icons/icons8-search-30.png" alt="icon search">
                         <input id="search_input" autocomplete="off" name="search" placeholder="Search..." />
                     </form>
                 </div>
@@ -68,7 +68,7 @@
                     </ul>
                 </div>
         </div>
-        <div class="header_bot body_width" id="header_bot">
+        <!-- <div class="header_bot body_width" id="header_bot">
             <div class="header_scroll">
                 <div class="left_noti">
                     <img src="/images/icons/icons_tb.png" alt="icon thông báo">
@@ -79,7 +79,7 @@
                         nghỉ lễ 30/4 - 1/5 nhanh tay nào các game thủ.</p>
                 </marquee>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
