@@ -301,7 +301,7 @@ class Home extends CI_Controller
         $blog = $this->Madmin->query_sql("SELECT id,image,alias FROM blogs");
         foreach ($blog as $val) {
             if (!@is_array(getimagesize(base_url() . $val['image']))) {
-                echo $val['id'] . '-' . $val['image'] . '  https://fic88.info/' . $val['alias'] . '/<br>';
+                echo $val['id'] . '-' . $val['image'] . '  https://sic88.org/' . $val['alias'] . '/<br>';
             }
         }
     }
