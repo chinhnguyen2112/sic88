@@ -101,7 +101,6 @@ body {
 }
 .header_menu {
 	background: #f6c042;
-	padding: 5px;
 }
 .menu {
 	transition: all 0.5s;
@@ -118,22 +117,26 @@ body {
 	align-items: center;
 }
 .all_item_menu .item_menu {
-  margin-right: 10px;
+	margin-right: 10px;
+	list-style: none;
+	height: 40px;
+	display: flex;
+	align-items: center;
 }
 .another_item_menu {
 	display: flex;
 	justify-content: end;
 }
 .another_item_menu .item_menu {
-  margin-left: 48px;
+	margin-left: 48px;
 }
 .item_home {
 	align-items: center;
 	display: flex;
 }
 .item_home img {
-	width: 20px !important;
-	height: 18px;
+	width: 25px !important;
+	height: 25px;
 	margin-right: 5px;
 }
 .item_home p {
@@ -142,41 +145,47 @@ body {
 	font-weight: bold;
 	color: #000000;
 }
-.item_menu {
-	list-style: none;
-}
 .icons_arrow {
 	width: 12px !important;
 }
 .sub_menu {
-	height: 0px;
+	height: 0;
+	display: flex;
 	position: absolute;
 	transition: 0.5s;
-	background: #fff;
-	list-style: none;
+	background: #2a5b84;
 	overflow: hidden;
 	z-index: 2;
-	min-width: 15em;
+	width: 100%;
+	left: 0;
+	top: 125px;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+.content_submenu {
+	display: flex;
+	text-align: center;
+	margin: auto;
 }
 .item_menu:hover .sub_menu {
 	height: max-content;
 }
 .sub_menu p {
 	padding: 5px;
-	border-bottom: 1px solid #eee;
-	padding: 8px 16px;
+	padding: 0px 16px;
 	font-size: 13px !important;
 	line-height: 37px !important;
 	font-weight: bold !important;
 	color: #000 !important;
 }
 .sub_menu p:hover {
-	background: #f0ecec;
-	color: #000;
+	background: #00000040;
+	color: #fff;
+}
+.content_submenu a {
+	color: #fff !important;
 }
 .item_menu a {
 	text-decoration: none;
@@ -185,6 +194,15 @@ body {
 	color: #000000;
 	padding: 5px 8px;
 	text-transform: uppercase;
+}
+.content_submenu a {
+	font-size: 10px;
+}
+#val_a {
+	transition: 0.3s;
+}
+#val_a:hover {
+	color: #2a5b84;
 }
 
 .item_menu img {
@@ -205,39 +223,7 @@ body {
 	margin: 0;
 	color: #fff;
 }
-.header_bot {
-	padding: 0;
-	display: flex;
-	justify-content: space-between;
-	transition: 0.5s;
-}
-.left_noti {
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
-	width: 11%;
-	padding-right: 5px;
-}
-.title_noti {
-	text-transform: uppercase;
-	color: #f6c042;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 14px;
-	margin: 0;
-}
-.left_noti img {
-	height: 19px;
-}
-.text_noti {
-	color: #fff;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 12px;
-	line-height: 14px;
-	text-decoration: none;
-}
+
 .search_nonpc,
 .cancel {
 	display: none;
@@ -283,15 +269,14 @@ body {
 		justify-content: space-between;
 		transition: 0.5s;
 		height: 0px;
+		background: #fff;
 	}
 	.sub_menu p {
 		width: 100px;
+		text-align: left;
 	}
 	.link_special img {
 		width: 23.23px !important;
-	}
-	.item_menu a {
-		padding: 0 !important;
 	}
 	.item_menu img {
 		width: 19px;
@@ -326,25 +311,30 @@ body {
 		display: none;
 	}
 	.list_menu {
-    flex-direction: column;
+		flex-direction: column;
 		padding: 15px 20px;
 		z-index: 3 !important;
 	}
-  .all_item_menu {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .another_item_menu {
-    width: 100%;
-    justify-content: space-between  ;
-  }
-  .all_item_menu .item_menu {
-    margin-right: 0;
-  }
-  .another_item_menu .item_menu {
-    margin-left: 0;
-  }
+	.all_item_menu {
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.another_item_menu {
+		width: 100%;
+		justify-content: space-between;
+	}
+	.all_item_menu .item_menu {
+		margin-right: 0;
+		flex-direction: column;
+		height: auto;
+	}
+	.another_item_menu .item_menu {
+		margin-left: 0;
+	}
+	.content_submenu {
+		flex-wrap: wrap;
+	}
 	.item_home p {
 		margin: auto;
 		font-weight: 400;
@@ -367,6 +357,9 @@ body {
 		text-transform: uppercase;
 		width: max-content;
 		margin: auto;
+		color: #000 !important;
+		border-bottom: 1px solid #eee;
+		padding: 0 0 5px 0;
 	}
 	.link_special {
 		background: none repeat scroll 0 0 #f0f0f0;
@@ -417,12 +410,12 @@ body {
 	}
 	.left_noti {
 		width: max-content;
-    padding-left: 5px;
+		padding-left: 5px;
 	}
-  .left_noti img {
-    height: auto;
-    width: 24px;
-  }
+	.left_noti img {
+		height: auto;
+		width: 24px;
+	}
 	.title_noti {
 		display: none;
 	}
