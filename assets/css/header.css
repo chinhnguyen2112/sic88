@@ -157,9 +157,9 @@ body {
 	height: 0;
 	display: flex;
 	position: absolute;
+	align-items: center;
 	transition: 0.5s;
 	background: #2a5b84;
-	overflow: hidden;
 	z-index: 2;
 	width: 100%;
 	left: 0;
@@ -175,7 +175,7 @@ body {
 	margin: auto;
 }
 .item_menu:hover .sub_menu {
-	height: max-content;
+	height: 35px;
 }
 .sub_menu p {
 	padding: 5px;
