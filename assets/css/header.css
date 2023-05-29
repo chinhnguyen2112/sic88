@@ -116,9 +116,9 @@ body {
 	display: flex;
 	align-items: center;
 }
-.all_item_menu li:first-child {
+/* .all_item_menu li:first-child {
 	margin-right: 30px;
-}
+} */
 .all_item_menu .item_menu {
 	margin-right: 10px;
 	list-style: none;

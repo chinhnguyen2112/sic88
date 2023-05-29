@@ -34,7 +34,7 @@ class Home extends CI_Controller
         $data['canonical'] = base_url();
         $data['blog'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 20);
         $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 5);
-        $data['meta_title'] = 'SIC88 - Nhà Cái Nạp Rút Trong Vòng 1 Phút - SiC88.OrG';
+        $data['meta_title'] = 'Sic88 - Đăng Ký Tài Khoản Nhận Thưởng Lên Đến 300%';
         $data['meta_des'] = 'Sic88 là nhà cái mới tại Việt Nam nhưng đã gây ấn tượng mạnh mẽ với người chơi từ chất lượng game đến công nghệ hiện đại. Xem chi tiết ngay!';
         $data['content'] = 'home';
         $data['list_js'] = [

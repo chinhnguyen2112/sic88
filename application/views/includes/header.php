@@ -33,7 +33,7 @@
                     <div class="all_item_menu">
                         <li class="logo_menu">
                             <a href="/">
-                                <img src="/images/icons8-home-30.png" alt="icons home">
+                                <img src="/images/icons8-home-30-2.png" alt="icons home">
                             </a>
                         </li>
                         <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 20 AND id != 22 AND id != 24 AND id != 25');
