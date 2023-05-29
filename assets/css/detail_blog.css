@@ -325,7 +325,7 @@ figcaption {
 }
 
 figure {
-    margin: auto;
+    margin: 10px auto;
     width: 100% !important;
 }
 
@@ -362,6 +362,7 @@ a.H4abc {
 
 .content_blog ul li,
 .content_blog ol li {
+    margin-bottom: 7px;
     line-height: 1.5 !important;
     white-space: unset !important;
 }
