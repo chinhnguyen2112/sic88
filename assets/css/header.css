@@ -65,6 +65,7 @@ body {
 	border: 1px solid #fff;
 	color: #fff;
 	outline-style: none;
+	opacity: 0.5;
 }
 ::placeholder {
 	color: #fff;
@@ -75,6 +76,7 @@ body {
 	width: 20px;
 	right: 10px;
 	position: absolute;
+	opacity: 0.5;
 }
 .btn_acc {
 	text-decoration: none;
