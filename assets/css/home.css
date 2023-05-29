@@ -126,16 +126,20 @@
 	display: flex;
 	justify-content: space-between;
 }
+
 .item_big {
 	width: 23%;
 }
+
 .text_step {
 	display: none;
 }
+
 .item_how {
 	padding: 15px;
 	border-radius: 5px;
 	height: 160px;
+}
 
 .how_01 {
 	border: 1px solid red;
@@ -531,6 +535,7 @@
 	.item_how {
 		height: 190px;
 	}
+
 	.item_title {
 		width: 90%;
 	}
@@ -722,13 +727,16 @@
 	.item_how {
 		margin-top: 20px;
 	}
+
 	.item_how {
 		height: 210px;
 	}
+
 	.text_item_how {
 		font-size: 13px;
 		text-align: justify;
 	}
+
 	/* all_tabs  */
 
 	.left_tabs {
