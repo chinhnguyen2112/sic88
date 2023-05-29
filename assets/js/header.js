@@ -17,11 +17,9 @@ window.onscroll = function() {scrollFunction()};
       function scrollFunction() {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
           document.getElementById("header_top").style.display = "none";
-          document.getElementById("header_bot").style.display = "none";
 
         } else {
           document.getElementById("header_top").style.display = "block";
-          document.getElementById("header_bot").style.display = "block";
         }
       }
 
@@ -48,7 +46,6 @@ function show_search(e, type) {
 		$(".search").hide(200);
 		$(e).attr("onclick", "show_search(this,1)");
 		document.getElementById("header_top").style.height = '36px';
-
 	}
 }
 function show_submenu(e, type) {
