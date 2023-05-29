@@ -34,8 +34,8 @@ class Home extends CI_Controller
         $data['canonical'] = base_url();
         $data['blog'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 20);
         $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 5);
-        $data['meta_title'] = 'Sic88 - Links Nhà Cái Mở Cổng Đăng Ký Chính Thức';
-        $data['meta_des'] = 'Sic88 là nhà cái mới tại Việt Nam nhưng đã gây ấn tượng mạnh mẽ với người chơi từ chất lượng game đến công nghệ hiện đại. Xem chi tiết ngay!';
+        $data['meta_title'] = 'Sic88 - Đăng Ký Tài Khoản Nhận Thưởng Lên Đến 300%';
+        $data['meta_des'] = 'Sic88 là nhà cái uy tín số 1 châu Á. Nạp rút tiền chỉ trong 1 phút, cực nhiều khuyến mãi. Sic88 bet đa dạng thể loại casino online dễ chơi dễ trúng thưởng';
         $data['content'] = 'home';
         $data['list_js'] = [
             'slick.min.js',
