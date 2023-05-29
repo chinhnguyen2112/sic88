@@ -43,7 +43,7 @@
     <div class="how_regis">
       <div class="how_regis_width body_width">
         <div class="title_how">
-          <h1>SIC88 - Nhà Cái Nạp Rút Trong Vòng 1 Phút</h1>
+          <h1>CHÀO MỪNG BẠN ĐẾN VỚI NHÀ CÁI SIC88</h1>
         </div>
         <div class="how_content">
           <div class="all_item_how">
@@ -105,7 +105,7 @@
           <div class="left_tabs">
             <div class="name_tabs active" data-id="1">
               <div class="left_btn_tabs">
-                <p class="title_btn">Đánh bài</p>
+                <p class="title_btn">Game Bài</p>
                 <p class="text_left_tabs">Đánh bài online</p>
               </div>
               <div class="right_btn_tabs">
@@ -114,7 +114,7 @@
             </div>
             <div class="name_tabs" data-id="2">
               <div class="left_btn_tabs">
-                <p class="title_btn">Casino live</p>
+                <p class="title_btn">Casino Live</p>
                 <p class="text_left_tabs">Sòng bài trực tuyến</p>
               </div>
               <div class="right_btn_tabs">
@@ -123,7 +123,7 @@
             </div>
             <div class="name_tabs" data-id="3">
               <div class="left_btn_tabs">
-                <p class="title_btn">Thể thao</p>
+                <p class="title_btn">Thể Thao</p>
                 <p class="text_left_tabs">Cá cược uy tín</p>
               </div>
               <div class="right_btn_tabs">
@@ -132,7 +132,7 @@
             </div>
             <div class="name_tabs" data-id="4">
               <div class="left_btn_tabs">
-                <p class="title_btn">Dân gian</p>
+                <p class="title_btn">Dân Gian</p>
                 <p class="text_left_tabs">Sân chơi hấp dẫn</p>
               </div>
               <div class="right_btn_tabs">
@@ -141,7 +141,7 @@
             </div>
             <div class="name_tabs" data-id="5">
               <div class="left_btn_tabs">
-                <p class="title_btn">Nổ hũ</p>
+                <p class="title_btn">Nổ Hũ</p>
                 <p class="text_left_tabs">Thưởng siêu lớn</p>
               </div>
               <div class="right_btn_tabs">
@@ -150,7 +150,7 @@
             </div>
             <div class="name_tabs" data-id="6">
               <div class="left_btn_tabs">
-                <p class="title_btn">Đá gà</p>
+                <p class="title_btn">Đá Gà</p>
                 <p class="text_left_tabs">Sảnh cược vip</p>
               </div>
               <div class="right_btn_tabs">
