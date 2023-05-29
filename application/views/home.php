@@ -82,7 +82,6 @@
           </div>
           <div class="line_how">
             <img class="img_pc" src="/images/icon_wellcome/gradient-bar.jpeg" alt="icon line">
-            <img class="img_mb" src="/images/icon_wellcome/gradient-bar 2.jpeg">
           </div>
           <div class="text_step_how">
             <p class="text_how_01">Tạo tài khoản</p>
