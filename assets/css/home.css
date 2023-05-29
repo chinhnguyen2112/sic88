@@ -110,10 +110,16 @@
 	display: flex;
 	justify-content: space-between;
 }
+.item_big {
+	width: 23%;
+}
+.text_step {
+	display: none;
+}
 .item_how {
 	padding: 15px;
 	border-radius: 5px;
-	width: 20%;
+	height: 160px;
 }
 .how_01 {
 	border: 1px solid red;
@@ -481,6 +487,9 @@
 }
 
 @media only screen and (max-width: 1280px) {
+	.item_how {
+		height: 190px;
+	}
 	.item_title {
 		width: 90%;
 	}
@@ -648,8 +657,14 @@
 		flex-wrap: wrap;
 	}
 	.item_how {
-		width: 44%;
 		margin-top: 20px;
+	}
+	.item_how {
+		height: 210px;
+	}
+	.text_item_how {
+		font-size: 13px;
+		text-align: justify;
 	}
 	.text_step_how p {
 		font-size: 17px;
