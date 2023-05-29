@@ -49,37 +49,44 @@
 .three_step {
 	background: #2e5b85;
 }
+
 .three_step_content {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	padding: 27px 0;
 }
+
 .item_step {
 	display: flex;
 }
+
 .item_step_content {
 	flex-direction: column;
 	display: flex;
 	justify-content: center;
 	margin-left: 16px;
 }
+
 .item_step img {
 	width: 64px;
 	height: 64px;
 }
+
 .first_text_item {
 	color: #caab72;
 	font-size: 20px;
 	font-weight: bold;
 	line-height: 24px;
 }
+
 .sec_text_item {
 	color: #a7a9b0;
 	font-size: 12px;
 	line-height: 20px;
 	margin-top: 4px;
 }
+
 .arrow_step {
 	width: 32px;
 	height: auto;
@@ -87,15 +94,22 @@
 	-webkit-mask-size: contain;
 	background-color: #90949c !important;
 }
+
 .arrow_step img {
 	width: 24px;
 }
+
 /*  how register  */
+.item_big {
+	width: 20%;
+}
+
 .how_regis {
 	text-align: center;
 	margin: 50px 0;
 	padding: 0 150px;
 }
+
 .title_how h1 {
 	color: #0f161f;
 	margin-top: 20px;
@@ -103,9 +117,11 @@
 	line-height: 35px;
 	font-weight: bold;
 }
+
 .how_content {
 	margin-top: 50px;
 }
+
 .all_item_how {
 	display: flex;
 	justify-content: space-between;
@@ -120,55 +136,69 @@
 	padding: 15px;
 	border-radius: 5px;
 	height: 160px;
-}
+
 .how_01 {
 	border: 1px solid red;
 }
+
 .how_02 {
 	border: 1px solid #67e49e;
 }
+
 .how_03 {
 	border: 1px solid #f7921a;
 }
+
 .how_04 {
 	border: 1px solid #fbb813;
 }
+
 .item_how img {
 	width: 75px;
 	height: 75px;
 }
+
 .img_mb {
 	display: none;
 }
+
 .line_how {
 	margin-top: 20px;
 }
+
 .text_item_how {
 	margin: 15px 0 0 0;
 	font-size: 15px;
 	color: #0f161f;
 }
+
 .text_step_how {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 20px;
 }
+
 .text_step_how p {
 	font-size: 20px;
 	width: 25%;
 }
+
 .text_how_01 {
 	color: red;
 }
+
 .text_how_02 {
 	color: #67e49e;
 }
+
 .text_how_03 {
 	color: #f7921a;
 }
+
 .text_how_04 {
 	color: #fbb813;
 }
+
 /* all_tabs  */
 .all_tabs {
 	height: max-content;
@@ -184,9 +214,11 @@
 	display: flex;
 	flex-direction: column;
 }
+
 .title_all_tabs {
 	display: flex;
 }
+
 .title_all_tabs h2 {
 	color: #000;
 	margin: 0 0 35px;
@@ -195,10 +227,12 @@
 	padding: 0 5px 5px 0;
 	border-bottom: 5px solid #ffb639;
 }
+
 .text_title_special {
 	color: #ffb639 !important;
 	font-size: 28px;
 }
+
 .tabs {
 	display: flex;
 }
@@ -288,6 +322,7 @@
 .content_tabs_left {
 	width: 69%;
 }
+
 .heading_content .title_content {
 	text-transform: uppercase;
 	font-style: normal;
@@ -323,11 +358,13 @@
 	display: flex;
 	justify-content: space-evenly;
 }
+
 .all_icons .icon_game {
 	width: 100px;
 	height: auto;
 	margin: 10px;
 }
+
 .icon_game_small {
 	width: 70px !important;
 }
@@ -344,6 +381,7 @@
 	margin-top: 35px;
 	text-align: end;
 }
+
 .btn_join:hover {
 	opacity: 0.7;
 }
@@ -415,9 +453,11 @@
 	margin: 0;
 	padding-top: 10px;
 }
+
 .qr_btn {
 	margin-top: 30px;
 }
+
 .btn_download_qr {
 	font-size: 16px;
 	font-weight: 700;
@@ -426,6 +466,7 @@
 	padding: 10px 31.5px;
 	border-radius: 20px;
 }
+
 .btn_download_qr:hover {
 	opacity: 0.9;
 }
@@ -493,22 +534,28 @@
 	.item_title {
 		width: 90%;
 	}
+
 	.item_box_com {
 		padding: 10px 0;
 		height: max-content;
 	}
+
 	.text_item_cont {
 		height: 166.71px;
 	}
+
 	.content_tabs_left {
 		width: 67%;
 	}
+
 	.heading_content .title_content {
 		font-size: 26px !important;
 	}
+
 	.all_icons .icon_game {
 		width: 83px;
 	}
+
 	.content_tabs_right img {
 		width: 49%;
 		top: -40px;
@@ -521,6 +568,7 @@
 	.container {
 		padding-top: 40px;
 	}
+
 	.slick-list {
 		padding: 0 !important;
 	}
@@ -532,24 +580,30 @@
 	.slick-prev {
 		left: 20px;
 	}
+
 	/* three step  */
 	.item_step img {
 		width: 58px;
 		height: 58px;
 	}
+
 	.item_step_content {
 		margin-left: 10px;
 	}
+
 	.first_text_item {
 		font-size: 16px;
 	}
+
 	.arrow_step {
 		width: 28px;
 	}
+
 	/*  how regis  */
 	.how_regis {
 		padding: 0 20px;
 	}
+
 	.all_item_how {
 		flex-wrap: wrap;
 	}
@@ -584,9 +638,11 @@
 		font-size: 15px;
 		padding-top: 15px;
 	}
+
 	.content_tabs_left {
 		width: 56%;
 	}
+
 	.content_tabs {
 		height: 370px;
 	}
@@ -630,24 +686,30 @@
 		right: 20px;
 		top: 80px;
 	}
+
 	/* three step  */
 	.three_step_content {
 		padding: 16px 0;
 	}
+
 	.item_step img {
 		width: 40px;
 		height: 40px;
 	}
+
 	.item_step_content {
 		margin-left: 8px;
 	}
+
 	.first_text_item {
 		font-size: 16px;
 		line-height: 20px;
 	}
+
 	.three_step .sec_text_item {
 		display: none;
 	}
+
 	.arrow_step {
 		width: 20px;
 	}
@@ -656,6 +718,7 @@
 	.all_item_how {
 		flex-wrap: wrap;
 	}
+
 	.item_how {
 		margin-top: 20px;
 	}
@@ -666,9 +729,6 @@
 		font-size: 13px;
 		text-align: justify;
 	}
-	.text_step_how p {
-		font-size: 17px;
-	}
 	/* all_tabs  */
 
 	.left_tabs {
@@ -678,12 +738,15 @@
 	.right_tabs {
 		width: calc(100% - 35%);
 	}
+
 	.content_tabs {
 		height: 360px;
 	}
+
 	.all_icons .icon_game {
 		width: 70px;
 	}
+
 	.content_tabs_left {
 		width: 100%;
 	}
@@ -717,6 +780,7 @@
 	.banner {
 		margin: 0 auto;
 	}
+
 	.banner .slick-list {
 		padding: 0 !important;
 	}
@@ -740,23 +804,28 @@
 	.three_step_content {
 		padding: 16px 0;
 	}
+
 	.item_step img {
 		width: 24px;
 		height: 24px;
 	}
+
 	.first_text_item {
 		font-size: 12px;
 		line-height: 18px;
 	}
+
 	.arrow_step {
 		width: 20px;
 	}
+
 	/* how regis  */
 	.how_content {
 		margin-top: 20px;
 		display: flex;
 		flex-direction: row-reverse;
 	}
+
 	.all_item_how {
 		width: 100%;
 	}
@@ -767,29 +836,37 @@
 		flex-direction: column;
 		margin-bottom: 20px;
 	}
+
 	.item_how {
 		width: 85%;
 		margin-top: 5px;
 		height: 170px;
 	}
-  .text_step {
-    font-weight: 500;
-  }
+
+	.text_step {
+		font-weight: 500;
+	}
+
 	.step_01 {
 		color: red;
 	}
+
 	.step_02 {
 		color: #67e49e;
 	}
+
 	.step_03 {
 		color: #f7921a;
 	}
+
 	.step_04 {
 		color: #fbb813;
 	}
+
 	.text_step_how {
 		display: none;
 	}
+
 	.line_how {
 		display: none;
 	}
@@ -800,17 +877,21 @@
 		padding: 0;
 		height: max-content;
 	}
+
 	.title_all_tabs {
 		padding-left: 20px;
 	}
+
 	.title_all_tabs h2 {
 		margin-bottom: 20px;
 	}
+
 	.tabs_content {
 		flex-direction: column;
 		justify-content: center;
 		padding: 20px 0;
 	}
+
 	.tabs {
 		justify-content: space-evenly;
 	}
@@ -828,6 +909,7 @@
 		padding: 5px 0;
 		align-items: center;
 	}
+
 	.left_btn_tabs {
 		display: none;
 	}
@@ -845,13 +927,16 @@
 		width: 100%;
 		text-align: justify;
 	}
+
 	.heading_content p {
 		display: none;
 	}
+
 	.heading_content .title_content {
 		font-size: 20px !important;
 		line-height: 28px !important;
 	}
+
 	.content_tabs p {
 		font-size: 18px;
 		padding-top: 5px;
@@ -882,6 +967,7 @@
 	.content_tabs {
 		width: 100%;
 	}
+
 	.all_icons {
 		display: none;
 	}
@@ -966,64 +1052,80 @@
 		line-height: 30px;
 		margin-top: 10px;
 	}
-  .item_big {
-    width: 48%;
-  }
+
+	.item_big {
+		width: 48%;
+	}
+
 	.item_how {
 		width: 88%;
 		margin-top: 10px;
 		padding: 10px;
-    height: 190px;
+		height: 190px;
 	}
-  .text_item_how {
-    font-size: 13px;
-  }
+
+	.text_item_how {
+		font-size: 13px;
+	}
 
 	/* all_tabs  */
 	.content_tabs p {
 		font-size: 14px;
 		padding-top: 5px;
 	}
+
 	.item_title {
 		width: 65%;
 	}
+
 	.left_tabs {
 		width: 22%;
 	}
+
 	.right_tabs {
 		width: 68%;
 		padding-left: 0px;
 	}
+
 	.name_tabs {
 		width: 85%;
 		padding: 5px;
 	}
+
 	.heading_content .title_content {
 		font-size: 16px !important;
 	}
+
 	.content_tabs {
 		height: 475px;
 	}
 }
+
 @media only screen and (max-width: 375px) {
 	.item_title {
 		width: 80%;
 	}
+
 	.item_box_com {
 		padding: 6px 0;
 	}
+
 	.text_item_cont {
 		height: 121.03px;
 	}
+
 	.heading_content .title_content {
 		font-size: 15px !important;
 	}
+
 	.content_tabs {
 		height: 520px;
 	}
+
 	.content_tabs p {
 		font-size: 13.5px;
 	}
+
 	/* how regis  */
 	.how_regis {
 		padding: 0 15px;
