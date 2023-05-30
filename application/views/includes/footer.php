@@ -23,13 +23,13 @@ if (count($menu_cate_parent) > 2) {
                     </div>
                     <div class="icons_contact">
                         <a href="#" class="item_icons">
-                            <img src="/images/icons/icons8-facebook-30.png">
+                            <img src="/images/icons/icons8-facebook-30.png" alt="icon facebook">
                         </a>
                         <a href="#" class="item_icons">
-                            <img src="/images/icons/icons8-instagram-30.png">
+                            <img src="/images/icons/icons8-instagram-30.png" alt="icon instagram">
                         </a>
                         <a href="#" class="item_icons">
-                            <img src="/images/icons/icons8-youtube-30.png">
+                            <img src="/images/icons/icons8-youtube-30.png" alt="icon youtube">
                         </a>
                     </div>
                 </div>
@@ -37,39 +37,39 @@ if (count($menu_cate_parent) > 2) {
             <div class="item_ft02">
                 <ul class="list_game_ft">
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/casino-online/">Casino Online</a>
                     </li>
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/no-hu/">Nổ Hũ</a>
                     </li>
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/game-bai/">Game Bài</a>
                     </li>
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/tai-xiu/">Tài Xỉu</a>
                     </li>
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/game-slot-doi-thuong/">Game Đổi Thưởng</a>
                     </li>
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/ban-ca/">Bắn Cá</a>
                     </li>
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/da-ga-truc-tiep/">Đá Gà Trực Tiếp</a>
                     </li>
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/co-ca-ngua/">Cờ Cá Ngựa</a>
                     </li>
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/lo-de-online/">Lô Đề Online</a>
                     </li>
                 </ul>
@@ -77,19 +77,19 @@ if (count($menu_cate_parent) > 2) {
             <div class="item_ft03">
                 <ul class="list_guide">
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/dang-ky-sic88/">Đăng ký sic88</a>
                     </li>
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/rut-tien-sic88/">Rút tiền sic88</a>
                     </li>
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/nap-tien-sic88/">Nạp tiền sic88</a>
                     </li>
                     <li class="item_game_ft">
-                        <img src="/images/icons/icons8-more-than-30.png">
+                        <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
                         <a href="/dang-nhap-sic88/">Đăng nhập sic88</a>
                     </li>
                 </ul>
@@ -107,7 +107,7 @@ if (count($menu_cate_parent) > 2) {
     </div>
     <div class="back_to_top">
         <a id="btn_to_top" class="btn_to_top">
-            <img src="/images/icons/icons8-arrow-50.png">
+            <img src="/images/icons/icons8-arrow-50.png" alt="icon arrow">
         </a>
     </div>
     <div class="footer_btn">

@@ -20,9 +20,11 @@
 
 .breadcrumb p,
 .breadcrumb span {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
     color: #808EA1;
+    display: flex;
+    align-items: center;
 }
 
 .train_content {

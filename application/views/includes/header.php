@@ -57,7 +57,7 @@
                         <li class="item_menu">
                             <span>
                                 <a class="link_special" href="/khuyen-mai/">
-                                    <img src="/images/icons/icons_km.png">
+                                    <img src="/images/icons/icons_km.png" alt="icon khuyến mãi">
                                     <p>KHUYẾN MÃI</p>
                                 </a>
                             </span>
@@ -65,7 +65,7 @@
                         <li class="item_menu">
                             <span>
                                 <a href="#">
-                                    <img src="/images/icons/icons_vip.png">
+                                    <img src="/images/icons/icons_vip.png" alt="icon vip">
                                 </a>
                             </span>
                         </li>

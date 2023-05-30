@@ -263,9 +263,8 @@ body {
 		display: none;
 		width: 18px;
 	}
-	.logo_header img {
-		width: 50px;
-		height: auto;
+	.logo_menu {
+		display: none;
 	}
 	.sub_menu {
 		position: static;
