@@ -7,6 +7,9 @@
     display: flex;
     gap: 10px;
 }
+.breadcrumb a {
+    color: #808EA1;
+}
 
 .content_about {
     margin: auto;
@@ -14,18 +17,12 @@
     padding: 30px 70px 20px 70px;
 }
 
-.this_breadcrumb {
-    font-size: 16px;
-    line-height: 24px;
-    color: #999;
-    font-weight: 500;
-}
 
 .breadcrumb p,
 .breadcrumb span {
     font-size: 16px;
     line-height: 20px;
-    color: #999;
+    color: #808EA1;
 }
 
 .train_content {
