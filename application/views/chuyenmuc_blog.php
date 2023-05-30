@@ -4,10 +4,9 @@
             <div class="breadcrumb">
                 <span>
                     <img src="/images/icons/icons8-home-20.png" alt="icon home small">
-                    <a href="/">Trang chủ</a>
                 </span>
                 <span>
-                    <img src="/images/icons/icons8-arrow-right-10.png">
+                    <img src="/images/icons/icons8-arrow-right-10.png" alt="icon arrow right">
                 </span>
                 <span class="this_breadcrumb"><?= $title_page ?></span>
             </div>

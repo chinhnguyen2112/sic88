@@ -62,14 +62,14 @@
         <div class="box_content">
             <ul>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-15.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-15.png" alt="icon star">
                     Kiếm Tiền Từ
                     <strong>
                         <a href="/casino-online/">Casino Online</a>
                     </strong>
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-15.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-15.png" alt="icon star">
                     Mẹo Hack
                     <strong>
                         <a href="/game-bai/">Game Bài</a>
@@ -77,7 +77,7 @@
                     Hiệu Quả
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-15.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-15.png" alt="icon star">
                     Luật Chơi
                     <strong>
                         <a href="/poker/">Poker</a>
@@ -85,7 +85,7 @@
                     Là Gì
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-15.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-15.png" alt="icon star">
                     Top 6 Trang
                     <strong>
                         <a href="/da-ga-truc-tiep/">Đá Gà</a>
@@ -93,14 +93,14 @@
                     Uy Tín
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-15.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-15.png" alt="icon star">
                     6 Cách Soi Cầu
                     <strong>
                         <a href="/tai-xiu/">Tài Xỉu</a>
                     </strong>
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-15.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-15.png" alt="icon star">
                     Phiên Bản
                     <strong>
                         <a href="/ban-ca/">Bắn Cá</a>
@@ -108,7 +108,7 @@
                     Hấp Dẫn
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-15.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-15.png" alt="icon star">
                     Phiên Bản
                     <strong>
                         <a href="/no-hu/">Nổ Hũ</a>
@@ -116,7 +116,7 @@
                     Chào 2023
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons/icons8-star-15.png" />
+                    <img class="icon_li" src="/images/icons/icons8-star-15.png" alt="icon star">
                     Game
                     <strong>
                         <a href="/baccarat/">Baccarat</a>
@@ -129,7 +129,7 @@
     <div class="hot_news">
         <div class="box_heading">
             <a href="#">
-                <img src="/images/icons/icons8-fire-30.png" />
+                <img src="/images/icons/icons8-fire-30.png" alt="icon fire">
                 Tin Mới Nóng
             </a>
         </div>
