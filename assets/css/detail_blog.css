@@ -72,13 +72,16 @@ h6 p {
     color: #0040ff !important;
     text-align: left !important;
 }
-
+.breadcrumb a {
+    color: #808EA1;
+    font-size: 16px;
+}
 .link_breadcrumb {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #59606A;
+    color: #808EA1;
 }
 
 .box_data_blog {

@@ -3,10 +3,17 @@
         <div class="main_content_blog">
             <div class="blog_content">
                 <div class="breadcrumb">
-                    <a href="/">Trang chủ</a>
-                    <span> / </span>
+                    <span>
+                        <img src="/images/icons/icons8-home-20.png" alt="icon home small">
+                        <a href="/">Trang chủ</a>
+                    </span>
+                    <span>
+                        <img src="/images/icons/icons8-arrow-right-10.png">
+                    </span>
                     <a class="link_breadcrumb" href="/<?= $cate_alias ?>"><?= $breadcrumb ?></a>
-                    <span> / </span>
+                    <span>
+                        <img src="/images/icons/icons8-arrow-right-10.png" src="icon arrow right">
+                    </span>
                     <span class="this_breadcrumb"><?= $blog['title'] ?></span>
                 </div>
                 <div class="box_data_blog">
@@ -35,30 +42,31 @@
                     </div>
                 </div>
                 <?php if ($blog_same != null) { ?>
-                    <div class="blog_same">
-                        <div class="list_blog_same">
-                            <?php
+                <div class="blog_same">
+                    <div class="list_blog_same">
+                        <?php
                             foreach ($blog_same as $val) { ?>
-                                <div class="this_handbook ">
-                                    <a class="img_item" href="/<?= $val['alias'] ?>/">
-                                        <img class="img_blog_same" src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
-                                    </a>
-                                    <div class="data_handbook">
-                                        <a class="title_handbook" href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
-                                        <p class="date_post">
-                                            <a class="name_cate" href="/<?= $blog['alias_cate'] ?>"><?= $blog['name_cate'] ?></a>
-                                            <span>
-                                                <?= date('d-m-Y', $val['created_at']) ?>
-                                                <span>
-                                        </p>
-                                        <div class="this_des_handbook"><?= $val['sapo'] ?></div>
-                                    </div>
+                        <div class="this_handbook ">
+                            <a class="img_item" href="/<?= $val['alias'] ?>/">
+                                <img class="img_blog_same" src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                            </a>
+                            <div class="data_handbook">
+                                <a class="title_handbook" href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
+                                <p class="date_post">
+                                    <a class="name_cate"
+                                        href="/<?= $blog['alias_cate'] ?>"><?= $blog['name_cate'] ?></a>
+                                    <span>
+                                        <?= date('d-m-Y', $val['created_at']) ?>
+                                        <span>
+                                </p>
+                                <div class="this_des_handbook"><?= $val['sapo'] ?></div>
+                            </div>
 
-                                </div>
-                            <?php
-                            } ?>
                         </div>
+                        <?php
+                            } ?>
                     </div>
+                </div>
                 <?php } ?>
                 <div class="line_blog"></div>
             </div>
