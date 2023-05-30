@@ -172,11 +172,11 @@
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Keyword</label>
-        <input type="text" name="meta_key" id="meta_key" value="<?= (isset($blog)) ? $blog['meta_key'] : ''; ?>" class="form-control">
+        <input type="text" name="meta_key" id="meta_key" value="<?= (isset($blog)) ? $blog['meta_key'] : ''; ?>" <?= (isset($blog)) ? '' : 'oninput="show_alias(this.value)"' ?> class="form-control">
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Đường dẫn thân thiện</label>
-        <input type="text" name="alias" value="<?= (isset($blog)) ? $blog['alias'] : ''; ?>" id="alias" class="form-control">
+        <input type="text" name="alias" <?= (isset($blog)) ? 'disabled' : '' ?> value="<?= (isset($blog)) ? $blog['alias'] : ''; ?>" id="alias" class="form-control">
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Chuyên mục</label>
