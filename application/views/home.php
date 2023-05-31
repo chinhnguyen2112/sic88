@@ -18,7 +18,7 @@
             <p class="sec_text_item">Nhanh chóng và dễ dàng!</p>
           </div>
         </a>
-        <div class="arrow_step">
+        <div class="arrow_step" role="img" aria-label="icon arrow step">
           <!-- <img src="/images/icons/icons8-right-arrow-50.png"> -->
         </div>
         <a href="#" class="item_step">
@@ -28,7 +28,7 @@
             <p class="sec_text_item">An toàn và thời gian gửi tiền nhanh nhất</p>
           </div>
         </a>
-        <div class="arrow_step">
+        <div class="arrow_step" role="img" aria-label="icon arrow step">
           <!-- <img src="/images/icons/icons8-right-arrow-50.png"> -->
         </div>
         <a href="#" class="item_step">
@@ -370,7 +370,7 @@
         <div class="qr_right">
           <div class="qr_right_top">
             <h3 class="title_qr">tải ứng dụng</h3>
-            <img class="logo" src="/images/logo/logo_content_home.png" alt="logo">
+            <img class="logo" src="/images/logo_content_home.png" alt="logo">
             <p class="text">Cược mọi lúc - Thắng mọi nơi</p>
           </div>
           <div class="qr_bot">
@@ -396,7 +396,7 @@
         </div>
         <p class="title_item">Đại Lý</p>
         <p class="text_infor">Tham gia chương trình công tác viên dễ dàng và kiếm hoa hồng tiền tỷ.</p>
-        <a href="#">Tìm Hiểu Thêm</a>
+        <a href="/dai-ly-sic88/">Tìm Hiểu Thêm</a>
       </div>
       <div class="item_infor">
         <div class="img_item">
@@ -413,7 +413,7 @@
         </div>
         <p class="title_item">VIP Member</p>
         <p class="text_infor">Nâng cấp Tài Khoản VIP để nhận được những độc quyền.</p>
-        <a href="#">Tìm Hiểu Thêm</a>
+        <a href="/vip-sic88/">Tìm Hiểu Thêm</a>
       </div>
       <div class="item_infor">
         <div class="img_item">

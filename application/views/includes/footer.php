@@ -8,7 +8,7 @@ if (count($menu_cate_parent) > 2) {
         <div class="content_footer">
             <div class="item_ft01">
                 <div class="logo_ft">
-                    <img src="/images/logo/Logo_sic88.png" alt="logo">
+                    <img src="/images/Logo_sic88.png" alt="logo">
                 </div>
                 <div class="introduce">
                     <div class="content_intro">
@@ -103,7 +103,7 @@ if (count($menu_cate_parent) > 2) {
         </div>
     </div>
     <div class="coppy_right">
-        <p class="text_cr">© 2023 - sic88. All Rights Reserved.</p>
+        <p class="text_cr">© 2023 - SIC88. All Rights Reserved.</p>
     </div>
     <div class="back_to_top">
         <a id="btn_to_top" class="btn_to_top">

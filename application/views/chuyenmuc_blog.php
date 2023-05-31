@@ -8,28 +8,19 @@
                 <span>
                     <img src="/images/icons/icons8-arrow-right-10.png" alt="icon arrow right">
                 </span>
-                <span class="this_breadcrumb"><?= $title_page ?></span>
+                <?php if(isset($cate_1) && $cate_1 != null){ ?>
+                    <a class="link_breadcrumb" href="/<?= $cate_1['alias'] ?>/"><?= $cate_1['name'] ?></a>
+                    <span>
+                        <img src="/images/icons/icons8-arrow-right-10.png" src="icon arrow right">
+                    </span>
+                <?php } if(isset($cate) && $cate != null){ ?>
+                    <span class="link_breadcrumb"><?= $cate ?></span>
+                <?php } ?>
             </div>
         </div>
         <div class="train_content">
             <div class="top_blog">
                 <div class="top_left">
-                    <?php if (isset($content_cate) && $content_cate != '') { ?>
-                    <div class="blog_content">
-                        <div class="left_detail">
-                            <div class="content_blog" id="content_blog">
-                                <?= $content_cate ?>
-                            </div>
-                            <div class="hide_show_content">
-                                <p class="hide_show_text">Xem thêm</p>
-                                <div class="list_img_arrow">
-                                    <img src="/images/arrow.svg" alt="xem thêm">
-                                    <img src="/images/arrow.svg" alt="xem thêm">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <?php } ?>
                     <div class="list_blog_top">
                         <div class="left_blog">
                             <div class="blog_top">
@@ -81,6 +72,22 @@
                                 <img src="/images/arrow_loadmore.svg" alt="xem thêm">
                             </div>
                         </div>
+                        <?php if (isset($content_cate) && $content_cate != '') { ?>
+                        <div class="blog_content">
+                            <div class="left_detail">
+                                <div class="content_blog" id="content_blog">
+                                    <?= $content_cate ?>
+                                </div>
+                                <div class="hide_show_content">
+                                    <p class="hide_show_text">Xem thêm</p>
+                                    <div class="list_img_arrow">
+                                        <img src="/images/arrow.svg" alt="xem thêm">
+                                        <img src="/images/arrow.svg" alt="xem thêm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php } ?>
                     </div>
                 </div>
                 <?php include('includes/sidebar.php') ?>
