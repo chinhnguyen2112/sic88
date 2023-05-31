@@ -162,7 +162,7 @@
             <div class="tabs_item item_01">
               <div class="content_tabs_left">
                 <div class="heading_content">
-                  <h3 class="title_content">Đánh bài online Việt Nam</h3>
+                  <h3 class="title_content">Đánh bài Việt Nam</h3>
 
                 </div>
                 <div class="content_tabs">
@@ -196,7 +196,7 @@
             <div class="tabs_item item_02" style="display: none;">
               <div class="content_tabs_left">
                 <div class="heading_content">
-                  <h3 class="title_content">CASINO LIVE VIỆT NAM</h3>
+                  <h3 class="title_content">CASINO VIỆT NAM</h3>
 
                 </div>
                 <div class="content_tabs">
@@ -231,7 +231,7 @@
             <div class="tabs_item item_03" style="display: none;">
               <div class="content_tabs_left">
                 <div class="heading_content">
-                  <h3 class="title_content">THỂ THAO ONLINE VIỆT NAM</h3>
+                  <h3 class="title_content">THỂ THAO VIỆT NAM</h3>
 
                 </div>
                 <div class="content_tabs">
@@ -298,7 +298,7 @@
             <div class="tabs_item item_05" style="display: none;">
               <div class="content_tabs_left">
                 <div class="heading_content">
-                  <h3 class="title_content">NỔ HŨ ONLINE VIỆT NAM</h3>
+                  <h3 class="title_content">NỔ HŨ VIỆT NAM</h3>
 
                 </div>
                 <div class="content_tabs">
