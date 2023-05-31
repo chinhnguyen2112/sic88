@@ -7,7 +7,7 @@
                 <img src="/images/icons/icons8-cancel-30 .png" alt="close menu" class="img_show_menu close_menu"
                     id="close_menu" onclick="show_menu(this,2)">
                 <a href="/" class="logo_header">
-                    <img src="/images/logo/Logo_sic88.png" alt="logo">
+                    <img src="/images/Logo_sic88.png" alt="logo">
                     <!-- <p class="fic">SIC</p>
                     <p class="number_logo">88</p> -->
                 </a>
@@ -21,9 +21,9 @@
                     <a class="btn_acc btn_login" href="#">Đăng Nhập</a>
                     <a class="btn_acc btn_register" href="#">Đăng Ký</a>
                 </div>
-                <img class="search_nonpc" id="open" src="/images/icons/icons8-search-25.png"
+                <img class="search_nonpc" id="open" src="/images/icons/icons8-search-25.png" alt="icon search"
                     onclick="show_search(this,1)">
-                <img class="search_nonpc cancel" id="cancel" src="/images/icons/icons8-cancel-30 .png"
+                <img class="search_nonpc cancel" id="cancel" src="/images/icons/icons8-cancel-30 .png" alt="icon search"
                     onclick="show_search(this,2)">
             </div>
         </div>
@@ -56,7 +56,7 @@
                     <div class="another_item_menu">
                         <li class="item_menu">
                             <span>
-                                <a class="link_special" href="/khuyen-mai/">
+                                <a class="link_special" href="/khuyen-mai/" rel=”nofollow”>
                                     <img src="/images/icons/icons_km.png" alt="icon khuyến mãi">
                                     <p>KHUYẾN MÃI</p>
                                 </a>
@@ -64,7 +64,7 @@
                         </li>
                         <li class="item_menu">
                             <span>
-                                <a href="#">
+                                <a href="/vip-sic88/" rel=”nofollow”>
                                     <img src="/images/icons/icons_vip.png" alt="icon vip">
                                 </a>
                             </span>

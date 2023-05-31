@@ -1,5 +1,5 @@
 .content {
-    padding-top: 155px;
+    padding-top: 110px;
     background: #fff;
 }
 
@@ -284,6 +284,9 @@
     display: inline-block;
     opacity: 1;
     transition: opacity 2s linear;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 /* blog */
@@ -433,7 +436,10 @@ a.H4abc {
 }
 
 .blog_content {
-    /* margin-top: 20px; */
+    margin-top: 20px;
+    background: linear-gradient(90deg, #cc0355 0, #5447a4 0, #ea003a 100%);
+    padding: 1px;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -455,7 +461,6 @@ a.H4abc {
     }
 
     .left_detail {
-        width: 100%;
         margin: 0;
     }
 }
