@@ -420,7 +420,7 @@ a.H4abc {
 
 .content_blog a {
     box-shadow: inset 0 -4px 0 #7be2af;
-    font-weight: 300 !important;
+    font-weight: 700 !important;
     color: #000;
 }
 
@@ -440,19 +440,27 @@ a.H4abc {
     justify-content: space-between;
     background: linear-gradient(90deg, #cc0355 0, #5447a4 0, #ea003a 100%);
     padding-bottom: 1px;
+    gap: 1px;
 }
 .btn_heading th {
     background: #fff;
 }
 .btn_heading .heading_table {
-    width: 80%;
+    width: 79%;
     align-items: center;
     display: flex;
+}
+.heading_show {
+    width: 21%;
 }
 .btn_heading h1 {
     font-weight: 700;
     color: #533c94;
-    margin: auto;   
+    padding-left: 10px;
+    text-align: start;
+}
+#span_end {
+    display: none;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -476,6 +484,15 @@ a.H4abc {
     .left_detail {
         width: 100%;
         margin: 0;
+    }
+    .btn_heading .heading_table {
+        width: 74%;
+    }
+    .heading_show {
+        width: 26%;
+    }
+    .div_bgr_load {
+        padding-top: 10px;
     }
 }
 
@@ -546,6 +563,18 @@ a.H4abc {
     .box_new img {
         max-width: 45px;
         border-radius: 7px;
+    }
+    .btn_heading h1 {
+        font-size: 15px;
+    }
+    .btn_heading .heading_table {
+        width: 78%;
+    }
+    .heading_show {
+        width: 22%;
+    }
+    .div_bgr_load {
+        padding: 6px 18px;
     }
 
 }
@@ -664,5 +693,35 @@ a.H4abc {
 
     .list_blog .des_blog {
         -webkit-line-clamp: 2;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .btn_heading .heading_table {
+        width: 72%;
+    }
+    .heading_show {
+        width: 28%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .btn_heading .heading_table {
+        width: 70%;
+    }
+    .btn_heading h1 {
+        font-size: 13px;
+    }
+    .heading_show {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .btn_heading .heading_table {
+        width: 63%;
+    }
+    .btn_heading h1 {
+        font-size: 13px;
+    }
+    .heading_show {
+        width: 37%;
     }
 }

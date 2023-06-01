@@ -100,12 +100,14 @@ $(".load_more").click(function () {
 		success: function (data) {
 			++page;
 			if (data.status == 0) {
-				$(".span_show_more").remove();
+				document.getElementById("span_show").style.display = 'none';
+				document.getElementById("span_end").style.display = 'block';
 			} else if (data.status == 1) {
 				// $(".list_blog_home").append(data.html);
 				show_more.before(data.html);
 				if (data.next == 0) {
-					$(".span_show_more").remove();
+					document.getElementById("span_show").style.display = 'none';
+					document.getElementById("span_end").style.display = 'block';
 				}
 			}
 			$(".this_train a img").css("height", height_img);

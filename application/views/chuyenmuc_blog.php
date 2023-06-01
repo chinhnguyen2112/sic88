@@ -70,12 +70,13 @@
                             <table>
                                 <tr class="btn_heading">
                                     <th class="heading_table">
-                                        <h1><?= $meta_title ?></h1>
+                                        <h1>Game bài đa dạng, hấp dẫn, nhận thưởng cực chất tại Sic88</h1>
                                     </th>
-                                    <th>
+                                    <th class="heading_show">
                                         <div class="load_more">
                                             <div class="div_bgr_load">
-                                                <span class="span_show_more">Hiển thị thêm tin</span>
+                                                <span id="span_show" class="span_show_more">Hiển thị thêm tin</span>
+                                                <span id="span_end" class="span_show_more">Hết !</span>
                                             </div>
                                         </div>
                                     </th>
