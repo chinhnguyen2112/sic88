@@ -103,8 +103,7 @@ class Ajax extends CI_Controller
     public function search()
     {
         $time = time();
-        $list_news = $this->Madmin->query_sql("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time ORDER BY id DESC LIMIT 5");
-        $data['list_news'] = $list_news;
+        $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 5");
         $key_search = $this->input->get('search');
         $data['key_search'] = $key_search;
         if ($key_search != '') {
@@ -114,9 +113,9 @@ class Ajax extends CI_Controller
             }
             $limit = 10;
             $start = $limit * ($page - 1);
-            $count = $this->Madmin->query_sql("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time AND title LIKE '%$key_search%'");
-            pagination('/search', count($count), $limit);
-            $result = $this->Madmin->query_sql("SELECT category.alias as cate_alias, category.name as cate_name, blogs.* FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.type = 0 AND time_post <= $time AND blogs.title LIKE '% $key_search %' ORDER BY blogs.id DESC LIMIT $start,$limit ");
+            $count = $this->Madmin->query_sql_num("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time AND title LIKE '%$key_search%'");
+            pagination('/search', $count, $limit);
+            $result = $this->Madmin->query_sql("SELECT category.alias as cate_alias, category.name as cate_name, blogs.* FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.type = 0 AND time_post <= $time AND blogs.title LIKE '%$key_search%' ORDER BY blogs.id DESC LIMIT $start,$limit ");
             $data['result'] = $result;
             $data['meta_title'] = 'Tất cả kết quả tìm kiếm';
             $data['content'] = 'result_search';
