@@ -31,7 +31,7 @@ class Home extends CI_Controller
     public function home()
     {
         $data['canonical'] = base_url();
-        $data['meta_title'] = 'Sic88 - Đăng Ký Tài Khoản Nhận Thưởng Lên Đến 300%';
+        $data['meta_title'] = 'SiC88 - Chương trình mở tài khoản nhận quà lớn cùng SiC88';
         $data['meta_des'] = 'Sic88 là nhà cái uy tín số 1 châu Á. Nạp rút tiền chỉ trong 1 phút, cực nhiều khuyến mãi. Sic88 bet đa dạng thể loại casino online dễ chơi dễ trúng thưởng';
         $data['content'] = 'home';
         $data['list_js'] = [
