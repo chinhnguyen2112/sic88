@@ -9,16 +9,17 @@
                     <span>
                         <img src="/images/icons/icons8-arrow-right-10.png" alt="icon arrow right">
                     </span>
-                    <?php if(isset($cate_1) && $cate_1 != null){ ?>
+                    <?php if (isset($cate_1) && $cate_1 != null) { ?>
                         <a class="link_breadcrumb" href="/<?= $cate_1['alias'] ?>/"><?= $cate_1['name'] ?></a>
-                    <span>
-                        <img src="/images/icons/icons8-arrow-right-10.png" src="icon arrow right">
-                    </span> 
-                    <?php } if(isset($cate) && $cate != null){ ?>
+                        <span>
+                            <img src="/images/icons/icons8-arrow-right-10.png" src="icon arrow right">
+                        </span>
+                    <?php }
+                    if (isset($cate) && $cate != null) { ?>
                         <a class="link_breadcrumb" href="/<?= $cate['alias'] ?>/"><?= $cate['name'] ?></a>
-                    <span>
-                        <img src="/images/icons/icons8-arrow-right-10.png" src="icon arrow right">
-                    </span> 
+                        <span>
+                            <img src="/images/icons/icons8-arrow-right-10.png" src="icon arrow right">
+                        </span>
                     <?php } ?>
                     <span class="this_breadcrumb"><?= $blog['title'] ?></span>
                 </div>
@@ -48,31 +49,30 @@
                     </div>
                 </div>
                 <?php if ($blog_same != null) { ?>
-                <div class="blog_same">
-                    <div class="list_blog_same">
-                        <?php
+                    <div class="blog_same">
+                        <div class="list_blog_same">
+                            <?php
                             foreach ($blog_same as $val) { ?>
-                        <div class="this_handbook ">
-                            <a class="img_item" href="/<?= $val['alias'] ?>/">
-                                <img class="img_blog_same" src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
-                            </a>
-                            <div class="data_handbook">
-                                <a class="title_handbook" href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
-                                <p class="date_post">
-                                    <a class="name_cate"
-                                        href="/<?= $blog['alias_cate'] ?>"><?= $blog['name_cate'] ?></a>
-                                    <span>
-                                        <?= date('d-m-Y', $val['created_at']) ?>
-                                        <span>
-                                </p>
-                                <div class="this_des_handbook"><?= $val['sapo'] ?></div>
-                            </div>
+                                <div class="this_handbook ">
+                                    <a class="img_item" href="/<?= $val['alias'] ?>/">
+                                        <img class="img_blog_same" src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                    </a>
+                                    <div class="data_handbook">
+                                        <a class="title_handbook" href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
+                                        <p class="date_post">
+                                            <a class="name_cate" href="/<?= $blog['alias_cate'] ?>"><?= $blog['name_cate'] ?></a>
+                                            <span>
+                                                <?= date('d-m-Y', $val['created_at']) ?>
+                                                <span>
+                                        </p>
+                                        <div class="this_des_handbook"><?= $val['sapo'] ?></div>
+                                    </div>
 
-                        </div>
-                        <?php
+                                </div>
+                            <?php
                             } ?>
+                        </div>
                     </div>
-                </div>
                 <?php } ?>
                 <div class="line_blog"></div>
             </div>

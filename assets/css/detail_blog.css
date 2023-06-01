@@ -8,8 +8,6 @@
 
 .breadcrumb {
     padding: 0;
-    gap: 10px;
-    display: flex;
 }
 
 .this_breadcrumb {
@@ -21,14 +19,11 @@
 
 .breadcrumb p,
 .breadcrumb span {
-    margin-bottom: 0;
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
     text-align: center;
     color: #808EA1;
-    display: flex;
-    align-items: center;
 }
 
 .left_detail {
@@ -75,10 +70,12 @@ h6 p {
     color: #0040ff !important;
     text-align: left !important;
 }
+
 .breadcrumb a {
     color: #808EA1;
     font-size: 13px;
 }
+
 .link_breadcrumb {
     font-weight: 400;
     font-size: 16px;
@@ -571,13 +568,6 @@ td:first-child {
     .breadcrumb {
         gap: 5px;
     }
-
-    .breadcrumb p,
-    .breadcrumb span {
-        margin-bottom: 0;
-        text-align: justify;
-    }
-
     .container_widget_about {
         padding: 0 20px;
         padding-bottom: 20px;
