@@ -394,6 +394,9 @@ body {
 	}
 }
 @media only screen and (max-width: 540px) {
+	.logo_header img {
+		width: 70px;
+	}
 	.header_scroll {
 		padding: 0;
 	}

@@ -128,7 +128,8 @@
 }
 
 .item_big {
-	width: 23%;
+	width: calc(25% - 10px);
+	display: flex;
 }
 
 .text_step {
@@ -138,7 +139,6 @@
 .item_how {
 	padding: 15px;
 	border-radius: 5px;
-	height: 160px;
 }
 
 .how_01 {
@@ -226,7 +226,7 @@
 .title_all_tabs h2 {
 	color: #000;
 	margin: 0 0 35px;
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: bold;
 	padding: 0 5px 5px 0;
 	border-bottom: 5px solid #ffb639;
@@ -307,10 +307,7 @@
 	transition: 0.5s;
 }
 
-.right_btn_tabs img {
-	width: 85%;
-	height: auto;
-}
+
 
 .right_tabs {
 	padding-left: 28px;
@@ -360,13 +357,13 @@
 	margin-top: 15px;
 	width: 100%;
 	display: flex;
+	gap: 10px;
 	justify-content: space-evenly;
 }
 
 .all_icons .icon_game {
 	width: 100px;
 	height: auto;
-	margin: 10px;
 }
 
 .icon_game_small {
@@ -375,8 +372,8 @@
 
 .content_tabs_right img {
 	position: absolute;
-	width: 47%;
-	right: -150px;
+	width: 44%;
+	right: -135px;
 	top: -50px;
 }
 
@@ -532,9 +529,6 @@
 }
 
 @media only screen and (max-width: 1280px) {
-	.item_how {
-		height: 190px;
-	}
 
 	.item_title {
 		width: 90%;
@@ -558,7 +552,7 @@
 	}
 
 	.all_icons .icon_game {
-		width: 83px;
+		width: calc(20% - 10px);
 	}
 
 	.content_tabs_right img {
@@ -745,10 +739,6 @@
 		margin-top: 20px;
 	}
 
-	.item_how {
-		height: 210px;
-	}
-
 	.text_item_how {
 		font-size: 13px;
 		text-align: justify;
@@ -856,16 +846,14 @@
 	}
 
 	.item_big {
-		width: 49%;
+		width: calc(50% - 10px);
 		display: flex;
-		flex-direction: column;
-		margin-bottom: 20px;
+		margin: 5px auto;
 	}
 
 	.item_how {
-		width: 85%;
+		width: 100%;
 		margin-top: 5px;
-		height: 170px;
 	}
 
 	.text_step {
@@ -929,7 +917,8 @@
 	.name_tabs {
 		width: 100%;
 		flex-direction: column;
-		height: 68px;
+		height: auto;
+		text-align: center;
 		margin-bottom: 15px;
 		padding: 5px 0;
 		align-items: center;
@@ -991,16 +980,12 @@
 
 	.content_tabs {
 		width: 100%;
+		height: 485px;
 	}
 
 	.all_icons {
 		display: none;
 	}
-
-	.content_tabs {
-		height: 475px;
-	}
-
 	.content_tabs_right {
 		display: none;
 	}
@@ -1024,6 +1009,12 @@
 	.text {
 		font-weight: 600;
 	}
+	.qr_bot {
+		gap: 20px;
+	}
+	.item_qr_01 {
+		padding: 0;
+	}
 
 	/* all_infor  */
 	.all_infor {
@@ -1034,7 +1025,7 @@
 	}
 
 	.item_infor {
-		width: 47%;
+		width: calc(50% - 10px);
 		margin: 0;
 		padding-bottom: 10px;
 	}
@@ -1062,97 +1053,29 @@
 	.text_infor {
 		padding: 5px;
 		font-size: 13px;
-		min-height: 80px;
+		min-height: 60px;
 	}
 }
 
 @media only screen and (max-width: 414px) {
-	.slick-list {
-		padding: 0 !important;
-	}
-
-	/* how regis  */
-	.title_how h1 {
-		font-size: 25px;
-		line-height: 30px;
-		margin-top: 10px;
-	}
-
 	.item_big {
-		width: 48%;
+		width: calc(100% - 10px);
 	}
-
-	.item_how {
-		width: 88%;
-		margin-top: 10px;
-		padding: 10px;
-		height: 190px;
-	}
-
-	.text_item_how {
-		font-size: 13px;
-	}
-
-	/* all_tabs  */
-	.content_tabs p {
-		font-size: 14px;
-		padding-top: 5px;
-	}
-
-	.item_title {
-		width: 65%;
-	}
-
-	.left_tabs {
-		width: 22%;
-	}
-
-	.right_tabs {
-		width: 68%;
-		padding-left: 0px;
-	}
-
-	.name_tabs {
-		width: 85%;
-		padding: 5px;
-	}
-
 	.heading_content .title_content {
-		font-size: 16px !important;
+		font-size: 18px !important;
 	}
-
 	.content_tabs {
-		height: 475px;
+		height: max-content;
 	}
-}
-
-@media only screen and (max-width: 375px) {
-	.item_title {
+	.content_tabs p {
+		font-size: 16px;
+	}
+	.right_btn_tabs img {
 		width: 80%;
 	}
-
-	.item_box_com {
-		padding: 6px 0;
-	}
-
-	.text_item_cont {
-		height: 121.03px;
-	}
-
-	.heading_content .title_content {
-		font-size: 15px !important;
-	}
-
-	.content_tabs {
-		height: 520px;
-	}
-
-	.content_tabs p {
-		font-size: 13.5px;
-	}
-
-	/* how regis  */
-	.how_regis {
-		padding: 0 15px;
+}
+@media only screen and (max-width: 375px) {
+	.item_infor {
+		width: calc(100% - 10px);
 	}
 }

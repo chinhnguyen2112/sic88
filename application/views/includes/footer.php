@@ -78,19 +78,19 @@ if (count($menu_cate_parent) > 2) {
                 <ul class="list_guide">
                     <li class="item_game_ft">
                         <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
-                        <a href="/dang-ky-sic88/">Đăng ký sic88</a>
+                        <a href="/dang-ky-sic88/">Đăng ký SIC88</a>
                     </li>
                     <li class="item_game_ft">
                         <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
-                        <a href="/rut-tien-sic88/">Rút tiền sic88</a>
+                        <a href="/rut-tien-sic88/">Rút tiền SIC88</a>
                     </li>
                     <li class="item_game_ft">
                         <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
-                        <a href="/nap-tien-sic88/">Nạp tiền sic88</a>
+                        <a href="/nap-tien-sic88/">Nạp tiền SIC88</a>
                     </li>
                     <li class="item_game_ft">
                         <img src="/images/icons/icons8-more-than-30.png" alt="icon arrow">
-                        <a href="/dang-nhap-sic88/">Đăng nhập sic88</a>
+                        <a href="/dang-nhap-sic88/">Đăng nhập SIC88</a>
                     </li>
                 </ul>
                 <div class="div_dmca">

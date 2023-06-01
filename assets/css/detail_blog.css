@@ -20,7 +20,7 @@
 .breadcrumb p,
 .breadcrumb span {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 24px;
     text-align: center;
     color: #808EA1;
@@ -73,7 +73,7 @@ h6 p {
 
 .breadcrumb a {
     color: #808EA1;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .link_breadcrumb {
@@ -552,6 +552,9 @@ td:first-child {
 }
 
 @media only screen and (max-width: 540px) {
+    .breadcrumb {
+        flex-wrap: wrap;
+    }
     .main_content_blog {
         display: flex;
         flex-direction: column;
@@ -562,7 +565,9 @@ td:first-child {
         width: 100%;
         margin-top: 0;
     }
-
+    .breadcrumb {
+        gap: 5px;
+    }
     .container_widget_about {
         padding: 0 20px;
         padding-bottom: 20px;
