@@ -70,7 +70,7 @@
                             <table>
                                 <tr class="btn_heading">
                                     <th class="heading_table">
-                                        <h1>Game bài đa dạng, hấp dẫn, nhận thưởng cực chất tại Sic88</h1>
+                                        <h1><?= $meta_title ?></h1>
                                     </th>
                                     <th class="heading_show">
                                         <div class="load_more">
