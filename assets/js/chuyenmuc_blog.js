@@ -85,7 +85,7 @@ var height_img = width_img / 1.73;
 $(".this_train a img").css("height", height_img);
 var page = 2;
 $(".load_more").click(function () {
-	var show_more = $(this);
+	var show_more = $("#table_bot");
 	var form_data = new FormData();
 	form_data.append("page", page);
 	var id_chuyenmuc = $("#chuyen_muc").val();
@@ -100,12 +100,12 @@ $(".load_more").click(function () {
 		success: function (data) {
 			++page;
 			if (data.status == 0) {
-				$(".load_more").remove();
+				$(".span_show_more").remove();
 			} else if (data.status == 1) {
 				// $(".list_blog_home").append(data.html);
 				show_more.before(data.html);
 				if (data.next == 0) {
-					$(".load_more").remove();
+					$(".span_show_more").remove();
 				}
 			}
 			$(".this_train a img").css("height", height_img);

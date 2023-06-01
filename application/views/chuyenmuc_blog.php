@@ -66,41 +66,42 @@
                         </div>
                         <?php }
                         } ?>
-                        <table class="table_bot">
-                            <tr>
-                                <td>
-                                    <h1>abc</h1>
-                                </td>
-                                <td>
-                                    <div class="load_more">
-                                        <div class="div_bgr_load">
-                                            <span>Hiển thị thêm tin</span>
-                                            <img src="/images/arrow_loadmore.svg" alt="xem thêm">
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <?php if (isset($content_cate) && $content_cate != '') { ?>
-                                    <div class="blog_content">
-                                        <div class="left_detail">
-                                            <div class="content_blog" id="content_blog">
-                                                <?= $content_cate ?>
+                        <div id="table_bot" class="table_bot">
+                            <table>
+                                <tr class="btn_heading">
+                                    <th class="heading_table">
+                                        <h1><?= $meta_title ?></h1>
+                                    </th>
+                                    <th>
+                                        <div class="load_more">
+                                            <div class="div_bgr_load">
+                                                <span class="span_show_more">Hiển thị thêm tin</span>
                                             </div>
-                                            <div class="hide_show_content">
-                                                <p class="hide_show_text">Xem thêm</p>
-                                                <div class="list_img_arrow">
-                                                    <img src="/images/arrow.svg" alt="xem thêm">
-                                                    <img src="/images/arrow.svg" alt="xem thêm">
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <?php if (isset($content_cate) && $content_cate != '') { ?>
+                                        <div class="blog_content">
+                                            <div class="left_detail">
+                                                <div class="content_blog" id="content_blog">
+                                                    <?= $content_cate ?>
+                                                </div>
+                                                <div class="hide_show_content">
+                                                    <p class="hide_show_text">Xem thêm</p>
+                                                    <div class="list_img_arrow">
+                                                        <img src="/images/arrow.svg" alt="xem thêm">
+                                                        <img src="/images/arrow.svg" alt="xem thêm">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <?php } ?>
-                                </td>
-                            </tr>
-                        </table>
+                                        <?php } ?>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <?php include('includes/sidebar.php') ?>

@@ -1,5 +1,5 @@
 .content {
-    padding-top: 155px;
+    padding-top: 140px;
     background: #fff;
 }
 
@@ -11,7 +11,7 @@
 .content_about {
     margin: auto;
     margin-top: 0px;
-    padding: 30px 70px 20px 70px;
+    padding: 0px 70px 20px 70px;
 }
 
 .this_breadcrumb {
@@ -22,7 +22,7 @@
 }
 
 .breadcrumb p,
-.breadcrumb span {
+.breadcrumb span, .breadcrumb a {
     font-size: 13px;
     line-height: 20px;
     color: #999;
@@ -32,8 +32,6 @@
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 30px;
-    padding-right: 15px;
-    padding-left: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -248,18 +246,13 @@
 
 
 .load_more {
-    width: max-content;
+    width: 100%;
     position: relative;
-    background: linear-gradient(90deg, #cc0355 0, #5447a4 0, #ea003a 100%);
-    padding: 1px;
-    border-radius: 35px;
-    margin: 20px auto 0;
 }
 
 .div_bgr_load {
     background: #fff;
-    padding: 6px 15px 7px 10px;
-    border-radius: 35px;
+    padding: 6px 19px;
     color: #333;
     display: block;
     cursor: pointer;
@@ -383,6 +376,7 @@ a.H4abc {
     position: relative;
     overflow: hidden;
     height: 70px;
+    padding: 0 10px;
 }
 
 .content_blog:before {
@@ -433,9 +427,32 @@ a.H4abc {
 .content_blog a:hover {
     background: #7be2af;
 }
-
-.blog_content {
-    /* margin-top: 20px; */
+.table_bot {
+    margin-top: 30px;
+    padding: 1px;
+    background: linear-gradient(90deg, #cc0355 0, #5447a4 0, #ea003a 100%);
+}
+.table_bot table {
+    background: #fff;
+}
+.btn_heading {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #cc0355 0, #5447a4 0, #ea003a 100%);
+    padding-bottom: 1px;
+}
+.btn_heading th {
+    background: #fff;
+}
+.btn_heading .heading_table {
+    width: 80%;
+    align-items: center;
+    display: flex;
+}
+.btn_heading h1 {
+    font-weight: 700;
+    color: #533c94;
+    margin: auto;   
 }
 
 @media only screen and (max-width: 1024px) {
