@@ -23,7 +23,7 @@
 .breadcrumb span {
     margin-bottom: 0;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 24px;
     text-align: center;
     color: #808EA1;
@@ -77,7 +77,7 @@ h6 p {
 }
 .breadcrumb a {
     color: #808EA1;
-    font-size: 15px;
+    font-size: 13px;
 }
 .link_breadcrumb {
     font-weight: 400;
@@ -555,6 +555,9 @@ td:first-child {
 }
 
 @media only screen and (max-width: 540px) {
+    .breadcrumb {
+        flex-wrap: wrap;
+    }
     .main_content_blog {
         display: flex;
         flex-direction: column;
@@ -565,10 +568,14 @@ td:first-child {
         width: 100%;
         margin-top: 0;
     }
+    .breadcrumb {
+        gap: 5px;
+    }
 
     .breadcrumb p,
     .breadcrumb span {
         margin-bottom: 0;
+        text-align: justify;
     }
 
     .container_widget_about {

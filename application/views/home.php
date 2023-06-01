@@ -325,7 +325,7 @@
                 </div>
               </div>
               <div class="content_tabs_right">
-                <!-- <img src="/images/icons/img_content_tabs.png" alt="ảnh nội dung tabs"> -->
+                <img src="/images/img_all_tabs/bg_boxgame_5.png" alt="ảnh nội dung tabs">
               </div>
             </div>
 

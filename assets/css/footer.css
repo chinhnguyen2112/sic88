@@ -200,12 +200,14 @@
 }
 
 @media only screen and (max-width: 540px) {
-	.item_ft02,
 	.item_ft03 {
 		width: 100%;
 		padding-bottom: 20px;
 	}
-
+	.item_ft02 {
+		width: 100%;
+		padding: 0;
+	}
 	.footer_btn {
 		display: block;
 		position: fixed;
