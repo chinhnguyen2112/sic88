@@ -136,7 +136,7 @@
         <div class="box_content">
             <ul>
                 <?php foreach ($blog_new as $key => $val) {
-                    if ($key > 0 && $key < 5) { ?>
+                    if ($key > 0 && $key < 7) { ?>
                         <li class="item_hot_news">
                             <a href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
                         </li>
