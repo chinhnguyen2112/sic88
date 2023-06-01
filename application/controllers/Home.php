@@ -72,6 +72,7 @@ class Home extends CI_Controller
             $chuyenmuc_parent = $this->Madmin->get_by(['id' => $chuyenmuc['parent']], 'category');
             $title_page = $chuyenmuc['name'];
             $data['cate'] = $chuyenmuc['name'];
+            $data['meta_title'] = $chuyenmuc['meta_title'];
             if ($chuyenmuc_parent != null) {
                 $cate_parent = $this->Madmin->query_sql_row("SELECT id,alias,name,parent  FROM category  WHERE name = '{$chuyenmuc_parent['name']}' ");
                 $data['cate_1'] = $cate_parent;
