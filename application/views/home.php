@@ -163,7 +163,7 @@
               <div class="content_tabs_left">
                 <div class="heading_content">
                   <h3 class="title_content">Đánh bài Việt Nam</h3>
-
+                  <hr>
                 </div>
                 <div class="content_tabs">
                   <p>Game đánh bài online Sic88 – Sự lựa chọn tuyệt vời dành cho những ai đang muốn
@@ -197,7 +197,7 @@
               <div class="content_tabs_left">
                 <div class="heading_content">
                   <h3 class="title_content">CASINO VIỆT NAM</h3>
-
+                  <hr>
                 </div>
                 <div class="content_tabs">
                   <p>Với thời đại 4.0 như hiện nay thì có thể nói Casino online đang trở thành xu
@@ -232,7 +232,7 @@
               <div class="content_tabs_left">
                 <div class="heading_content">
                   <h3 class="title_content">THỂ THAO VIỆT NAM</h3>
-
+                  <hr>
                 </div>
                 <div class="content_tabs">
                   <p>Cá cược thể thao tại Sic88 vô cùng uy tín sẽ tạo cho người chơi những cảm xúc hồi
@@ -266,7 +266,7 @@
               <div class="content_tabs_left">
                 <div class="heading_content">
                   <h3 class="title_content">TRÒ CHƠI DÂN GIAN VIỆT NAM</h3>
-
+                  <hr>
                 </div>
                 <div class="content_tabs">
                   <p>Tại Sic88 chúng tôi có những tựa game dân gian vô cùng ấn tượng mà không phải nhà
@@ -299,7 +299,7 @@
               <div class="content_tabs_left">
                 <div class="heading_content">
                   <h3 class="title_content">NỔ HŨ VIỆT NAM</h3>
-
+                  <hr>
                 </div>
                 <div class="content_tabs">
                   <p>Sic88 tự hào là một trong những nhà cái cung cấp các game nổ hũ uy tín nhất hiện
@@ -315,10 +315,11 @@
                     toán bằng nhiều hình thức khác nhau.</p>
                 </div>
                 <div class="all_icons">
-                  <!-- <img class="icon_game" src="/images/icons/icon_game01.png" alt="icons game bài 01">
-                  <img class="icon_game" src="/images/icons/icon_game02.png" alt="icons game bài 02">
-                  <img class="icon_game" src="/images/icons/icon_game03.png" alt="icons game bài 03">
-                  <img class="icon_game" src="/images/icons/icon_game04.png" alt="icons game bài 04"> -->
+                  <img class="icon_game" src="/images/img_all_tabs/no-hu-1.png" alt="icons game bài 01">
+                  <img class="icon_game" src="/images/img_all_tabs/no-hu-2.png" alt="icons game bài 02">
+                  <img class="icon_game" src="/images/img_all_tabs/no-hu-3.png" alt="icons game bài 03">
+                  <img class="icon_game" src="/images/img_all_tabs/no-hu-4.png" alt="icons game bài 04">
+                  <img class="icon_game" src="/images/img_all_tabs/no-hu-5.png" alt="icons game bài 05">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
@@ -333,7 +334,7 @@
               <div class="content_tabs_left">
                 <div class="heading_content">
                   <h3 class="title_content">ĐÁ GÀ VIỆT NAM</h3>
-
+                  <hr>
                 </div>
                 <div class="content_tabs">
                   <p>Đá gà online hay đá gà trực tuyến là 1 hình thức cá độ đá gà mới xuất hiện vài
