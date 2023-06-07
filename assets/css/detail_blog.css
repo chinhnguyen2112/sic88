@@ -230,6 +230,7 @@ figcaption {
 }
 
 .list_mucluc {
+    display: none;
     margin-bottom: 8px;
 }
 
