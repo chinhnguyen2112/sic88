@@ -37,7 +37,10 @@
                 <div class="sapo"> <?= $blog['sapo'] ?></div>
                 <div class="right_detail">
                     <div class="mucluc_blog" id="mucluc_blog">
-                        <p class="title_mucluc" id="title_mucluc">Mục lục [<span class="show_ml">show</span>]</p>
+                        <div class="box_title_ml">
+                            <p class="title_mucluc" id="title_mucluc"><img class="img_ml" src="/images/icons/mucluc.png" alt="mục lục"> Mục lục</p>
+                            <img src="/images/arrow.svg" class="img_show_ml" alt="mục lục">
+                        </div>
                         <ul class="list_mucluc" id="list_mucluc">
 
                         </ul>

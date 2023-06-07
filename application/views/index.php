@@ -49,6 +49,34 @@
 
     gtag('config', 'G-TLM6YYLXM8');
   </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sic88",
+      "alternateName": "Nhà Cái Sic88",
+      "url": "https://sic88.org/",
+      "logo": "https://sic88.org/images/Logo_sic88.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "",
+        "contactType": "",
+        "areaServed": "VN",
+        "availableLanguage": ["en", "Vietnamese"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/sic88org",
+        "https://twitter.com/sic88org",
+        "https://www.instagram.com/sic88org/",
+        "https://www.youtube.com/@sic88org/about",
+        "https://www.linkedin.com/in/sic88org/",
+        "https://www.pinterest.com/sic88org/",
+        "https://sic88org.tumblr.com/",
+        "https://github.com/sic88org",
+        "https://sic88.org/"
+      ]
+    }
+  </script>
 </head>
 
 <body>
