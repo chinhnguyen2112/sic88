@@ -179,10 +179,10 @@
                     ngay tại đây.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game icon_game_small" src="/images/icons/icon_game01.png" alt="icons game bài 01">
-                  <img class="icon_game icon_game_small" src="/images/icons/icon_game02.png" alt="icons game bài 02">
-                  <img class="icon_game icon_game_small" src="/images/icons/icon_game03.png" alt="icons game bài 03">
-                  <img class="icon_game icon_game_small" src="/images/icons/icon_game04.png" alt="icons game bài 04">
+                  <img class="icon_game icon_game_small" src="/images/img_all_tabs/gamebai_01.png" alt="icons game bài 01">
+                  <img class="icon_game icon_game_small" src="/images/img_all_tabs/gamebai_02.png" alt="icons game bài 02">
+                  <img class="icon_game icon_game_small" src="/images/img_all_tabs/gamebai_03.png" alt="icons game bài 03">
+                  <img class="icon_game icon_game_small" src="/images/img_all_tabs/gamebai_04.png" alt="icons game bài 04">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
@@ -213,11 +213,10 @@
                     bạn có thể chơi bất kỳ trò nào mà bạn muốn.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game" src="/images/img_all_tabs/casino-1.png" alt="icons casino 01">
-                  <img class="icon_game" src="/images/img_all_tabs/casino-2.png" alt="icons casino 02">
-                  <img class="icon_game" src="/images/img_all_tabs/casino-3.png" alt="icons casino 03">
-                  <img class="icon_game" src="/images/img_all_tabs/casino-4.png" alt="icons casino 04">
-                  <img class="icon_game" src="/images/img_all_tabs/casino-5.png" alt="icons casino 05">
+                  <img class="icon_game" src="/images/img_all_tabs/casino_01.png" alt="icons casino 01">
+                  <img class="icon_game" src="/images/img_all_tabs/casino_02.png" alt="icons casino 02">
+                  <img class="icon_game" src="/images/img_all_tabs/casino_03.png" alt="icons casino 03">
+                  <img class="icon_game" src="/images/img_all_tabs/casino_04.png" alt="icons casino 04">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
@@ -247,11 +246,10 @@
                     người chơi hiện hữu và có cả chính sách ưu đãi cho các đại lý.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game" src="/images/img_all_tabs/the-thao-1.png" alt="icons thể thao 01">
-                  <img class="icon_game" src="/images/img_all_tabs/the-thao-2.png" alt="icons thể thao 02">
-                  <img class="icon_game" src="/images/img_all_tabs/the-thao-3.png" alt="icons thể thao 03">
-                  <img class="icon_game" src="/images/img_all_tabs/the-thao-4.png" alt="icons thể thao 04">
-                  <img class="icon_game" src="/images/img_all_tabs/the-thao-5.png" alt="icons thể thao 05">
+                  <img class="icon_game" src="/images/img_all_tabs/thethao_01.png" alt="icons thể thao 01">
+                  <img class="icon_game" src="/images/img_all_tabs/thethao_02.png" alt="icons thể thao 02">
+                  <img class="icon_game" src="/images/img_all_tabs/thethao_03.png" alt="icons thể thao 03">
+                  <img class="icon_game" src="/images/img_all_tabs/thethao_04.png" alt="icons thể thao 04">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
@@ -315,11 +313,11 @@
                     toán bằng nhiều hình thức khác nhau.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game" src="/images/img_all_tabs/no-hu-1.png" alt="icons game bài 01">
-                  <img class="icon_game" src="/images/img_all_tabs/no-hu-2.png" alt="icons game bài 02">
-                  <img class="icon_game" src="/images/img_all_tabs/no-hu-3.png" alt="icons game bài 03">
-                  <img class="icon_game" src="/images/img_all_tabs/no-hu-4.png" alt="icons game bài 04">
-                  <img class="icon_game" src="/images/img_all_tabs/no-hu-5.png" alt="icons game bài 05">
+                  <img class="icon_game" src="/images/img_all_tabs/nohu_01.png" alt="icons game bài 01">
+                  <img class="icon_game" src="/images/img_all_tabs/nohu_02.png" alt="icons game bài 02">
+                  <img class="icon_game" src="/images/img_all_tabs/nohu_03.png" alt="icons game bài 03">
+                  <img class="icon_game" src="/images/img_all_tabs/nohu_04.png" alt="icons game bài 04">
+                  <img class="icon_game" src="/images/img_all_tabs/nohu_05.png" alt="icons game bài 05">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>
@@ -348,8 +346,10 @@
                     cược online thì cập nhật tài khoản sẽ giúp bạn có khả năng thắng cược.</p>
                 </div>
                 <div class="all_icons">
-                  <img class="icon_game" src="/images/img_all_tabs/da-ga-1.png" alt="icons đá gà 01">
-                  <img class="icon_game" src="/images/img_all_tabs/da-ga-2.png" alt="icons đá gà 02">
+                  <img class="icon_game" src="/images/img_all_tabs/daga_01.png" alt="icons đá gà 01">
+                  <img class="icon_game" src="/images/img_all_tabs/daga_02.png" alt="icons đá gà 02">
+                  <img class="icon_game" src="/images/img_all_tabs/daga_03.png" alt="icons đá gà 03">
+                  <img class="icon_game" src="/images/img_all_tabs/daga_04.png" alt="icons đá gà 04">
                 </div>
                 <div class="btn_join">
                   <a href="#">Tham gia ngay</a>

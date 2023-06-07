@@ -166,15 +166,6 @@ figcaption {
     font-weight: 400;
     line-height: 20px;
 }
-
-.line_blog {
-    border-top: 2px solid #f4aa1c;
-    width: 100%;
-    margin: 30px 0;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(33.37deg, #77B955 0%, #008DC3 80.14%);
-}
-
 .list_blog_same {
     display: flex;
     gap: 25px;
@@ -660,9 +651,4 @@ td:first-child {
         line-height: 1.5;
         margin: 0;
     }
-
-    .line_blog {
-        margin: 10px 0;
-    }
-
 }
