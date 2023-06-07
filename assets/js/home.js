@@ -45,6 +45,14 @@ if (width > 540) {
   val = 2;
 }
 
+$('.slider_all_game').slick({
+	autoplay:true,
+	autoplaySpeed: 2000,
+	arrows:true,
+	centerMode:true,
+	slidesToShow:4,
+});
+
 
 $(".name_tabs").click(function () {
   var id = $(this).data("id");
