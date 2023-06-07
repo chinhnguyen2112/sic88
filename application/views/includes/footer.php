@@ -93,17 +93,32 @@ if (count($menu_cate_parent) > 2) {
                         <a href="/dang-nhap-sic88/">Đăng nhập SIC88</a>
                     </li>
                 </ul>
+            </div>
+        </div>
+        <div class="bot_footer">
+            <div class="item_ft_04">
                 <div class="div_dmca">
                     <a
                         href="https://www.dmca.com/Protection/Status.aspx?ID=edfe211c-add0-4955-8a3c-0b6973cd7020&amp;refurl=https://sic88.org/"><img
                             src="https://images.dmca.com/Badges/_dmca_premi_badge_2.png?ID=edfe211c-add0-4955-8a3c-0b6973cd7020"
                             alt="DMCA.com Protection Status"></a>
                 </div>
+                <div class="text_item_04">
+                    <p>SIC88 hoạt động hợp pháp tại Phillppines được giám sát bởi tổ chức Gaming Associates.</p>
+                    <p class="coppy_right">Coppyright © SIC88 Reserved</p>
+                </div>
+            </div>
+            <div class="item_ft_04">
+                <div class="img_item_04">
+                    <img class="icon_18" src="/images/icons/icon_18.png" alt="icon 18">
+                    <img src="/images/icons/icon_stop.png" alt="icon stop">
+                </div>
+                <div class="text_item_04">
+                    <p>Chúng tôi tích cực đẩy mạnh cá cược có trách nhiệm và cương quyết từ chối trẻ vị thành niên
+                        sử dụng phần mềm của chúng tôi để cá cược trên mạng.</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="coppy_right">
-        <p class="text_cr">© 2023 - SIC88. All Rights Reserved.</p>
     </div>
     <div class="back_to_top">
         <a id="btn_to_top" class="btn_to_top">

@@ -77,7 +77,6 @@
                         </div>
                     </div>
                 <?php } ?>
-                <div class="line_blog"></div>
             </div>
             <?php include('includes/sidebar.php') ?>
         </div>

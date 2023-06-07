@@ -1010,6 +1010,7 @@
 	.all_icons {
 		justify-content: space-between;
 		flex-wrap: wrap;
+		gap: 30px;
 	}
 	.content_tabs_right {
 		display: none;
