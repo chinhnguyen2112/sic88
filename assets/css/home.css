@@ -847,11 +847,13 @@
 	}
 
 	/* how regis  */
+	.how_regis {
+		display: none;
+	}
 	.how_content {
 		margin-top: 20px;
 		display: flex;
 		flex-direction: row-reverse;
-		display: none;
 	}
 
 	.all_item_how {
