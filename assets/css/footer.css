@@ -291,10 +291,6 @@
 	.btn_ft_login {
 		background-color: #5cb85c;
 	}
-  .div_dmca {
-    margin: 15px auto;
-  }
-
 	.back_to_top {
 		display: none;
 	}
@@ -305,13 +301,16 @@
 		border-top: 1px solid #fff;
 	}
 	.item_ft_04 {
-		padding-top: 10px;
+		padding-top: 15px;
 		display: flex;
 		flex-direction: column;
 		width: 49%;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: center;
 		border-right: 1px solid #fff;
+	}
+	.div_dmca img {
+		width: 35px;
 	}
 	.img_item_04 {
 		margin-right: 0;
