@@ -153,7 +153,7 @@
     border-top: 1px solid #fff;
 }
 .item_ft_04 {
-	padding-top: 10px;
+	padding: 10px;
 	display: flex;
 	width: 50%;
 	justify-content: space-between;
@@ -173,8 +173,9 @@
     height: 35px;
 }
 .icon_18 {
-    width: 50px !important;
-    height: 50px !important;
+	margin-right: 10px;
+    width: 40px !important;
+    height: 40px !important;
 }
 .text_item_04 {
 	text-align: left;
@@ -227,6 +228,9 @@
 
 	.item_ft03 {
 		width: 35%;
+	}
+	.text_item_04 {
+		width: 75%;
 	}
 
 	.footer_btn {
@@ -337,8 +341,11 @@
 		width: 100%;
 	}
 	.icon_18 {
-		width: 65px !important;
-		height: 65px !important;
+		width: 50px !important;
+		height: 50px !important;
+	}
+	.list_guide .item_game_ft {
+		width: 100%;
 	}
 	.img_item_04 img {
 		width: 45px;
