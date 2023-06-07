@@ -318,17 +318,15 @@ body {
 	}
 
 	.sub_menu {
-		position: static;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		transition: 0.5s;
-		height: 0px;
-		background: #fff;
+		display: none;
+		background: unset;
+		height: auto !IMPORTANT;
+		position: unset;
+		box-shadow: unset;
 	}
 
 	.sub_menu p {
-		width: 100px;
+		width: 100%;
 		text-align: left;
 	}
 
@@ -386,6 +384,7 @@ body {
 		width: 100%;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		align-items: flex-start;
 	}
 
 	.another_item_menu {

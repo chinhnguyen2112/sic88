@@ -242,6 +242,9 @@
 	.footer_width {
 		padding: 20px 25px 60px 25px;
 	}
+	.logo_ft img {
+		width: 100%;
+	}
 	.item_ft02 {
 		width: 100%;
 		padding: 0;
@@ -301,7 +304,7 @@
 		border-top: 1px solid #fff;
 	}
 	.item_ft_04 {
-		padding-top: 15px;
+		padding: 15px 0 0;
 		display: flex;
 		flex-direction: column;
 		width: 49%;
@@ -332,6 +335,14 @@
 	.item_ft_04 {
 		width: 100%;
 		border: none;
+		flex-direction: row;
+	}
+	.div_dmca img {
+		width: 45px;
+	}
+	.img_item_04 {
+		flex-direction: column;
+		gap: 10px;
 	}
 	.item_game_ft {
 		width: 100%;
@@ -349,6 +360,9 @@
 	.img_item_04 img {
 		width: 45px;
 		height: 45px;
+	}
+	.text_item_04 {
+		width: 80%;
 	}
 	.div_dmca {
 		width: max-content;

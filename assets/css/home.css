@@ -7,6 +7,9 @@
 	background: #fff;
 	margin: auto;
 }
+.slide_game, .xoso_lode {
+	display: none;
+}
 
 .banner {
 	width: 100%;
@@ -108,6 +111,7 @@
 	text-align: center;
 	margin: 50px 0;
 	padding: 0 150px;
+	display: none;
 }
 
 .title_how h1 {
@@ -206,7 +210,7 @@
 /* all_tabs  */
 .all_tabs {
 	height: max-content;
-	margin: auto;
+	margin: 20px auto;
 	padding: 0 150px;
 	/* background-image: url(/images/icons/bg_all_tabs.png); */
 }
@@ -789,6 +793,12 @@
 }
 
 @media only screen and (max-width: 540px) {
+	.three_step, .qr_app, .all_infor {
+		display: none;
+	}
+	.slide_game, .xoso_lode {
+		display: block;
+	}
 	.container {
 		width: 100%;
 		margin-bottom: 20px;
@@ -887,15 +897,64 @@
 		display: none;
 	}
 
+	/* slide game  */
+	.slide_game .slick-list {
+		padding: 0 !important;
+	}
+	.slider_all_game {
+		background: #2a5b84;
+		border-radius: 10px;
+		margin: 10px 10px 0px;
+		padding: 10px 0px;
+	}
+	
+	.item_slide {
+		align-items: center;
+		text-align: center;
+	}
+	.item_slide img {
+		margin: auto;
+	}
+	.item_slide p {
+		color: #fff;
+		font-size: 14px;
+		line-height: 14px;
+		width: max-content;
+		margin: 8px auto 0;
+	}
+
+	/* xổ số lô đề  */
+	.xoso_lode {
+		width: 100%;
+		margin: auto;
+	}
+	.xoso_content {
+		flex-direction: column;
+		background: #f1f1f1 !important;
+		border-radius: 5px !important;
+		padding: 10px 15px;
+		margin: 15px 10px 0 10px;	
+	}
+	.item_all_icons {
+		text-align: center;
+	}
+	.item_all_icons p {
+		margin-top: 10px;
+		font-size: 13px;
+		color: #000;
+	}
+
 	/* tabs  */
 	.all_tabs {
 		width: 100%;
 		padding: 0;
 		height: max-content;
+		margin: 0;
 	}
 
 	.title_all_tabs {
 		padding-left: 20px;
+		display: none;
 	}
 
 	.title_all_tabs h2 {
@@ -905,7 +964,7 @@
 	.tabs_content {
 		flex-direction: column;
 		justify-content: center;
-		padding: 20px 0;
+		padding:0;
 	}
 
 	.tabs {
@@ -933,9 +992,9 @@
 	}
 
 	.right_tabs {
-		width: 90%;
+		width: 100%;
 		padding-left: 0;
-		margin: auto;
+		margin: 0 10px;
 	}
 
 	.tabs_item {
@@ -947,6 +1006,9 @@
 	}
 	.item_02, .item_03, .item_04, .item_05, .item_06 {
 		display: block !important;
+	}
+	.item_05 .all_icons {
+		gap: 20px;
 	}
 	.heading_content {
 		display: flex;
@@ -1010,7 +1072,7 @@
 	.all_icons {
 		justify-content: space-between;
 		flex-wrap: wrap;
-		gap: 30px;
+		gap: 0;
 	}
 	.content_tabs_right {
 		display: none;
