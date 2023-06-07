@@ -111,7 +111,6 @@
 	text-align: center;
 	margin: 50px 0;
 	padding: 0 150px;
-	display: none;
 }
 
 .title_how h1 {
@@ -852,6 +851,7 @@
 		margin-top: 20px;
 		display: flex;
 		flex-direction: row-reverse;
+		display: none;
 	}
 
 	.all_item_how {
