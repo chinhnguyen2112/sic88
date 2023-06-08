@@ -368,6 +368,13 @@
 	gap: 10px;
 	justify-content: space-evenly;
 }
+.all_icons a {
+	transition: all .5s ease-in-out;
+}
+.all_icons a:hover {
+	transform: scale(1.1);
+		transition: .5s;
+}
 
 .all_icons .icon_game {
 	width: 80px;
