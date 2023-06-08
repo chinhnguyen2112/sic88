@@ -17,27 +17,27 @@
 
         <div class="slide_game">
             <div class="slider_all_game">
-                <a class="item_slide" href="/xo-so/" rel=”nofollow”>
+                <a class="item_slide" href="/xo-so/" rel="nofollow">
                   <img src="/images/icons/slider_game/game_slider_01.png" alt="icon xổ số">
                   <p>XỔ SỐ</p>
                 </a>
-                <a class="item_slide" href="/game-bai/" rel=”nofollow”>
+                <a class="item_slide" href="/game-bai/" rel="nofollow">
                   <img src="/images/icons/slider_game/game_slider_01.png" alt="icon đánh bài">
                   <p>ĐÁNH BÀI</p>
                 </a>
-                <a class="item_slide" href="/casino-online/" rel=”nofollow”>
+                <a class="item_slide" href="/casino-online/" rel="nofollow">
                   <img src="/images/icons/slider_game/game_slider_02.png" alt="icon casino">
                   <p>CASINO</p>
                 </a>
-                <a class="item_slide" href="/the-thao/" rel=”nofollow”>
+                <a class="item_slide" href="/the-thao/" rel="nofollow">
                   <img src="/images/icons/slider_game/game_slider_03.png" alt="icon thể thao">
                   <p>THỂ THAO</p>
                 </a>
-                <a class="item_slide" href="/game-dan-gian/" rel=”nofollow”>
+                <a class="item_slide" href="/game-dan-gian/" rel="nofollow">
                   <img src="/images/icons/slider_game/game_slider_04.png" alt="icon dân gian">
                   <p>DÂN GIAN</p>
                 </a>
-                <a class="item_slide" href="/no-hu/" rel=”nofollow”>
+                <a class="item_slide" href="/no-hu/" rel="nofollow">
                   <img src="/images/icons/slider_game/game_slider_05.png" alt="icon nổ hũ">
                   <p>NỔ HŨ</p>
                 </a>
@@ -51,22 +51,22 @@
                 
             </div>
             <div class="all_icons">
-              <a class="item_all_icons" href="#" rel=”nofollow”>
+              <a class="item_all_icons" href="#" rel="nofollow">
                 <img class="icon_game" src="/images/icons/slider_game/xoso_1s.png"
                     alt="icons xổ số lô đề">
                 <p>Siêu Tốc</p>
               </a>
-              <a class="item_all_icons" href="#" rel=”nofollow”>
+              <a class="item_all_icons" href="#" rel="nofollow">
                 <img class="icon_game" src="/images/icons/slider_game/xoso_mb.png"
                     alt="icons xổ số lô đề">
                 <p>Miền Bắc</p>
               </a>
-              <a class="item_all_icons" href="#" rel=”nofollow”>
+              <a class="item_all_icons" href="#" rel="nofollow">
                 <img class="icon_game" src="/images/icons/slider_game/xoso_mn.png"
                     alt="icons xổ số lô đề">
                 <p>Miền Nam</p>
               </a>
-              <a class="item_all_icons" href="#" rel=”nofollow”>
+              <a class="item_all_icons" href="#" rel="nofollow">
                 <img class="icon_game" src="/images/icons/slider_game/xoso_mt.png"
                     alt="icons xổ số lô đề">
                 <p>Miền Trung</p>
@@ -247,22 +247,22 @@
                                         ngay tại đây.</p>
                                 </div>
                                 <div class="all_icons">
-                                  <a href="/tien-len/" rel=”nofollow”>
+                                  <a href="/tien-len/" rel="nofollow">
                                     <img class="icon_game " src="/images/img_all_tabs/gamebai_01.png"
                                         alt="icons game bài 01">
                                     <p>Tiến Lên</p>
                                   </a>
-                                  <a href="/phom-online/" rel=”nofollow”>
+                                  <a href="/phom-online/" rel="nofollow">
                                     <img class="icon_game " src="/images/img_all_tabs/gamebai_02.png"
                                         alt="icons game bài 02">
                                     <p>Tá Lả</p>
                                   </a>
-                                  <a href="/mau-binh/" rel=”nofollow”>
+                                  <a href="/mau-binh/" rel="nofollow">
                                     <img class="icon_game " src="/images/img_all_tabs/gamebai_03.png"
                                         alt="icons game bài 03">
                                     <p>Mậu Binh</p>
                                   </a>
-                                  <a href="/tien-len/" rel=”nofollow”>
+                                  <a href="/tien-len/" rel="nofollow">
                                     <img class="icon_game " src="/images/img_all_tabs/gamebai_04.png"
                                         alt="icons game bài 04">
                                     <p>Cờ Tướng</p>
@@ -371,22 +371,22 @@
                                         24/7 để giúp đỡ các bạn.</p>
                                 </div>
                                 <div class="all_icons">
-                                  <a href="/bau-cua-tom-ca/" rel=”nofollow”>
+                                  <a href="/bau-cua-tom-ca/" rel="nofollow">
                                     <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-1.png"
                                         alt="icons game dân gian 01">
                                     <p>Bầu Tôm</p>
                                   </a>
-                                  <a href="/oan-tu-ti/" rel=”nofollow”>
+                                  <a href="/oan-tu-ti/" rel="nofollow">
                                     <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-2.png"
                                         alt="icons game dân gian 02">
                                     <p>Oẳn Tù Tì</p>
                                   </a>
-                                  <a href="/tai-xiu/" rel=”nofollow”>
+                                  <a href="/tai-xiu/" rel="nofollow">
                                     <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-3.png"
                                         alt="icons game dân gian 03">
                                     <p>Tài Xỉu</p>
                                   </a>
-                                  <a href="/xoc-dia/" rel=”nofollow”>
+                                  <a href="/xoc-dia/" rel="nofollow">
                                     <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-4.png"
                                         alt="icons game dân gian 04">
                                     <p>Xóc Đĩa</p>
@@ -422,27 +422,27 @@
                                         toán bằng nhiều hình thức khác nhau.</p>
                                 </div>
                                 <div class="all_icons">
-                                  <a href="#" rel=”nofollow”>
+                                  <a href="#" rel="nofollow">
                                     <img class="icon_game" src="/images/img_all_tabs/nohu_01.png"
                                         alt="icons nổ hũ 01">
                                       <p>GPI Slot</p>
                                   </a>
-                                  <a href="#" rel=”nofollow”>
+                                  <a href="#" rel="nofollow">
                                     <img class="icon_game" src="/images/img_all_tabs/nohu_02.png"
                                         alt="icons nổ hũ 02">
                                       <p>MGS Slot</p>
                                   </a>
-                                  <a href="#" rel=”nofollow”>
+                                  <a href="#" rel="nofollow">
                                     <img class="icon_game" src="/images/img_all_tabs/nohu_03.png"
                                         alt="icons nổ hũ 03">
                                       <p>PP Slots</p>
                                   </a>
-                                  <a href="#" rel=”nofollow”>
+                                  <a href="#" rel="nofollow">
                                     <img class="icon_game" src="/images/img_all_tabs/nohu_04.png"
                                         alt="icons nổ hũ 04">
                                       <p>Sexy Slot</p>
                                   </a>
-                                  <a href="#" rel=”nofollow”>
+                                  <a href="#" rel="nofollow">
                                     <img class="icon_game" src="/images/img_all_tabs/nohu_05.png"
                                         alt="icons nổ hũ 05">
                                       <p>PT Slot</p>
@@ -475,19 +475,19 @@
                                         cược online thì cập nhật tài khoản sẽ giúp bạn có khả năng thắng cược.</p>
                                 </div>
                                 <div class="all_icons">
-                                  <a href="/da-ga-truc-tiep/" rel=”nofollow”>
+                                  <a href="/da-ga-truc-tiep/" rel="nofollow">
                                     <img class="icon_game" src="/images/img_all_tabs/daga_01.png" alt="icons đá gà 01">
                                     <p>Đá Gà</p>
                                   </a>
-                                  <a href="#" rel=”nofollow”>
+                                  <a href="#" rel="nofollow">
                                     <img class="icon_game" src="/images/img_all_tabs/daga_02.png" alt="icons đá gà 01">
                                     <p>Đá Gà 3D</p>
                                   </a>
-                                  <a href="#" rel=”nofollow”>
+                                  <a href="#" rel="nofollow">
                                     <img class="icon_game" src="/images/img_all_tabs/daga_03.png" alt="icons đá gà 01">
                                     <p>Đua Chó</p>
                                   </a>
-                                  <a href="#" rel=”nofollow”>
+                                  <a href="#" rel="nofollow">
                                     <img class="icon_game" src="/images/img_all_tabs/daga_04.png" alt="icons đá gà 01">
                                     <p>Đua Ngựa</p>
                                   </a>
