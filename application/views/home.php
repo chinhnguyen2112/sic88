@@ -247,14 +247,26 @@
                                         ngay tại đây.</p>
                                 </div>
                                 <div class="all_icons">
-                                    <img class="icon_game icon_game_small" src="/images/img_all_tabs/gamebai_01.png"
+                                  <a href="/tien-len/">
+                                    <img class="icon_game " src="/images/img_all_tabs/gamebai_01.png"
                                         alt="icons game bài 01">
-                                    <img class="icon_game icon_game_small" src="/images/img_all_tabs/gamebai_02.png"
+                                    <p>Tiến Lên</p>
+                                  </a>
+                                  <a href="/phom-online/">
+                                    <img class="icon_game " src="/images/img_all_tabs/gamebai_02.png"
                                         alt="icons game bài 02">
-                                    <img class="icon_game icon_game_small" src="/images/img_all_tabs/gamebai_03.png"
+                                    <p>Tá Lả</p>
+                                  </a>
+                                  <a href="/mau-binh/">
+                                    <img class="icon_game " src="/images/img_all_tabs/gamebai_03.png"
                                         alt="icons game bài 03">
-                                    <img class="icon_game icon_game_small" src="/images/img_all_tabs/gamebai_04.png"
+                                    <p>Mậu Binh</p>
+                                  </a>
+                                  <a href="/tien-len/">
+                                    <img class="icon_game " src="/images/img_all_tabs/gamebai_04.png"
                                         alt="icons game bài 04">
+                                    <p>Cờ Tướng</p>
+                                  </a>
                                 </div>
                                 <div class="btn_join">
                                     <a href="#">Tham gia ngay</a>
@@ -359,14 +371,27 @@
                                         24/7 để giúp đỡ các bạn.</p>
                                 </div>
                                 <div class="all_icons">
+                                  <a href="/bau-cua-tom-ca/">
                                     <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-1.png"
                                         alt="icons game dân gian 01">
+                                    <p>Bầu Tôm</p>
+                                  </a>
+                                  <a href="/oan-tu-ti/">
                                     <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-2.png"
                                         alt="icons game dân gian 02">
+                                    <p>Oẳn Tù Tì</p>
+                                  </a>
+                                  <a href="/tai-xiu/">
                                     <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-3.png"
                                         alt="icons game dân gian 03">
+                                    <p>Tài Xỉu</p>
+                                  </a>
+                                  <a href="/xoc-dia/">
                                     <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-4.png"
                                         alt="icons game dân gian 04">
+                                    <p>Xóc Đĩa</p>
+                                  </a>
+                                    
                                 </div>
                                 <div class="btn_join">
                                     <a href="#">Tham gia ngay</a>
@@ -397,16 +422,31 @@
                                         toán bằng nhiều hình thức khác nhau.</p>
                                 </div>
                                 <div class="all_icons">
+                                  <a href="#">
                                     <img class="icon_game" src="/images/img_all_tabs/nohu_01.png"
-                                        alt="icons game bài 01">
+                                        alt="icons nổ hũ 01">
+                                      <p>GPI Slot</p>
+                                  </a>
+                                  <a href="#">
                                     <img class="icon_game" src="/images/img_all_tabs/nohu_02.png"
-                                        alt="icons game bài 02">
+                                        alt="icons nổ hũ 02">
+                                      <p>MGS Slot</p>
+                                  </a>
+                                  <a href="#">
                                     <img class="icon_game" src="/images/img_all_tabs/nohu_03.png"
-                                        alt="icons game bài 03">
+                                        alt="icons nổ hũ 03">
+                                      <p>PP Slots</p>
+                                  </a>
+                                  <a href="#">
                                     <img class="icon_game" src="/images/img_all_tabs/nohu_04.png"
-                                        alt="icons game bài 04">
+                                        alt="icons nổ hũ 04">
+                                      <p>Sexy Slot</p>
+                                  </a>
+                                  <a href="#">
                                     <img class="icon_game" src="/images/img_all_tabs/nohu_05.png"
-                                        alt="icons game bài 05">
+                                        alt="icons nổ hũ 05">
+                                      <p>PT Slot</p>
+                                  </a>
                                 </div>
                                 <div class="btn_join">
                                     <a href="#">Tham gia ngay</a>
@@ -435,10 +475,22 @@
                                         cược online thì cập nhật tài khoản sẽ giúp bạn có khả năng thắng cược.</p>
                                 </div>
                                 <div class="all_icons">
+                                  <a href="/da-ga-truc-tiep/">
                                     <img class="icon_game" src="/images/img_all_tabs/daga_01.png" alt="icons đá gà 01">
-                                    <img class="icon_game" src="/images/img_all_tabs/daga_02.png" alt="icons đá gà 02">
-                                    <img class="icon_game" src="/images/img_all_tabs/daga_03.png" alt="icons đá gà 03">
-                                    <img class="icon_game" src="/images/img_all_tabs/daga_04.png" alt="icons đá gà 04">
+                                    <p>Đá Gà</p>
+                                  </a>
+                                  <a href="#">
+                                    <img class="icon_game" src="/images/img_all_tabs/daga_02.png" alt="icons đá gà 01">
+                                    <p>Đá Gà 3D</p>
+                                  </a>
+                                  <a href="#">
+                                    <img class="icon_game" src="/images/img_all_tabs/daga_03.png" alt="icons đá gà 01">
+                                    <p>Đua Chó</p>
+                                  </a>
+                                  <a href="#">
+                                    <img class="icon_game" src="/images/img_all_tabs/daga_04.png" alt="icons đá gà 01">
+                                    <p>Đua Ngựa</p>
+                                  </a>
                                 </div>
                                 <div class="btn_join">
                                     <a href="#">Tham gia ngay</a>
