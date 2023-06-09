@@ -397,9 +397,17 @@ body {
 		margin-right: 0;
 		flex-direction: column;
 		height: auto;
+		border-bottom: 1px solid #eee;
+		width: 50%;
+		text-align: center;
+		z-index: 3;
 	}
 	.all_item_menu .item_menu:last-child {
 		width: 100%;
+		display: block;
+	}
+	.all_item_menu .item_menu:last-child span {
+		width: 50%;
 	}
 	.another_item_menu .item_menu {
 		margin-left: 0;
@@ -416,12 +424,6 @@ body {
 		line-height: 24px;
 	}
 
-	.item_menu {
-		width: 50%;
-		text-align: center;
-		z-index: 3;
-	}
-
 	.item_menu a {
 		font-weight: 400;
 		font-size: 16px;
@@ -429,7 +431,6 @@ body {
 		display: block;
 		margin: auto;
 		color: #fff !important;
-		border-bottom: 1px solid #eee;
 		padding: 15px 10px;
 	}
 	.item_menu .img_arrow {
