@@ -182,15 +182,16 @@
         <label class="label" for="name">Chuyên mục</label>
         <select name="category" id="category" class="form-control">
             <?php
-            $chuyenmuc = chuyen_muc(['level !=' => 1]);
-            foreach ($chuyenmuc as $key => $val) {
-                $name = $val['name'];
-                if ($val['parent'] > 0) {
-                    $cate_parent = chuyen_muc(['id' => $val['parent']]);
-                    $name = $cate_parent[0]['name'] . ' - ' . $val['name'];
-                } ?>
-                <option <?= (isset($blog) &&  $blog['chuyenmuc'] == $val['id']) ? 'selected' : '' ?> value="<?= $val['id'] ?>"><?= $name ?></option>
-            <?php } ?>
+            $chuyenmuc = chuyen_muc(['parent' => 0]);
+            foreach ($chuyenmuc as $key => $val) { ?>
+                <option <?= (isset($blog) &&  $blog['chuyenmuc'] == $val['id']) ? 'selected' : '' ?> value="<?= $val['id'] ?>"><?= $val['name'] ?></option>
+                <?php
+                $cate_child = chuyen_muc(['parent' => $val['id']]);
+                foreach ($cate_child as $val_child) { ?>
+                    <option <?= (isset($blog) &&  $blog['chuyenmuc'] == $val_child['id']) ? 'selected' : '' ?> value="<?= $val_child['id'] ?>"> - <?= $val_child['name'] ?></option>
+            <?php
+                }
+            }  ?>
         </select>
     </div>
     <div class="form-group mb-3">
