@@ -55,6 +55,14 @@ function show_submenu(e, type) {
 	} else {
 		$(e).find(".sub_menu").hide(200);
 		$(e).attr("onclick", "show_submenu(this,1)");
+		document.getElementsByClassName("img_arrow").style.transform = 'rotate(0deg)';
+
 	}
 }
+$(document).ready(function(){
+	$(".img_arrow").click(function(){
+	  $(this).toggleClass("img-rotate");
+	});
+  });
+  
 
