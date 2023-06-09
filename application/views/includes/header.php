@@ -36,12 +36,18 @@
                         foreach ($menu_cate_parent as $val) {
                             $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
                             <li class="item_menu" onclick="show_submenu(this,1)">
-                                <span><a id="val_a" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a></span>
+                                <span>
+                                    
+                                    <?php if ($menu_cate != null) { ?>
+                                        <img class="img_arrow" src="/images/icons/icons8-forward-30.png" alt="icon arrow">
+                                    <?php } ?>
+                                    <a id="val_a" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                                </span>
                                 <?php if ($menu_cate != null) { ?>
                                     <div class="sub_menu">
                                         <div class="content_submenu">
                                             <?php foreach ($menu_cate as $val1) { ?>
-                                                <p><a href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a></p>
+                                                <p><a class="item_sub_menu" href="/<?= $val1['alias'] ?>/"><?= $val1['name'] ?></a></p>
                                             <?php } ?>
                                         </div>
                                     </div>
@@ -54,13 +60,13 @@
                             <span>
                                 <a class="link_special" href="/khuyen-mai/" rel=”nofollow”>
                                     <img src="/images/icons/icons_km.png" alt="icon khuyến mãi">
-                                    <p>KHUYẾN MÃI</p>
+                                    <p>Khuyến Mãi</p>
                                 </a>
                             </span>
                         </li>
                         <li class="item_menu">
                             <span>
-                                <a href="/vip-sic88/" rel=”nofollow”>
+                                <a class="vip" href="/vip-sic88/" rel=”nofollow”>
                                     <img src="/images/icons/icons_vip.png" alt="icon vip">
                                 </a>
                             </span>

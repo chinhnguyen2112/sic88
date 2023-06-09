@@ -232,7 +232,6 @@ body {
 	font-weight: bold;
 	color: #000000;
 	padding: 5px 8px;
-	text-transform: uppercase;
 }
 
 .content_submenu a {
@@ -250,7 +249,9 @@ body {
 .item_menu img {
 	width: 30px;
 }
-
+.item_menu .img_arrow {
+	display: none;
+}
 .link_special {
 	align-items: center;
 	display: flex;
@@ -328,6 +329,7 @@ body {
 	.sub_menu p {
 		width: 100%;
 		text-align: left;
+		padding: 0;
 	}
 
 	.link_special img {
@@ -335,7 +337,7 @@ body {
 	}
 
 	.item_menu img {
-		width: 19px;
+		width: 24px;
 	}
 
 	.header_top {
@@ -376,7 +378,6 @@ body {
 
 	.list_menu {
 		flex-direction: column;
-		padding: 15px 20px;
 		z-index: 3 !important;
 	}
 
@@ -397,7 +398,9 @@ body {
 		flex-direction: column;
 		height: auto;
 	}
-
+	.all_item_menu .item_menu:last-child {
+		width: 100%;
+	}
 	.another_item_menu .item_menu {
 		margin-left: 0;
 	}
@@ -414,38 +417,61 @@ body {
 	}
 
 	.item_menu {
-		width: 46%;
-		margin-top: 15px;
-		background: none repeat scroll 0 0 #f0f0f0;
+		width: 50%;
 		text-align: center;
-		border-radius: 5px;
-		padding: 5px;
 		z-index: 3;
 	}
 
 	.item_menu a {
 		font-weight: 400;
-		font-size: 12px;
-		line-height: 24px;
-		text-transform: uppercase;
-		width: max-content;
+		font-size: 16px;
+		width: 100%;
+		display: block;
 		margin: auto;
-		color: #000 !important;
+		color: #fff !important;
 		border-bottom: 1px solid #eee;
-		padding: 0 0 5px 0;
+		padding: 15px;
+	}
+	.item_menu .img_arrow {
+		display: block;
+	}
+	.item_menu .vip {
+		text-align: center;
+	}
+	
+	.item_menu .item_sub_menu::before {
+		content: '•';
+		margin-right: 10px;
+		font-size: 25px;
+	}
+	.item_menu .link_special {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
 	}
 
 	.link_special {
-		background: none repeat scroll 0 0 #f0f0f0;
+		background: none repeat scroll 0 0 #f6c042;
+		border-radius: unset;
 	}
 
 	.link_special p {
-		color: #000;
-		font-size: 12px;
+		font-size: 16px;
+		font-weight: 400;
 	}
 
 	.item_menu span {
 		width: 100%;
+		text-align: left;
+		display: flex;
+		align-items: center;
+		position:relative;
+	}
+	.item_menu span .img_arrow {
+		width: 10px;
+		height: 10px;
+		position:absolute;
+		right: 20px;
 	}
 
 	.header_bot {
@@ -485,7 +511,7 @@ body {
 	}
 
 	.item_menu {
-		width: 45%;
+		width: 50%;
 	}
 
 	.search {
@@ -520,6 +546,6 @@ body {
 
 	.sub_menu p {
 		text-align: left;
-		padding: 0 16px;
+		padding: 0;
 	}
 }
