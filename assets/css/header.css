@@ -435,10 +435,11 @@ body {
 		font-weight: 400;
 		font-size: 16px;
 		width: 100%;
-		display: block;
+		display: flex;
+		align-items: center;
 		margin: auto;
 		color: #fff !important;
-		padding:15px;
+		padding:10px 15px;
 	}
 	.item_menu .img_arrow {
 		display: block;
