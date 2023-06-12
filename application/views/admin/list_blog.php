@@ -159,6 +159,8 @@
                     <div class="card-body">
                         <div class="box_search_forrm">
                             <p>Bộ lọc</p>
+                            <input id="url_search" class="key_search" placeholder="Nhập url..." value="<?= $this->input->get('url_search') ?>" />
+                            <input id="key_search" class="key_search" placeholder="Nhập từ khóa..." value="<?= $this->input->get('key_search') ?>" />
                             <select name="" id="cate">
                                 <option value="">Chọn chuyên mục</option>
                                 <?php $list_cate = chuyen_muc(['parent' => 0]);
@@ -169,6 +171,7 @@
                             <button class="filter_btn" onclick="filter_ds()"><span>Lọc</span></button>
                         </div>
                         <div class="table-responsive">
+                            <p><b>Có :<?= $count ?> kết quả</b></p>
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
@@ -238,8 +241,10 @@
 </div>
 <script>
     function filter_ds() {
+        var url_search = $('#url_search').val();
+        var key_search = $('#key_search').val();
         var cate = $('#cate').val();
-        var url = '/admin/list_blog?cate=' + cate;
+        var url = '/admin/list_blog?key_search=' + key_search + '&cate=' + cate + '&url_search=' + url_search;
         window.location.href = url;
     }
 </script>

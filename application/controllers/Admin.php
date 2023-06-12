@@ -243,11 +243,20 @@
         public function list_blog()
         {
             if (admin()) {
+                $url_search = str_replace('https://sic88.org/', '', $this->input->get('url_search'));
+                $url_search = str_replace('/', '', $url_search);
+                $key_search = $this->input->get('key_search');
                 $cate = $this->input->get('cate');
-                $x = 0;
-                $where['id >'] = 0;
-                if ($cate > 0) {
-                    $where['chuyenmuc'] = $cate;
+                $this_cate = chuyen_muc(['id' => $cate]);
+                $where = ' id > 0  ';
+                if ($key_search != '') {
+                    $where .= "AND title LIKE '%$key_search%' ";
+                }
+                if ($url_search != '') {
+                    $where .= " AND alias LIKE '%$url_search%' ";
+                }
+                if ($this_cate != null) {
+                    $where .= ' AND (' . $this->search_cate($this_cate[0]['id'], $this_cate[0]['level']) . ')';
                 }
                 $page = $this->uri->segment(3);
                 if ($page < 1 || $page == '') {
@@ -256,6 +265,7 @@
                 $limit = 20;
                 $start = $limit * ($page - 1);
                 $list = $this->Madmin->get_list($where, 'blogs');
+                $data['count'] = count($list);
                 pagination('/admin/list_blog', count($list), $limit, 3);
                 $data['list'] = $this->Madmin->get_limit($where, 'blogs', $start, $limit);
                 $data['content'] = '/admin/list_blog';
@@ -357,6 +367,26 @@
             } else {
                 redirect('/admin/login/');
             }
+        }
+        public function search_cate($id, $level)
+        {
+            if ($level == 1 || $level == 0) {
+                $where = " chuyenmuc = $id OR cate_parent = $id ";
+            } else if ($level == 2) {
+                $where = " chuyenmuc = $id ";
+                $cate = $this->Madmin->query_sql("SELECT id,parent,level FROM category WHERE parent = $id ");
+                if ($cate != null) {
+                    foreach ($cate as $key => $val) {
+                        $id_cate = $val['id'];
+                        $where .= " OR chuyenmuc = $id_cate ";
+                    }
+                } else {
+                    $where .= " chuyenmuc = $id ";
+                }
+            } elseif ($level == 3) {
+                $where = " chuyenmuc = $id ";
+            }
+            return $where;
         }
         public function sitemap()
         {
