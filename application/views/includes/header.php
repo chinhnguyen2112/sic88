@@ -72,6 +72,23 @@
                             </span>
                         </li>
                     </div>
+                    <div class="social">
+                        <a href="#">
+                            <img src="/images/icons/zalo.png" alt="icon zalo">
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/fb.png" alt="icon facebook">
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/tw.png" alt="icon twitter">
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/ytb.png" alt="icon youtube">
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/rss.png" alt="icon rss">
+                        </a>
+                    </div>
                 </ul>
             </div>
         </div>
