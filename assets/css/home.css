@@ -566,9 +566,9 @@
 		font-size: 26px !important;
 	}
 
-	.all_icons .icon_game {
+	/* .all_icons .icon_game {
 		width: calc(20% - 10px);
-	}
+	} */
 
 	.content_tabs_right img {
 		width: 49%;
@@ -675,7 +675,7 @@
 	}
 
 	.content_tabs {
-		height: 370px;
+		height: 400px;
 	}
 
 	.content_tabs_right img {
