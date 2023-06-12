@@ -63,7 +63,7 @@
                         }
                         $data['blog'] = $blog;
                     } else {
-                        redirect('/add_blog');
+                        redirect('/admin/add_blog');
                     }
                 }
                 $this->load->view('admin/index', $data);
@@ -162,7 +162,7 @@
                     if ($chuyenmuc != null) {
                         $data['chuyenmuc'] = $chuyenmuc;
                     } else {
-                        redirect('/add_chuyenmuc');
+                        redirect('/admin/add_chuyenmuc');
                     }
                 }
                 $this->load->view('admin/index', $data);
@@ -181,43 +181,55 @@
             $data['content'] = $this->input->post('content');
             $data['level'] = 0;
             $data['parent'] = 0;
-            if ($cate > 0) {
-                $data['parent'] = $cate;
-                $this->Madmin->update(['id' => $cate], ['level' => 1], 'category');
-            }
+            $where_check = ['alias' => $alias];
             if ($id > 0) {
-                $insert_chuyenmuc = 0;
-                $update_chuyenmuc = $this->Madmin->update(['id' => $id], $data, 'category');
-                if ($update_chuyenmuc) {
-                    $insert_chuyenmuc = $id;
-                }
-            } else {
-                $insert_chuyenmuc = $this->Madmin->insert($data, 'category');
+                $where_check['id !='] = $id;
             }
-            if ($insert_chuyenmuc > 0) {
+            $check = $this->Madmin->get_by($where_check, 'category');
+            if ($check != null) {
                 $response = [
-                    'status' => 1,
-                    'msg' => 'Thành công'
+                    'status' => 2,
+                    'msg' => 'đã tồn tại'
                 ];
             } else {
-                $response = [
-                    'status' => 0,
-                    'msg' => 'Thất bại'
-                ];
+                if ($cate > 0) {
+                    $data['parent'] = $cate;
+                    $this->Madmin->update(['id' => $cate], ['level' => 1], 'category');
+                }
+                if ($id > 0) {
+                    $insert_chuyenmuc = 0;
+                    $update_chuyenmuc = $this->Madmin->update(['id' => $id], $data, 'category');
+                    if ($update_chuyenmuc) {
+                        $insert_chuyenmuc = $id;
+                    }
+                } else {
+                    $insert_chuyenmuc = $this->Madmin->insert($data, 'category');
+                }
+                if ($insert_chuyenmuc > 0) {
+                    $response = [
+                        'status' => 1,
+                        'msg' => 'Thành công'
+                    ];
+                } else {
+                    $response = [
+                        'status' => 0,
+                        'msg' => 'Thất bại'
+                    ];
+                }
             }
             echo json_encode($response);
         }
         public function list_chuyenmuc()
         {
             if (admin()) {
-                $page = $this->uri->segment(2);
+                $page = $this->uri->segment(3);
                 if ($page < 1 || $page == '') {
                     $page = 1;
                 }
                 $limit = 20;
                 $start = $limit * ($page - 1);
                 $list = $this->Madmin->get_list('', 'category');
-                pagination('/list_chuyenmuc', count($list), $limit);
+                pagination('/admin/list_chuyenmuc', count($list), $limit, 3);
                 $data['list'] = $this->Madmin->get_limit('', 'category', $start, $limit);
                 $data['content'] = '/admin/list_chuyenmuc';
                 $this->load->view('admin/index', $data);
@@ -234,14 +246,14 @@
                 if ($cate > 0) {
                     $where['chuyenmuc'] = $cate;
                 }
-                $page = $this->uri->segment(2);
+                $page = $this->uri->segment(3);
                 if ($page < 1 || $page == '') {
                     $page = 1;
                 }
                 $limit = 20;
                 $start = $limit * ($page - 1);
                 $list = $this->Madmin->get_list($where, 'blogs');
-                pagination('/list_blog', count($list), $limit);
+                pagination('/admin/list_blog', count($list), $limit, 3);
                 $data['list'] = $this->Madmin->get_limit($where, 'blogs', $start, $limit);
                 $data['content'] = '/admin/list_blog';
                 $this->load->view('admin/index', $data);
@@ -260,7 +272,7 @@
                     if ($tag != null) {
                         $data['tag'] = $tag;
                     } else {
-                        redirect('/add_tag');
+                        redirect('/admin/add_tag');
                     }
                 }
                 $this->load->view('admin/index', $data);
@@ -279,28 +291,40 @@
             $data['content'] = $this->input->post('content');
             $cate = $this->input->post('category');
             $data['parent'] = 0;
-            if ($cate > 0) {
-                $data['parent'] = $cate;
-            }
+            $where_check = ['alias' => $alias];
             if ($id > 0) {
-                $insert_tag = 0;
-                $update_tag = $this->Madmin->update(['id' => $id], $data, 'tags');
-                if ($update_tag) {
-                    $insert_tag = $id;
-                }
-            } else {
-                $insert_tag = $this->Madmin->insert($data, 'tags');
+                $where_check['id !='] = $id;
             }
-            if ($insert_tag > 0) {
+            $check = $this->Madmin->get_by($where_check, 'tags');
+            if ($check != null) {
                 $response = [
-                    'status' => 1,
-                    'msg' => 'Thành công'
+                    'status' => 2,
+                    'msg' => 'đã tồn tại'
                 ];
             } else {
-                $response = [
-                    'status' => 0,
-                    'msg' => 'Thất bại'
-                ];
+                if ($cate > 0) {
+                    $data['parent'] = $cate;
+                }
+                if ($id > 0) {
+                    $insert_tag = 0;
+                    $update_tag = $this->Madmin->update(['id' => $id], $data, 'tags');
+                    if ($update_tag) {
+                        $insert_tag = $id;
+                    }
+                } else {
+                    $insert_tag = $this->Madmin->insert($data, 'tags');
+                }
+                if ($insert_tag > 0) {
+                    $response = [
+                        'status' => 1,
+                        'msg' => 'Thành công'
+                    ];
+                } else {
+                    $response = [
+                        'status' => 0,
+                        'msg' => 'Thất bại'
+                    ];
+                }
             }
             echo json_encode($response);
         }
@@ -316,14 +340,14 @@
                 if ($parent > 0) {
                     $where['parent'] = $parent;
                 }
-                $page = $this->uri->segment(2);
+                $page = $this->uri->segment(3);
                 if ($page < 1 || $page == '') {
                     $page = 1;
                 }
                 $limit = 20;
                 $start = $limit * ($page - 1);
                 $list = $this->Madmin->get_list($where, 'tags');
-                pagination('/list_tag', count($list), $limit);
+                pagination('/admin/list_tag', count($list), $limit, 3);
                 $data['list'] = $this->Madmin->get_limit($where, 'tags', $start, $limit);
                 $data['content'] = '/admin/list_tag';
                 $this->load->view('admin/index', $data);

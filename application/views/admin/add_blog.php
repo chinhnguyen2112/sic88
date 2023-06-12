@@ -300,7 +300,7 @@
             data.append("content", CKEDITOR.instances.editor.getData());
             data.append("sapo", CKEDITOR.instances.sapo.getData());
             $.ajax({
-                url: '/ajax_add_blog',
+                url: '/admin/ajax_add_blog',
                 type: "POST",
                 cache: false,
                 contentType: false,

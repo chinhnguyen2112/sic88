@@ -202,7 +202,7 @@
                                             <td><?= date('d-m-Y', $val['created_at']) ?></td>
                                             <td class="text-center">
                                                 <div class="btn-group">
-                                                    <a href="/add_blog?id=<?= $val['id']; ?>" target="_blank">
+                                                    <a href="/admin/add_blog?id=<?= $val['id']; ?>" target="_blank">
                                                         <button style="font-size: 16px;" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Sửa tài khoản"><i class="fa fa-pencil"></i> Sửa</button>
                                                     </a>
 
@@ -226,7 +226,7 @@
 <script>
     function filter_ds() {
         var cate = $('#cate').val();
-        var url = '/list_blog?cate=' + cate;
+        var url = '/admin/list_blog?cate=' + cate;
         window.location.href = url;
     }
 </script>
