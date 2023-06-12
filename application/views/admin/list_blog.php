@@ -177,6 +177,7 @@
                                         <th>Tiêu đề</th>
                                         <th>Xem tin</th>
                                         <th>Chuyên mục</th>
+                                        <th style="width:300px">Tags</th>
                                         <th>Ngày đăng</th>
                                     </tr>
                                 </thead>
