@@ -90,6 +90,9 @@
             if ($cate[0]['parent'] > 0) {
                 $data['cate_parent'] = $cate[0]['parent'];
             }
+            if ($this->input->post('tag') != '') {
+                $data['tag'] =  implode(',', $this->input->post('tag'));
+            }
             if (!is_dir('upload/blog/')) {
                 mkdir('upload/blog/', 0755, TRUE);
             }
