@@ -200,6 +200,19 @@
                                                 }
                                                 ?>
                                             </td>
+                                            <td style="width:300px">
+                                                <div class="list_tag">
+                                                    <?php
+                                                    if ($val['tag'] != '') {
+                                                        $tag = explode(',', $val['tag']);
+                                                        foreach ($tag as $key_tag => $val_tag) {
+                                                            $this_tag = tag(['id' => $val_tag]);
+                                                            $tag_parent = tag(['id' => $this_tag[0]['parent']]);
+                                                            echo '<a style=" background: #ff4504; padding: 2px 5px; color: #fff;" href="/' . $tag_parent[0]['alias'] . '/' . $this_tag[0]['alias'] . '/">' . $this_tag[0]['name'] . '</a>';
+                                                        }
+                                                    }
+                                                    ?></div>
+                                            </td>
                                             <td><?= date('d-m-Y', $val['created_at']) ?></td>
                                             <td class="text-center">
                                                 <div class="btn-group">
