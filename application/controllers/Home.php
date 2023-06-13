@@ -157,7 +157,7 @@ class Home extends CI_Controller
                 'css_tag.css',
             ];
         } else {
-            redirect('/');
+            return $this->load->view('errors/html/error_404');
         }
         $data['index'] = 1;
         $this->load->view('index', $data);
@@ -193,7 +193,7 @@ class Home extends CI_Controller
             $data['meta_img'] = $blog['image'];
             $this->load->view('index', $data);
         } else {
-            redirect('/');
+            $this->load->view('errors/html/error_404');
         }
     }
     public function import_file()
@@ -373,4 +373,11 @@ class Home extends CI_Controller
         }
         echo '</table>';
     }
+    // function error_404() 
+    // {
+    //     $data['meta_title'] = 'ERROR 404';
+    //     $data['content'] = 'error_404';
+    //     $data['index'] = 1;
+    //     $this->load->view('index', $data);
+    // }
 }
