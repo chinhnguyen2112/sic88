@@ -85,3 +85,4 @@ $route['(:any)'] = 'Home/chuyenmuc/$1 ';
 $route['(:any)/(:num)'] = 'Home/chuyenmuc/$1 ';
 // $route['(:any)/(:any)'] = 'Home/tag/$1/$2 ';
 // $route['(:any)/(:any)/(:num)'] = 'Home/tag/$1/$2/$3 ';
+
