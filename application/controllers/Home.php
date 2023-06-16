@@ -56,7 +56,7 @@ class Home extends CI_Controller
         $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.alias = '$alias' ");
         if ($chuyenmuc != null) { //chuyenmuc
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
-                redirect('/' . $alias . '/');
+                redirect('/' . $alias . '/', 'location', 301);
             }
             $page = $this->uri->segment(3);
             if ($page < 1 || $page == '') {
@@ -96,7 +96,7 @@ class Home extends CI_Controller
             ];
         } else if ($blog != null) { // blog
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
-                redirect('/' . $alias . '/');
+                redirect('/' . $alias . '/', 'location', 301);
             }
             if (!admin() && $blog['time_post'] > $time) {
                 redirect('/');
@@ -124,7 +124,7 @@ class Home extends CI_Controller
             $data['meta_img'] = $blog['image'];
         } else if ($tags != null) {
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
-                redirect('/' . $alias . '/');
+                redirect('/' . $alias . '/', 'location', 301);
             }
             $id_parent = $tags['id'];
             $list_tag = $this->Madmin->query_sql("SELECT *  FROM tags  WHERE parent = $id_parent ");
