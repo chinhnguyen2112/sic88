@@ -16,8 +16,8 @@
                     </form>
                 </div>
                 <div class="all_btn_acc">
-                    <a class="btn_acc btn_login" href="#">Đăng Nhập</a>
-                    <a class="btn_acc btn_register" href="#">Đăng Ký</a>
+                    <a class="btn_acc btn_login" rel="nofollow" href="https://sic68.com/register/?reg-id=00289180">Đăng Nhập</a>
+                    <a class="btn_acc btn_register" rel="nofollow" href="https://sic68.com/register/?reg-id=00289180">Đăng Ký</a>
                 </div>
                 <img class="search_nonpc" id="open" src="/images/icons/icons8-search-25.png" alt="icon search" onclick="show_search(this,1)">
                 <img class="search_nonpc cancel" id="cancel" src="/images/icons/icons8-cancel-30 .png" alt="icon search" onclick="show_search(this,2)">
@@ -37,7 +37,7 @@
                             $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
                             <li class="item_menu" onclick="show_submenu(this,1)">
                                 <span>
-                                    
+
                                     <?php if ($menu_cate != null) { ?>
                                         <img class="img_arrow" src="/images/icons/icons8-forward-30.png" alt="icon arrow">
                                     <?php } ?>
