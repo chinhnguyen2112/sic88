@@ -168,6 +168,7 @@ figcaption {
     font-weight: 400;
     line-height: 20px;
 }
+
 .list_blog_same {
     display: flex;
     gap: 25px;
@@ -498,6 +499,7 @@ td:first-child {
     .container_widget_about {
         padding: 20px;
     }
+
     .main_content_blog {
         padding-top: 40px;
     }
@@ -688,6 +690,7 @@ td:first-child {
         line-height: 1.5;
         margin: 0;
     }
+
     .line_blog {
         margin: 10px 0;
     }
