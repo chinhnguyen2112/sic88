@@ -195,6 +195,13 @@
     CKEDITOR.replace('editor');
 </script>
 <script type="text/javascript">
+    $("#alias").keypress(function(evt) {
+        var num = String.fromCharCode(evt.which);
+        if (num == " ") {
+            evt.preventDefault();
+        }
+    });
+
     function get_alias(str) {
         str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
         str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");

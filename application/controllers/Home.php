@@ -109,6 +109,9 @@ class Home extends CI_Controller
                 $cate_parent = $this->Madmin->query_sql_row("SELECT id,alias,name,parent  FROM category  WHERE id = {$cate['parent']} ");
                 $data['cate_1'] = $cate_parent;
             }
+            if ($blog['author_id'] > 0) {
+                $data['author'] = $this->Madmin->get_by(['id' => $blog['author_id']], 'admin');
+            }
             $data['blog'] = $blog;
             $data['content'] = 'detail_blog';
             $data['list_js'] = [
@@ -194,6 +197,37 @@ class Home extends CI_Controller
             $this->load->view('index', $data);
         } else {
             $this->load->view('errors/html/error_404');
+        }
+    }
+    public function author($alias)
+    {
+        $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
+        if ($author == null) {
+            set_status_header(301);
+            return $this->load->view('errors/html/error_404');
+        } else {
+            $time = time();
+            if ($_SERVER['REQUEST_URI'] != '/tac-gia/' . $author['alias'] . '/') {
+                redirect('/tac-gia/' . $author['alias'] . '/', 'location', 301);
+            }
+            $blog = $this->Madmin->query_sql("SELECT * FROM blogs WHERE author_id = '{$author['id']}' LIMIT 20");
+            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE time_post <= $time  ORDER BY id DESC LIMIT 5");
+            $data['blog'] = $blog;
+            $data['author'] = $author;
+            $data['list_js'] = [
+                'jquery.toc.min.js',
+                'author.js',
+            ];
+            $data['list_css'] = [
+                'author.css',
+            ];
+            $data['meta_title'] = $author['name'] . ' Tác giả tại Sic88';
+            $data['meta_des'] = $author['name'];
+            $data['meta_key'] = $author['name'];
+            $data['meta_img'] = $author['image'];
+            $data['index'] = 1;
+            $data['content'] = 'author';
+            $this->load->view('index', $data);
         }
     }
     public function import_file()

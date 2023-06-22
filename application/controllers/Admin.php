@@ -73,85 +73,93 @@
         }
         public function ajax_add_blog()
         {
-            $id = $this->input->post('id');
-            $time = time();
-            $data['title'] = $this->input->post('title');
-            $data['time_post'] = $time_post =  strtotime($this->input->post('time_post'));
-            $data['alias'] = $alias = $this->input->post('alias');
-            $data['chuyenmuc'] = $chuyenmuc =  $this->input->post('category');
-            $data['sapo'] = $this->input->post('sapo');
-            $data['content'] = $this->input->post('content');
-            $data['meta_title'] = $this->input->post('meta_title');
-            $data['meta_key']     = $this->input->post('meta_key');
-            $data['meta_des']     = $this->input->post('meta_des');
-            $data['created_at'] = $time_post;
-            $data['updated_at'] = $time;
-            $cate = chuyen_muc(['id' => $chuyenmuc]);
-            if ($cate[0]['parent'] > 0) {
-                $data['cate_parent'] = $cate[0]['parent'];
-            }
-            if ($this->input->post('tag') != '') {
-                $data['tag'] =  implode(',', $this->input->post('tag'));
-            }
-            if (!is_dir('upload/blog/')) {
-                mkdir('upload/blog/', 0755, TRUE);
-            }
-            if ($id > 0) {
-                $where_check = [
-                    'alias' => $alias,
-                    'id !=' => $id
-                ];
-            } else {
-                $where_check = [
-                    'alias' => $alias,
-                ];
-            }
-            $check = $this->Madmin->get_by($where_check, 'blogs');
-            if ($check != null) {
-                $response = [
-                    'status' => 2,
-                    'msg' => 'đã tồn tại'
-                ];
-            } else {
-                if (isset($_FILES['image']) && $_FILES['image']['name'] !== "") {
-                    $filedata         = $_FILES['image']['tmp_name'];
-                    $thumb_path        = 'upload/blog/' . $alias . '.jpg';
-                    $imguser = $alias . '.jpg';
-                    $config['file_name'] = $imguser;
-                    $config['upload_path'] = 'upload/blog';
-                    $config['allowed_types'] = 'jpg|png';
-                    $this->load->library('upload', $config);
-                    $this->upload->initialize($config);
-                    if (!$this->upload->do_upload('image')) {
-                        $error = array('error' => $this->upload->display_errors());
-                    } else {
-                        $imageThumb = new Image($filedata);
-                        $imageThumb->resize(650, 375, 'crop');
-                        $imageThumb->save($alias, $config['upload_path'], 'jpg');
-                        $data['image'] = $thumb_path;
-                    }
+            if (admin()) {
+                $id = $this->input->post('id');
+                $time = time();
+                $data['title'] = $this->input->post('title');
+                $data['time_post'] = $time_post =  strtotime($this->input->post('time_post'));
+                $data['alias'] = $alias = trim($this->input->post('alias'));
+                $data['chuyenmuc'] = $chuyenmuc =  $this->input->post('category');
+                $data['sapo'] = $this->input->post('sapo');
+                $data['content'] = $this->input->post('content');
+                $data['meta_title'] = $this->input->post('meta_title');
+                $data['meta_key']     = $this->input->post('meta_key');
+                $data['meta_des']     = $this->input->post('meta_des');
+                $data['created_at'] = $time_post;
+                $data['updated_at'] = $time;
+                $data['author_id'] = $_SESSION['admin']['id'];
+                $cate = chuyen_muc(['id' => $chuyenmuc]);
+                if ($cate[0]['parent'] > 0) {
+                    $data['cate_parent'] = $cate[0]['parent'];
+                }
+                if ($this->input->post('tag') != '') {
+                    $data['tag'] =  implode(',', $this->input->post('tag'));
+                }
+                if (!is_dir('upload/blog/')) {
+                    mkdir('upload/blog/', 0755, TRUE);
                 }
                 if ($id > 0) {
-                    $insert_blog = 0;
-                    $update_blog = $this->Madmin->update(['id' => $id], $data, 'blogs');
-                    if ($update_blog) {
-                        $insert_blog = $id;
+                    $where_check = [
+                        'alias' => $alias,
+                        'id !=' => $id
+                    ];
+                } else {
+                    $where_check = [
+                        'alias' => $alias,
+                    ];
+                }
+                $check = $this->Madmin->get_by($where_check, 'blogs');
+                if ($check != null) {
+                    $response = [
+                        'status' => 2,
+                        'msg' => 'đã tồn tại'
+                    ];
+                } else {
+                    if (isset($_FILES['image']) && $_FILES['image']['name'] !== "") {
+                        $filedata         = $_FILES['image']['tmp_name'];
+                        $thumb_path        = 'upload/blog/' . $alias . '.jpg';
+                        $imguser = $alias . '.jpg';
+                        $config['file_name'] = $imguser;
+                        $config['upload_path'] = 'upload/blog';
+                        $config['allowed_types'] = 'jpg|png';
+                        $this->load->library('upload', $config);
+                        $this->upload->initialize($config);
+                        if (!$this->upload->do_upload('image')) {
+                            $error = array('error' => $this->upload->display_errors());
+                        } else {
+                            $imageThumb = new Image($filedata);
+                            $imageThumb->resize(650, 375, 'crop');
+                            $imageThumb->save($alias, $config['upload_path'], 'jpg');
+                            $data['image'] = $thumb_path;
+                        }
                     }
-                } else {
-                    $insert_blog = $this->Madmin->insert($data, 'blogs');
+                    if ($id > 0) {
+                        $insert_blog = 0;
+                        $update_blog = $this->Madmin->update(['id' => $id], $data, 'blogs');
+                        if ($update_blog) {
+                            $insert_blog = $id;
+                        }
+                    } else {
+                        $insert_blog = $this->Madmin->insert($data, 'blogs');
+                    }
+                    if ($insert_blog > 0) {
+                        $this->sitemap();
+                        $response = [
+                            'status' => 1,
+                            'msg' => 'Thành công'
+                        ];
+                    } else {
+                        $response = [
+                            'status' => 0,
+                            'msg' => 'Thất bại'
+                        ];
+                    }
                 }
-                if ($insert_blog > 0) {
-                    $this->sitemap();
-                    $response = [
-                        'status' => 1,
-                        'msg' => 'Thành công'
-                    ];
-                } else {
-                    $response = [
-                        'status' => 0,
-                        'msg' => 'Thất bại'
-                    ];
-                }
+            } else {
+                $response = [
+                    'status' => 0,
+                    'msg' => 'Chưa đăng nhập'
+                ];
             }
             echo json_encode($response);
         }
@@ -387,6 +395,76 @@
                 $where = " chuyenmuc = $id ";
             }
             return $where;
+        }
+        public function info()
+        {
+            if (admin()) {
+                $data['admin'] = $this->Madmin->get_by(['id' => $_SESSION['admin']['id']], 'admin');
+                $data['content'] = '/admin/info';
+                $this->load->view('admin/index', $data);
+            } else {
+                redirect('/admin/login/');
+            }
+        }
+        public function ajax_author()
+        {
+            if (admin()) {
+                $id = $_SESSION['admin']['id'];
+                $data['name'] = $this->input->post('name');
+                $data['alias'] = $alias = trim($this->input->post('alias'));
+                $data['content'] = $this->input->post('content');
+                $where_check = [
+                    'alias' => $alias,
+                    'id !=' => $id
+                ];
+                $check = $this->Madmin->get_by($where_check, 'admin');
+                if ($check != null) {
+                    $response = [
+                        'status' => 2,
+                        'msg' => 'đã tồn tại'
+                    ];
+                } else {
+                    if (isset($_FILES['image']) && $_FILES['image']['name'] !== "") {
+                        if (!is_dir('upload/author/')) {
+                            mkdir('upload/author/', 0755, TRUE);
+                        }
+                        $filedata         = $_FILES['image']['tmp_name'];
+                        $thumb_path        = 'upload/author/' . $id . '.jpg';
+                        $imguser = $id . '.jpg';
+                        $config['file_name'] = $imguser;
+                        $config['upload_path'] = 'upload/author';
+                        $config['allowed_types'] = 'jpg|png';
+                        $this->load->library('upload', $config);
+                        $this->upload->initialize($config);
+                        if (!$this->upload->do_upload('image')) {
+                            $error = array('error' => $this->upload->display_errors());
+                        } else {
+                            $imageThumb = new Image($filedata);
+                            $imageThumb->resize(300, 300, 'crop');
+                            $imageThumb->save($id, $config['upload_path'], 'jpg');
+                            $data['image'] = $thumb_path;
+                        }
+                    }
+                    $update = $this->Madmin->update(['id' => $id], $data, 'admin');
+                    if ($update) {
+                        $response = [
+                            'status' => 1,
+                            'msg' => 'cập nhật thành công !'
+                        ];
+                    } else {
+                        $response = [
+                            'status' => 0,
+                            'msg' => 'Thất bại'
+                        ];
+                    }
+                }
+            } else {
+                $response = [
+                    'status' => 0,
+                    'msg' => 'Hết phiên đăng nhập !'
+                ];
+            }
+            echo json_encode($response);
         }
         public function sitemap()
         {

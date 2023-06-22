@@ -27,8 +27,14 @@
                     <div class="left_blog">
                         <h1 class="title_h1"><?= $blog['title'] ?></h1>
                         <div class="box_author">
-                            <img src="/images/date.svg" alt="Ngày đăng">
-                            <div class="text_author">
+                            <?php if (isset($author) && $author != null) { ?>
+                                <div class="text_author">
+                                    <img src="/<?= ($author['image'] != null) ? $author['image'] : 'images/avt.png' ?>" alt="Tác giả">
+                                    <a class="name_author" href="/tac-gia/<?= $author['alias'] ?>/"><?= $author['name'] ?></a>
+                                </div>
+                            <?php } ?>
+                            <div class="box_date">
+                                <img src="/images/date.svg" alt="Ngày đăng">
                                 <p class="date_blog">Đăng ngày: <?= date('d-m-Y', $blog['created_at']) ?></p>
                             </div>
                         </div>

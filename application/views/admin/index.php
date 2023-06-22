@@ -61,6 +61,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/admin/info">
+                            <i class="typcn typcn-user menu-icon"></i>
+                            <span class="menu-title">Hồ sơ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#ui-basicss" aria-expanded="false" aria-controls="ui-basicss">
                             <i class="typcn typcn-document-text menu-icon"></i>
                             <span class="menu-title">Tất cả bài viết</span>
