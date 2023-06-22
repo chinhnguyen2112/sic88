@@ -167,19 +167,36 @@
         <input type="file" style="width: 0;" accept="image/png, image/jpeg" onchange="document.getElementById('mainImage').src = window.URL.createObjectURL(this.files[0])" id="image" name="image">
     </div>
     <div class="form-group mb-3">
+        <label class="label" for="name">Tên đăng nhập</label>
+        <input type="text" name="username" value="<?= (isset($admin)) ? $admin['username'] : ''; ?>" <?= (isset($admin)) ? ' onmousedown="return false;"' : '' ?> class="form-control" />
+    </div>
+    <div class="form-group mb-3">
         <label class="label" for="name">Họ và Tên</label>
         <input type="text" name="name" value="<?= (isset($admin)) ? $admin['name'] : ''; ?>" class="form-control" />
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Đường dẫn thân thiện</label>
-        <input type="text" name="alias" value="<?= (isset($admin)) ? $admin['alias'] : ''; ?>" id="alias" class="form-control">
+        <input type="text" name="alias" value="<?= (isset($admin)) ? $admin['alias'] : ''; ?>" id="alias" <?= (isset($admin)) ? ' onmousedown="return false;"' : '' ?> class="form-control">
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Thông tin tác giả</label>
         <textarea name="content" id="editor"><?= (isset($admin) && $admin['content'] != '') ? $admin['content'] : '' ?></textarea>
     </div>
+    <?php if (admin_vip()) { ?>
+        <div class="form-group mb-3">
+            <label class="label" for="name">Mật Khẩu</label>
+            <input type="text" name="password" id="password" placeholder="Mật khẩu mới" class="form-control">
+        </div>
+        <div class="form-group mb-3">
+            <label class="label" for="name">Loại tài khoản</label>
+            <select name="vip" id="vip" class="form-control">
+                <option <?= (isset($admin) &&  $admin['vip'] == 0) ? 'selected' : '' ?> value="0">Biên tập</option>
+                <option <?= (isset($admin) &&  $admin['vip'] == 1) ? 'selected' : '' ?> value="1">Quản lý</option>
+            </select>
+        </div>
+    <?php } ?>
     <div class="form-group">
-        <button type="submit" class="form-control btn btn-primary submit px-3">Sửa</button>
+        <button type="submit" class="form-control btn btn-primary submit px-3"><?= (isset($id)) ? 'Sửa' : 'Thêm mới' ?></button>
     </div>
 </form>
 <script src="/assets/js/jquery.validate.min.js"></script>
@@ -226,6 +243,9 @@
     $("#form").validate({
         onclick: false,
         rules: {
+            "username": {
+                required: true,
+            },
             "name": {
                 required: true,
             },
@@ -234,6 +254,9 @@
             },
         },
         messages: {
+            "username": {
+                required: "Tên đăng nhập không được trống",
+            },
             "name": {
                 required: "Tên không được để trống",
             },

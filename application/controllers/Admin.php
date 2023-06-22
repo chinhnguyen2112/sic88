@@ -399,7 +399,19 @@ class Admin extends CI_Controller
     public function info()
     {
         if (admin()) {
-            $data['admin'] = $this->Madmin->get_by(['id' => $_SESSION['admin']['id']], 'admin');
+            if ($this->input->get('id') > 0) {
+                $data['id'] = $id = $this->input->get('id');
+                if (!admin_vip() && $id != $_SESSION['admin']['id']) {
+                    redirect('/admin/info?id=' . $_SESSION['admin']['id']);
+                } else {
+                    $author = $this->Madmin->get_by(['id' => $id], 'admin');
+                    if ($author != null) {
+                        $data['admin'] = $author;
+                    } else {
+                        redirect('/admin/info?id=' . $_SESSION['admin']['id']);
+                    }
+                }
+            }
             $data['content'] = '/admin/info';
             $this->load->view('admin/index', $data);
         } else {
@@ -409,14 +421,23 @@ class Admin extends CI_Controller
     public function ajax_author()
     {
         if (admin()) {
-            $id = $_SESSION['admin']['id'];
             $data['name'] = $this->input->post('name');
-            $data['alias'] = $alias = trim($this->input->post('alias'));
+            $alias = trim($this->input->post('alias'));
             $data['content'] = $this->input->post('content');
-            $where_check = [
-                'alias' => $alias,
-                'id !=' => $id
-            ];
+            $id = $_SESSION['admin']['id'];
+            if (admin_vip()) {
+                $id = $this->input->post('id');
+                $data['alias'] = $alias;
+                $data['vip'] = $this->input->post('vip');
+                $password = trim($this->input->post('password'));
+                if ($password != '') {
+                    $data['password'] = md5($password);
+                }
+            }
+            $where_check['alias'] = $alias;
+            if ($id > 0) {
+                $where_check['id !='] = $id;
+            }
             $check = $this->Madmin->get_by($where_check, 'admin');
             if ($check != null) {
                 $response = [
@@ -424,6 +445,11 @@ class Admin extends CI_Controller
                     'msg' => 'đã tồn tại'
                 ];
             } else {
+                if (admin_vip() && $id == '') {
+                    $data['created_at'] = time();
+                    $data['username'] = $this->input->post('username');
+                    $id = $this->Madmin->insert($data, 'admin');
+                }
                 if (isset($_FILES['image']) && $_FILES['image']['name'] !== "") {
                     if (!is_dir('upload/author/')) {
                         mkdir('upload/author/', 0755, TRUE);
@@ -465,6 +491,16 @@ class Admin extends CI_Controller
             ];
         }
         echo json_encode($response);
+    }
+    public function list_author()
+    {
+        if (admin_vip()) {
+            $data['list'] = $this->Madmin->get_list(['id !=' => $_SESSION['admin']['id']], 'admin');
+            $data['content'] = '/admin/list_author';
+            $this->load->view('admin/index', $data);
+        } else {
+            redirect('/admin/');
+        }
     }
     public function sitemap()
     {

@@ -71,6 +71,7 @@ $route['admin/list_tag'] = 'Admin/list_tag';
 $route['admin/list_tag/(:num)'] = 'Admin/list_tag';
 $route['admin/info'] = 'Admin/info';
 $route['admin/ajax_author'] = 'Admin/ajax_author';
+$route['admin/list_author'] = 'Admin/list_author';
 
 //search
 $route['result_search'] = 'Home/view_result_search';
