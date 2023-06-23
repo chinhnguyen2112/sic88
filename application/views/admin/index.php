@@ -71,8 +71,8 @@
                                 <li class="nav-item"><a class="nav-link" href="/admin/info?id=<?= $_SESSION['admin']['id'] ?>">Hồ sơ</a></li>
                                 <?php if (admin_vip()) { ?>
                                     <li class="nav-item"><a class="nav-link" href="/admin/info">Thêm thành viên</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/admin/list_author">Danh sách thành viên</a></li>
                                 <?php } ?>
-                                <li class="nav-item"><a class="nav-link" href="/admin/list_author">Danh sách thành viên</a></li>
                             </ul>
                         </div>
                     </li>
