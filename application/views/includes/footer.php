@@ -98,7 +98,7 @@ if (count($menu_cate_parent) > 2) {
         <div class="bot_footer">
             <div class="item_ft_04">
                 <div class="div_dmca">
-                    <a href="https://www.dmca.com/Protection/Status.aspx?ID=edfe211c-add0-4955-8a3c-0b6973cd7020&amp;refurl=https://sic88.org/"><img src="https://images.dmca.com/Badges/_dmca_premi_badge_2.png?ID=edfe211c-add0-4955-8a3c-0b6973cd7020" alt="DMCA.com Protection Status"></a>
+                    <a rel="nofollow" href="https://www.dmca.com/Protection/Status.aspx?ID=edfe211c-add0-4955-8a3c-0b6973cd7020&amp;refurl=https://sic88.org/"><img src="https://images.dmca.com/Badges/_dmca_premi_badge_2.png?ID=edfe211c-add0-4955-8a3c-0b6973cd7020" alt="DMCA.com Protection Status"></a>
                 </div>
                 <div class="text_item_04">
                     <p>SIC88 hoạt động hợp pháp tại Phillppines được giám sát bởi tổ chức Gaming Associates.</p>
