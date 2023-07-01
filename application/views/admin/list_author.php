@@ -95,6 +95,7 @@
         background: red;
         padding: 3px 5px;
         color: #fff;
+        height: -webkit-fill-available;
         cursor: pointer;
     }
 
@@ -110,6 +111,10 @@
         width: 100%;
         height: 100%;
         border: 1px solid #ccc !important;
+    }
+
+    .btn-group {
+        align-items: center;
     }
 
     @media only screen and (max-width: 540px) {
@@ -162,6 +167,7 @@
                                         <th>Họ và Tên</th>
                                         <th>Url</th>
                                         <th>Loại tài khoản</th>
+                                        <th>Xóa</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -172,13 +178,22 @@
                                             <td><?= $val['username'] ?></td>
                                             <td><?= $val['name'] ?></td>
                                             <td><a href="/tac-gia/<?= $val['alias'] ?>/" target="_blank" rel="noopener noreferrer">https://sic88.org/<?= $val['alias'] ?>/</a></td>
-                                            <td class="text-center"><?= ($val['vip'] == 1) ? 'Quản lý' : 'Biên tập' ?></td>
+                                            <td class="text-center"><?php if ($val['type'] == 2) {
+                                                                        echo 'Biên tập';
+                                                                    } else if ($val['type'] == 3) {
+                                                                        echo 'Cộng tác viên';
+                                                                    } else if ($val['type'] == 1) {
+                                                                        echo 'Quản lý';
+                                                                    } ?></td>
                                             <td class="text-center">
-                                                <div class="btn-group">
-                                                    <a href="/admin/info?id=<?= $val['id']; ?>" target="_blank">
-                                                        <button style="font-size: 16px;" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Sửa tài khoản"><i class="fa fa-pencil"></i> Sửa</button>
-                                                    </a>
-                                                </div>
+                                                <?php if ($val['type'] != 1) { ?>
+                                                    <div class="btn-group">
+                                                        <a href="/admin/info?id=<?= $val['id']; ?>" target="_blank">
+                                                            <button style="font-size: 16px;text-decoration: underline;" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Sửa tài khoản"><i class="fa fa-pencil"></i> Sửa</button>
+                                                        </a>
+                                                        <span class="delete_job" onclick="del_blog(<?= $val['id']; ?>)">Xóa</span>
+                                                    </div>
+                                                <?php } ?>
                                             </td>
                                         </tr>
                                     <?php } ?>
@@ -191,3 +206,43 @@
         </div>
     </div>
 </div>
+<link rel="stylesheet" href="/assets/css/sweetalert.css">
+<script src="/assets/js/sweetalert.min.js"></script>
+<script>
+    function del_blog(id) {
+        if (confirm('Bạn chắc chắn muốn xóa người dùng này?')) {
+            var data = new FormData($("#form")[0]);
+            data.append("id", id);
+            data.append("table", "admin");
+            $.ajax({
+                url: '/admin/del_blog',
+                type: "POST",
+                cache: false,
+                contentType: false,
+                processData: false,
+                dataType: "json",
+                data: data,
+                success: function(response) {
+                    if (response.status == 1) {
+                        swal({
+                            title: "Thành Công",
+                            type: "success",
+                            text: "Xóa thành công"
+                        }, function() {
+                            window.location.reload();
+                        });
+                    } else {
+                        swal({
+                            title: "Thất bại",
+                            type: "error",
+                            text: "Cập nhật thất bại"
+                        });
+                    }
+                },
+                error: function(xhr) {
+                    alert('Thất bại');
+                }
+            });
+        }
+    }
+</script>

@@ -182,16 +182,17 @@
         <label class="label" for="name">Thông tin tác giả</label>
         <textarea name="content" id="editor"><?= (isset($admin) && $admin['content'] != '') ? $admin['content'] : '' ?></textarea>
     </div>
-    <?php if (admin_vip()) { ?>
+    <?php if (check_admin() == 1) { ?>
         <div class="form-group mb-3">
             <label class="label" for="name">Mật Khẩu</label>
             <input type="text" name="password" id="password" placeholder="Mật khẩu mới" class="form-control">
         </div>
         <div class="form-group mb-3">
             <label class="label" for="name">Loại tài khoản</label>
-            <select name="vip" id="vip" class="form-control">
-                <option <?= (isset($admin) &&  $admin['vip'] == 0) ? 'selected' : '' ?> value="0">Biên tập</option>
-                <option <?= (isset($admin) &&  $admin['vip'] == 1) ? 'selected' : '' ?> value="1">Quản lý</option>
+            <select name="type" id="type" class="form-control">
+                <option <?= (isset($admin) &&  $admin['type'] == 1) ? 'selected' : '' ?> value="1">Quản lý</option>
+                <option <?= (isset($admin) &&  $admin['type'] == 2) ? 'selected' : '' ?> value="2">Biên tập</option>
+                <option <?= (isset($admin) &&  $admin['type'] == 3) ? 'selected' : '' ?> value="3">Cộng tác viên</option>
             </select>
         </div>
     <?php } ?>

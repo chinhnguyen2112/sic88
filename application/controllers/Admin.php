@@ -10,12 +10,15 @@ class Admin extends CI_Controller
         $this->load->database();
         $this->load->helper(['url', 'func_helper', 'images']);
         $this->load->library(['session', 'pagination311', 'upload']);
+        if (admin()) {
+            $g_admin = $this->Madmin->get_by(['id' => $_SESSION['admin']['id']], 'admin');
+            $this->session->set_userdata('admin', $g_admin);
+        }
     }
     public function admin()
     {
         if (admin()) {
             $data = [];
-            // $data['content'] = '/admin/main';
             $this->load->view('admin/index', $data);
         } else {
             redirect('/admin/login/');
@@ -159,6 +162,58 @@ class Admin extends CI_Controller
             $response = [
                 'status' => 0,
                 'msg' => 'Chưa đăng nhập'
+            ];
+        }
+        echo json_encode($response);
+    }
+    public function del_blog()
+    {
+        if (check_admin() == 1) {
+            $id = $this->input->post('id');
+            $table = $this->input->post('table');
+            if ($table == 'admin') {
+                $check = $this->Madmin->get_by(['id' => $id], 'admin');
+                if ($check['type'] == 1) {
+                    $response = [
+                        'status' => 0,
+                        'msg' => 'Không được xóa quản lý'
+                    ];
+                } else {
+                    $delete = $this->Madmin->delete(['id' => $id], $table);
+                }
+            } elseif ($table == 'category') {
+                $check = $this->Madmin->num_rows_or('', ['chuyenmuc' => $id, 'cate_parent' => $id], 'blogs');
+                if ($check != null) {
+                    $response = [
+                        'status' => 0,
+                        'msg' => 'Chưa chuyển hết bài viết của chuyên mục này'
+                    ];
+                } else {
+                    $check = $this->Madmin->get_list(['parent' => $id], 'category');
+                    if ($check != null) {
+                        $response = [
+                            'status' => 0,
+                            'msg' => 'Chưa chuyển chuyên mục con của chuyên mục này'
+                        ];
+                    } else {
+                        $delete = $this->Madmin->delete(['id' => $id], $table);
+                        $this->sitemap_page();
+                    }
+                }
+            } else {
+                $delete = $this->Madmin->delete(['id' => $id], $table);
+                $this->sitemap();
+            }
+            if ($delete) {
+                $response = [
+                    'status' => 1,
+                    'msg' => 'Thành công'
+                ];
+            }
+        } else {
+            $response = [
+                'status' => 0,
+                'msg' => 'Không phải admin'
             ];
         }
         echo json_encode($response);
@@ -398,41 +453,36 @@ class Admin extends CI_Controller
     }
     public function info()
     {
-        if (admin()) {
+        if (check_admin() == 1) {
             if ($this->input->get('id') > 0) {
                 $data['id'] = $id = $this->input->get('id');
-                if (!admin_vip() && $id != $_SESSION['admin']['id']) {
-                    redirect('/admin/info?id=' . $_SESSION['admin']['id']);
+                $author = $this->Madmin->get_by(['id' => $id], 'admin');
+                if ($author != null) {
+                    $data['admin'] = $author;
                 } else {
-                    $author = $this->Madmin->get_by(['id' => $id], 'admin');
-                    if ($author != null) {
-                        $data['admin'] = $author;
-                    } else {
-                        redirect('/admin/info?id=' . $_SESSION['admin']['id']);
-                    }
+                    redirect('/admin/');
                 }
             }
             $data['content'] = '/admin/info';
             $this->load->view('admin/index', $data);
         } else {
-            redirect('/admin/login/');
+            redirect('/admin/');
         }
     }
     public function ajax_author()
     {
-        if (admin()) {
+        if (check_admin() == 1) {
             $data['name'] = $this->input->post('name');
             $alias = trim($this->input->post('alias'));
             $data['content'] = $this->input->post('content');
-            $id = $_SESSION['admin']['id'];
-            if (admin_vip()) {
-                $id = $this->input->post('id');
-                $data['alias'] = $alias;
-                $data['vip'] = $this->input->post('vip');
-                $password = trim($this->input->post('password'));
-                if ($password != '') {
-                    $data['password'] = md5($password);
-                }
+            $id = $this->input->post('id');
+            $data['alias'] = $alias;
+            $data['type'] = $this->input->post('type');
+            $password = trim($this->input->post('password'));
+            $data['created_at'] = time();
+            $data['username'] = $this->input->post('username');
+            if ($password != '') {
+                $data['password'] = md5($password);
             }
             $where_check['alias'] = $alias;
             if ($id > 0) {
@@ -445,9 +495,7 @@ class Admin extends CI_Controller
                     'msg' => 'đã tồn tại'
                 ];
             } else {
-                if (admin_vip() && $id == '') {
-                    $data['created_at'] = time();
-                    $data['username'] = $this->input->post('username');
+                if ($id == '') {
                     $id = $this->Madmin->insert($data, 'admin');
                 }
                 if (isset($_FILES['image']) && $_FILES['image']['name'] !== "") {
@@ -494,8 +542,8 @@ class Admin extends CI_Controller
     }
     public function list_author()
     {
-        if (admin_vip()) {
-            $data['list'] = $this->Madmin->get_list(['id !=' => $_SESSION['admin']['id']], 'admin');
+        if (check_admin() == 1) {
+            $data['list'] =  $this->Madmin->query_sql("SELECT *  FROM admin ORDER BY type ");
             $data['content'] = '/admin/list_author';
             $this->load->view('admin/index', $data);
         } else {

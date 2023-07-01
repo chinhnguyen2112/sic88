@@ -34,7 +34,8 @@ class Home extends CI_Controller
             redirect('/', 'location', 301);
         }
         $data['canonical'] = base_url();
-        $data['meta_title'] = 'Sic88 - Links đăng ký tài khoản nhà cái Sic88';
+        $data['meta_title'] = 'Sic88 - Link chính thức đăng ký tài khoản Sic88';
+        $data['meta_key'] = 'Sic88, Sic888, sic88 chính thức, sic 88, đăng nhập sic88';
         $data['meta_des'] = 'Sic88 là nhà cái uy tín số 1 châu Á. Nạp rút tiền chỉ trong 1 phút, cực nhiều khuyến mãi. Sic88 bet đa dạng thể loại casino online dễ chơi dễ trúng thưởng';
         $data['content'] = 'home';
         $data['list_js'] = [
@@ -113,7 +114,10 @@ class Home extends CI_Controller
                 $data['cate_1'] = $cate_parent;
             }
             if ($blog['author_id'] > 0) {
-                $data['author'] = $this->Madmin->get_by(['id' => $blog['author_id']], 'admin');
+                $author = $this->Madmin->get_by(['id' => $blog['author_id']], 'admin');
+                if ($author != null) {
+                    $data['author'] = $author;
+                }
             }
             $data['blog'] = $blog;
             $data['content'] = 'detail_blog';
