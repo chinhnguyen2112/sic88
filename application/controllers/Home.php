@@ -55,6 +55,7 @@ class Home extends CI_Controller
         $time = time();
         $alias = trim($alias);
         $data['canonical'] = base_url() . $alias . '/';
+        $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
         $chuyenmuc = $this->Madmin->get_by(['alias' => $alias], 'category');
         $tags = $this->Madmin->get_by(['alias' => $alias], 'tags');
         $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.alias = '$alias' ");
@@ -166,6 +167,8 @@ class Home extends CI_Controller
             $data['list_css'] = [
                 'css_tag.css',
             ];
+        } elseif ($author != null) {
+            return $this->author($alias);
         } else {
             return $this->load->view('errors/html/error_404');
         }
@@ -214,8 +217,8 @@ class Home extends CI_Controller
             return $this->load->view('errors/html/error_404');
         } else {
             $time = time();
-            if ($_SERVER['REQUEST_URI'] != '/tac-gia/' . $author['alias'] . '/') {
-                redirect('/tac-gia/' . $author['alias'] . '/', 'location', 301);
+            if ($_SERVER['REQUEST_URI'] != '/' . $author['alias'] . '/') {
+                redirect('/' . $author['alias'] . '/', 'location', 301);
             }
             $blog = $this->Madmin->query_sql("SELECT * FROM blogs WHERE author_id = '{$author['id']}' LIMIT 20");
             $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE time_post <= $time  ORDER BY id DESC LIMIT 5");

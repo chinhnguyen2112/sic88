@@ -177,7 +177,7 @@
                                             <td class="text-center"><?= $val['id']; ?></td>
                                             <td><?= $val['username'] ?></td>
                                             <td><?= $val['name'] ?></td>
-                                            <td><a href="/tac-gia/<?= $val['alias'] ?>/" target="_blank" rel="noopener noreferrer">https://sic88.org/<?= $val['alias'] ?>/</a></td>
+                                            <td><a href="/<?= $val['alias'] ?>/" target="_blank" rel="noopener noreferrer">https://sic88.org/<?= $val['alias'] ?>/</a></td>
                                             <td class="text-center"><?php if ($val['type'] == 2) {
                                                                         echo 'Biên tập';
                                                                     } else if ($val['type'] == 3) {
