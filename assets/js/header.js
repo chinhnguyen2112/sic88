@@ -1,16 +1,16 @@
 var screen = screen.width;
 if (screen > 768 && screen < 1025)  {
-	$("#img_slide_01").attr("src","/images/images_banner/1024/bao-hiem-100-1024.jpg");
-	$("#img_slide_02").attr("src","/images/images_banner/1024/KM-the-thao-1024.jpg");
-	$("#img_slide_03").attr("src","/images/images_banner/1024/Li-xi-cuoi-tuan-1024.jpg");
-	$("#img_slide_04").attr("src","/images/images_banner/1024/thuong-nap-100-1024.jpg");
-	$("#img_slide_05").attr("src","/images/images_banner/1024/trai-nghiem-58k-1024.jpg");
+	$("#img_slide_01").attr("src","/images/images_banner/1024/AnyConv.com__bao-hiem-100-1024.webp");
+	$("#img_slide_02").attr("src","/images/images_banner/1024/AnyConv.com__KM-the-thao-1024.webp");
+	$("#img_slide_03").attr("src","/images/images_banner/1024/AnyConv.com__Li-xi-cuoi-tuan-1024.webp");
+	$("#img_slide_04").attr("src","/images/images_banner/1024/AnyConv.com__thuong-nap-100-1024.webp");
+	$("#img_slide_05").attr("src","/images/images_banner/1024/AnyConv.com__trai-nghiem-58k-1024.webp");
 } else if (screen < 541) {
-	$("#img_slide_01").attr("src","/images/images_banner/768/bao-hiem-100-768.jpg");
-	$("#img_slide_02").attr("src","/images/images_banner/768/KM-the-thao-768.jpg");
-	$("#img_slide_03").attr("src","/images/images_banner/768/Li-xi-cuoi-tuan-768.jpg");
-	$("#img_slide_04").attr("src","/images/images_banner/768/thuong-nap-100-768.jpg");
-	$("#img_slide_05").attr("src","/images/images_banner/768/trai-nghiem-58k-768.jpg");
+	$("#img_slide_01").attr("src","/images/images_banner/768/AnyConv.com__bao-hiem-100-768.webp");
+	$("#img_slide_02").attr("src","/images/images_banner/768/AnyConv.com__KM-the-thao-768.webp");
+	$("#img_slide_03").attr("src","/images/images_banner/768/AnyConv.com__Li-xi-cuoi-tuan-768.webp");
+	$("#img_slide_04").attr("src","/images/images_banner/768/AnyConv.com__thuong-nap-100-768.webp");
+	$("#img_slide_05").attr("src","/images/images_banner/768/AnyConv.com__trai-nghiem-58k-768.webp");
 };
 
 window.onscroll = function() {scrollFunction()};
@@ -52,6 +52,8 @@ function show_submenu(e, type) {
 	if (type == 1) {
 		$(e).find(".sub_menu").show(200);
 		$(e).attr("onclick", "show_submenu(this,2)");
+		document.getElementsByClassName("img_arrow").style.transform = 'rotate(0deg)';
+
 	} else {
 		$(e).find(".sub_menu").hide(200);
 		$(e).attr("onclick", "show_submenu(this,1)");
