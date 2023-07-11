@@ -37,11 +37,10 @@
                             $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
                             <li class="item_menu" onclick="show_submenu(this,1)">
                                 <span>
-                                    
                                     <?php if ($menu_cate != null) { ?>
                                         <img class="img_arrow" src="/images/icons/icons8-forward-30.png" alt="icon arrow">
                                     <?php } ?>
-                                    <a id="val_a" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                                    <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
                                 </span>
                                 <?php if ($menu_cate != null) { ?>
                                     <div class="sub_menu">

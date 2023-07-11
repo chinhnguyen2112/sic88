@@ -756,7 +756,7 @@
 
 	.text_item_how {
 		font-size: 13px;
-		text-align: justify;
+		text-align: center;
 	}
 
 	/* all_tabs  */
@@ -801,11 +801,11 @@
 }
 
 @media only screen and (max-width: 540px) {
-	.three_step, .qr_app, .all_infor {
-		display: none;
+	.three_step, .qr_app {
+		display: block;
 	}
 	.slide_game, .xoso_lode {
-		display: block;
+		display: none;
 	}
 	.container {
 		width: 100%;
@@ -857,7 +857,7 @@
 
 	/* how regis  */
 	.how_regis {
-		display: none;
+		display: block;
 	}
 	.how_content {
 		margin-top: 20px;
@@ -988,12 +988,14 @@
 
 	.tabs {
 		justify-content: space-evenly;
+		padding: 0 15px;
+		gap: 15px;
 	}
 
 	.left_tabs {
 		width: 16%;
 		justify-content: space-between;
-		display: none;
+		display: block;
 	}
 
 	.name_tabs {
@@ -1011,21 +1013,17 @@
 	}
 
 	.right_tabs {
-		width: 100%;
+		width: 80%;
 		padding-left: 0;
-		margin: 0 10px;
 	}
 
 	.tabs_item {
 		flex-direction: column;
-		background: #f1f1f1 !important;
 		border-radius: 5px !important;
-		padding: 10px 15px;
-		margin: 15px auto;
 	}
-	.item_02, .item_03, .item_04, .item_05, .item_06 {
+	/* .item_02, .item_03, .item_04, .item_05, .item_06 {
 		display: block !important;
-	}
+	} */
 	.item_04 .icon_game_small {
 		border-radius: 50% !important;
 	}
@@ -1091,7 +1089,6 @@
 	.content_tabs {
 		width: 100%;
 		height: 485px;
-		display: none;
 	}
 
 	.all_icons {
@@ -1112,7 +1109,7 @@
 		line-height: 14px;
 		color: #000;
 		margin-top: 8px;
-		display: block;
+		display: none;
 	}
 	.content_tabs_right {
 		display: none;
@@ -1190,7 +1187,7 @@
 		width: calc(100% - 10px);
 	}
 	.heading_content .title_content {
-		font-size: 12px !important;
+		font-size: 18px !important;
 	}
 	.content_tabs {
 		height: max-content;
@@ -1200,6 +1197,10 @@
 	}
 	.right_btn_tabs img {
 		width: 80%;
+	}
+	.item_infor {
+		width: 80%;
+		margin: 5px auto;
 	}
 }
 @media only screen and (max-width: 375px) {

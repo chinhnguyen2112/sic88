@@ -2,15 +2,15 @@
     <div class="content">
         <div class="banner">
             <div class="slider">
-                <div class="slide"><img id="img_slide_01" src="/images/images_banner/pc/bao-hiem-100-01.jpg"
+                <div class="slide"><img id="img_slide_01" src="/images/images_banner/pc/bao-hiem-100-01.webp"
                         alt="bảo hiểm 100%"></div>
-                <div class="slide"><img id="img_slide_02" src="/images/images_banner/pc/KM-the-thao-01.jpg"
+                <div class="slide"><img id="img_slide_02" src="/images/images_banner/pc/KM-the-thao-01.webp"
                         alt="khuyến mãi thể thao"></div>
-                <div class="slide"><img id="img_slide_03" src="/images/images_banner/pc/Li-xi-cuoi-tuan-01.jpg"
+                <div class="slide"><img id="img_slide_03" src="/images/images_banner/pc/Li-xi-cuoi-tuan-01.webp"
                         alt="lì xì cuối tuần"></div>
-                <div class="slide"><img id="img_slide_04" src="/images/images_banner/pc/thuong-100-nap-dau-tien-01.jpg"
+                <div class="slide"><img id="img_slide_04" src="/images/images_banner/pc/thuong-100-nap-dau-tien-01_1.webp"
                         alt="thưởng 100% nạp đầu tiên"></div>
-                <div class="slide"><img id="img_slide_05" src="/images/images_banner/pc/trai-nghiem-58k-01.jpg"
+                <div class="slide"><img id="img_slide_05" src="/images/images_banner/pc/trai-nghiem-58k-01_1.webp"
                         alt="trải nghiệm 58k"></div>
             </div>
         </div>
