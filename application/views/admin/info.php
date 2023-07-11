@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/assets/css/select2.min.css">
 <style>
     .form_change_pass {
         width: 800px;
@@ -50,7 +51,7 @@
         margin-bottom: 30px !important;
     }
 
-    .nav_list_skill {
+    .nav_blog_skill {
         position: absolute;
         display: none;
         max-height: 200px;
@@ -144,65 +145,69 @@
         margin-bottom: 10px;
     }
 
+    .select2-selection__choice {
+        padding: 8px 5px !important;
+        font-size: 12px !important;
+    }
+
     @media only screen and (max-width: 1024px) {
         .form_change_pass {
             width: 100%;
         }
     }
 </style>
-
 <link rel="stylesheet" href="/assets/css/sweetalert.css">
-
 <form id="form" class="form_change_pass">
-    <input type="hidden" id="id_uv" name="id" hidden value="<?= (isset($id) && $id > 0) ? $id : '' ?>" />
-    <div class="form-group mb-3">
-        <label class="label" for="name">Tên tag</label>
-        <input type="text" name="name" id="name" value="<?= (isset($tag)) ? $tag['name'] : ''; ?>" class="form-control">
+    <input type="hidden" id="id_blog" name="id" hidden value="<?= (isset($id) && $id > 0) ? $id : '' ?>" />
+    <div class="form-group mb-3" style="text-align: center;">
+        <label for="image">
+            <img src="/<?= (isset($admin) && $admin['image'] != '') ? $admin['image'] : 'images/avt.png' ?>" style="cursor:pointer;border-radius:50%" id="mainImage" width="300px" height="300px" alt=" ảnh sản phẩm">
+        </label>
+        <p>Ảnh đại diện</p>
+        <input type="file" style="width: 0;" accept="image/png, image/jpeg" onchange="document.getElementById('mainImage').src = window.URL.createObjectURL(this.files[0])" id="image" name="image">
     </div>
     <div class="form-group mb-3">
-        <label class="label" for="name">Đường dẫn thân thiện (không chứa dấu "/")</label>
-        <input type="text" name="alias" value="<?= (isset($tag)) ? $tag['alias'] : ''; ?>" id="alias" class="form-control">
+        <label class="label" for="name">Tên đăng nhập</label>
+        <input type="text" name="username" value="<?= (isset($admin)) ? $admin['username'] : ''; ?>" <?= (isset($admin)) ? ' onmousedown="return false;"' : '' ?> class="form-control" />
     </div>
     <div class="form-group mb-3">
-        <label class="label" for="name">Tag cha</label>
-        <select name="category" id="category" class="form-control">
-            <option value="0">Chọn tag</option>
-            <?php
-            $list_tag = tag(['parent' => 0, 'id !=' => $tag['id']]);
-            foreach ($list_tag as $key => $val) { ?>
-                <option <?= (isset($tag) &&  $tag['parent'] == $val['id']) ? 'selected' : '' ?> value="<?= $val['id'] ?>"><?= $val['name'] ?></option>
-            <?php } ?>
-        </select>
+        <label class="label" for="name">Họ và Tên</label>
+        <input type="text" name="name" value="<?= (isset($admin)) ? $admin['name'] : ''; ?>" class="form-control" />
     </div>
     <div class="form-group mb-3">
-        <label class="label" for="name">Meta Keyword</label>
-        <input type="text" name="meta_key" id="meta_key" value="<?= (isset($tag)) ? $tag['meta_key'] : ''; ?>" class="form-control">
+        <label class="label" for="name">Đường dẫn thân thiện</label>
+        <input type="text" name="alias" value="<?= (isset($admin)) ? $admin['alias'] : ''; ?>" id="alias" <?= (isset($admin)) ? ' onmousedown="return false;"' : '' ?> class="form-control">
     </div>
     <div class="form-group mb-3">
-        <label class="label" for="name">Meta Title</label>
-        <input type="text" name="meta_title" id="meta_title" value="<?= (isset($tag)) ? $tag['meta_title'] : ''; ?>" class="form-control">
+        <label class="label" for="name">Thông tin tác giả</label>
+        <textarea name="content" id="editor"><?= (isset($admin) && $admin['content'] != '') ? $admin['content'] : '' ?></textarea>
     </div>
-    <div class="form-group mb-3">
-        <label class="label" for="name">Meta Description</label>
-        <textarea type="text" style="height:110px" name="meta_des" id="meta_des" class="form-control"><?= (isset($tag)) ? $tag['meta_des'] : ''; ?></textarea>
-    </div>
-    <div class="form-group mb-3">
-        <label class="label" for="name">Nội dung</label>
-        <textarea name="content" id="editor"><?= (isset($tag) && $tag['content'] != '') ? $tag['content'] : '' ?></textarea>
-    </div>
+    <?php if (check_admin() == 1) { ?>
+        <div class="form-group mb-3">
+            <label class="label" for="name">Mật Khẩu</label>
+            <input type="text" name="password" id="password" placeholder="Mật khẩu mới" class="form-control">
+        </div>
+        <div class="form-group mb-3">
+            <label class="label" for="name">Loại tài khoản</label>
+            <select name="type" id="type" class="form-control">
+                <option <?= (isset($admin) &&  $admin['type'] == 1) ? 'selected' : '' ?> value="1">Quản lý</option>
+                <option <?= (isset($admin) &&  $admin['type'] == 2) ? 'selected' : '' ?> value="2">Biên tập</option>
+                <option <?= (isset($admin) &&  $admin['type'] == 3) ? 'selected' : '' ?> value="3">Cộng tác viên</option>
+            </select>
+        </div>
+    <?php } ?>
     <div class="form-group">
-        <button type="submit" class="form-control btn btn-primary submit px-3"><?= (isset($id)) ? "Sửa" : "Thêm mới" ?></button>
+        <button type="submit" class="form-control btn btn-primary submit px-3"><?= (isset($id)) ? 'Sửa' : 'Thêm mới' ?></button>
     </div>
-
 </form>
-
 <script src="/assets/js/jquery.validate.min.js"></script>
+<script src="/assets/js/select2.min.js"></script>
 <script src="/assets/js/sweetalert.min.js"></script>
 <script src="/ckeditor/ckeditor.js"></script>
 <script defer type="text/javascript">
     CKEDITOR.replace('editor');
 </script>
-<script type="text/javascript">
+<script>
     $("#alias").keypress(function(evt) {
         var num = String.fromCharCode(evt.which);
         if (num == " ") {
@@ -231,33 +236,40 @@
         return str;
     }
 
-    // function show_alias(str) {
-    //     var alias = get_alias(str);
-    //     $("#alias").val(alias);
-    // }
+    function show_alias(str) {
+        var alias = get_alias(str);
+        $("#alias").val(alias);
+    }
+    var check_avt = ($('#id_blog').val() > 0) ? false : true;
     $("#form").validate({
         onclick: false,
         rules: {
+            "username": {
+                required: true,
+            },
             "name": {
                 required: true,
             },
             "alias": {
                 required: true,
-            }
+            },
         },
         messages: {
+            "username": {
+                required: "Tên đăng nhập không được trống",
+            },
             "name": {
-                required: "Vui lòng nhập tên tag",
+                required: "Tên không được để trống",
             },
             "alias": {
-                required: "Vui lòng nhập url tag",
-            }
+                required: "Không để trống đường dẫn",
+            },
         },
         submitHandler: function(form) {
             var data = new FormData($("#form")[0]);
             data.append("content", CKEDITOR.instances.editor.getData());
             $.ajax({
-                url: '/admin/ajax_add_tag',
+                url: '/admin/ajax_author',
                 type: "POST",
                 cache: false,
                 contentType: false,
@@ -277,7 +289,7 @@
                         swal({
                             title: "Thất bại",
                             type: "error",
-                            text: "Tag đã tồn tại"
+                            text: "URL tác giả bị trùng"
                         });
                     } else {
                         swal({

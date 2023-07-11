@@ -30,8 +30,12 @@ class Home extends CI_Controller
     }
     public function home()
     {
+        if ($_SERVER['REQUEST_URI'] != '/') {
+            redirect('/', 'location', 301);
+        }
         $data['canonical'] = base_url();
-        $data['meta_title'] = 'SiC88 - Nhận 120% "tiền thưởng" khi mở tài khoản tại SiC88';
+        $data['meta_title'] = 'Sic88 - Link chính thức đăng ký tài khoản Sic88';
+        $data['meta_key'] = 'Sic88, Sic888, sic88 chính thức, sic 88, đăng nhập sic88';
         $data['meta_des'] = 'Sic88 là nhà cái uy tín số 1 châu Á. Nạp rút tiền chỉ trong 1 phút, cực nhiều khuyến mãi. Sic88 bet đa dạng thể loại casino online dễ chơi dễ trúng thưởng';
         $data['content'] = 'home';
         $data['list_js'] = [
@@ -51,11 +55,13 @@ class Home extends CI_Controller
         $time = time();
         $alias = trim($alias);
         $data['canonical'] = base_url() . $alias . '/';
+        $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
         $chuyenmuc = $this->Madmin->get_by(['alias' => $alias], 'category');
+        $tags = $this->Madmin->get_by(['alias' => $alias], 'tags');
         $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.alias = '$alias' ");
         if ($chuyenmuc != null) { //chuyenmuc
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
-                redirect('/' . $alias . '/');
+                redirect('/' . $alias . '/', 'location', 301);
             }
             $page = $this->uri->segment(3);
             if ($page < 1 || $page == '') {
@@ -95,7 +101,7 @@ class Home extends CI_Controller
             ];
         } else if ($blog != null) { // blog
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
-                redirect('/' . $alias . '/');
+                redirect('/' . $alias . '/', 'location', 301);
             }
             if (!admin() && $blog['time_post'] > $time) {
                 redirect('/');
@@ -107,6 +113,12 @@ class Home extends CI_Controller
             if ($cate['parent'] > 0) {
                 $cate_parent = $this->Madmin->query_sql_row("SELECT id,alias,name,parent  FROM category  WHERE id = {$cate['parent']} ");
                 $data['cate_1'] = $cate_parent;
+            }
+            if ($blog['author_id'] > 0) {
+                $author = $this->Madmin->get_by(['id' => $blog['author_id']], 'admin');
+                if ($author != null) {
+                    $data['author'] = $author;
+                }
             }
             $data['blog'] = $blog;
             $data['content'] = 'detail_blog';
@@ -121,6 +133,42 @@ class Home extends CI_Controller
             $data['meta_des'] = $blog['meta_des'];
             $data['meta_key'] = $blog['meta_key'];
             $data['meta_img'] = $blog['image'];
+        } else if ($tags != null) {
+            if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
+                redirect('/' . $alias . '/', 'location', 301);
+            }
+            $id_parent = $tags['id'];
+            $list_tag = $this->Madmin->query_sql("SELECT *  FROM tags  WHERE parent = $id_parent ");
+            $where = '  FIND_IN_SET(' . $id_parent . ',tag) ';
+            foreach ($list_tag as $key => $val) {
+                $where .= ' OR FIND_IN_SET(' . $val['id'] . ',tag) ';
+            }
+            $page = $this->uri->segment(3);
+            if ($page < 1 || $page == '') {
+                $page = 1;
+            }
+            $limit = 18;
+            $start = $limit * ($page - 1);
+            $count = $this->Madmin->query_sql("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE time_post <= $time AND ( $where ) ");
+            pagination('/' . $tags['alias'], count($count), $limit);
+            $data['blog'] = $this->Madmin->query_sql("SELECT * FROM blogs  WHERE time_post <= $time AND ( $where ) ORDER BY id DESC LIMIT $start,$limit");
+            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE time_post <= $time  ORDER BY id DESC LIMIT 5");
+            $data['title_page'] = $tags['name'];
+            $data['meta_title'] = $tags['meta_title'];
+            $data['meta_des'] = $tags['meta_des'];
+            $data['meta_key'] = $tags['meta_key'];
+            $data['content_tag'] = $tags['content'];
+            $data['tag_id'] = $tags['id'];
+            $data['canonical'] = base_url() . $alias . '/';
+            $data['content'] = 'tag';
+            $data['list_js'] = [
+                'tag.js',
+            ];
+            $data['list_css'] = [
+                'css_tag.css',
+            ];
+        } elseif ($author != null) {
+            return $this->author($alias);
         } else {
             return $this->load->view('errors/html/error_404');
         }
@@ -159,6 +207,37 @@ class Home extends CI_Controller
             $this->load->view('index', $data);
         } else {
             $this->load->view('errors/html/error_404');
+        }
+    }
+    public function author($alias)
+    {
+        $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
+        if ($author == null) {
+            set_status_header(301);
+            return $this->load->view('errors/html/error_404');
+        } else {
+            $time = time();
+            if ($_SERVER['REQUEST_URI'] != '/' . $author['alias'] . '/') {
+                redirect('/' . $author['alias'] . '/', 'location', 301);
+            }
+            $blog = $this->Madmin->query_sql("SELECT * FROM blogs WHERE author_id = '{$author['id']}' LIMIT 20");
+            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE time_post <= $time  ORDER BY id DESC LIMIT 5");
+            $data['blog'] = $blog;
+            $data['author'] = $author;
+            $data['list_js'] = [
+                'jquery.toc.min.js',
+                'author.js',
+            ];
+            $data['list_css'] = [
+                'author.css',
+            ];
+            $data['meta_title'] = $author['name'] . ' Tác giả tại Sic88';
+            $data['meta_des'] = $author['name'];
+            $data['meta_key'] = $author['name'];
+            $data['meta_img'] = $author['image'];
+            $data['index'] = 1;
+            $data['content'] = 'author';
+            $this->load->view('index', $data);
         }
     }
     public function import_file()

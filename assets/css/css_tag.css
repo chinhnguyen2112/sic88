@@ -1,5 +1,5 @@
 .content {
-    padding-top: 20px;
+    padding-top: 123px;
     background: #fff;
 }
 
@@ -24,11 +24,9 @@
 }
 
 .train_content {
-    margin-top: 40px;
+    margin-top: 25px;
     margin-bottom: 20px;
     padding-bottom: 30px;
-    padding-right: 15px;
-    padding-left: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -383,7 +381,7 @@ a.H4abc {
     }
 
     .content {
-        padding-top: 0;
+        padding-top: 42px;
     }
 
     .title_blog a {
@@ -394,6 +392,10 @@ a.H4abc {
     .left_detail {
         width: 100%;
         margin: 0;
+    }
+
+    .train_content {
+        margin-top: 0;
     }
 
 }

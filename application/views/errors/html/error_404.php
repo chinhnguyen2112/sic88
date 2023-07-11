@@ -1,4 +1,3 @@
-
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 ?>
@@ -6,111 +5,126 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="robots" content="noodp,noindex,nofollow" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>404 Page Not Found</title>
-	<style>
+    <meta charset="utf-8">
+    <meta name="robots" content="noodp,noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <style>
+        .error_main {
+            display: flex;
+            max-height: 100vh;
+            align-items: center;
+        }
 
-.error_main {
-    display: flex;
-    max-height: 100vh;
-    align-items: center;
-}
-.error404 {
-    align-items: center;
-    display: flex;
-    max-width: 90%;
-	padding: 100px 0;
-    margin: 0 auto;
-    text-align: center;
-}
-.img_error img {
-    width: 480px;
-}
-.content_error h3 {
-    color: #30425B;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 57px;
-    max-width: 460px;
-}
-.list_contact {
-    display: flex;
-    justify-content: center;
-}
-.item_contact {
-    margin: 0 10px;
-}
-.item_contact p {
-    color: #666;
-    font-size: 12px;
-    line-height: 17px;
-    margin-bottom: 5px;
-}
-.item_contact a {
-    background: #2a5b84;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 5px 0;
-    border-radius: 20px;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    width: 180px;
-    text-decoration: none;
-    color: #fff;
-    height: 30px;
-}
-.item_contact img {
-    padding: 7px 2px;
-    width: 20px;
-    background: #fff;
-    border-radius: 50%;
-}
-.text_back {
-    color: #fff !important;
-    padding: 0 !important;
-    margin: 0 0 0 5px !important;
-    font-size: 16px !important;
-    font-weight: bold;
-}
-@media only screen and (max-width: 768px) {
-    .error404 {
-        flex-direction: column;
-        padding: 40px 20px 30px;
-    text-align: center;
-    }
-    .img_error img {
-        width: 280px;
-    }
-    .content_error h3 {
-        color: #30425B;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 24px;
-        margin: 20px auto;
-        max-width: 250px;
-    }
-}
-@media only screen and (max-width: 540px) {
-    .error_main {
-        min-height: auto;
-    }
-    .error404 {
-        padding: 40px 0 30px;
-    }
-    .item_contact a {
-        width: 130px;
-        font-size: 12px;
-		padding: 2px 5px;
-    }
-    .text_back {
-        font-size: 12px !important;
-    }
-}
-	</style>
+        .error404 {
+            align-items: center;
+            display: flex;
+            max-width: 90%;
+            padding: 100px 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .img_error img {
+            width: 480px;
+        }
+
+        .content_error h3 {
+            color: #30425B;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 57px;
+            max-width: 460px;
+        }
+
+        .list_contact {
+            display: flex;
+            justify-content: center;
+        }
+
+        .item_contact {
+            margin: 0 10px;
+        }
+
+        .item_contact p {
+            color: #666;
+            font-size: 12px;
+            line-height: 17px;
+            margin-bottom: 5px;
+        }
+
+        .item_contact a {
+            background: #2a5b84;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 5px 0;
+            border-radius: 20px;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            width: 180px;
+            text-decoration: none;
+            color: #fff;
+            height: 30px;
+        }
+
+        .item_contact img {
+            padding: 7px 2px;
+            width: 20px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        .text_back {
+            color: #fff !important;
+            padding: 0 !important;
+            margin: 0 0 0 5px !important;
+            font-size: 16px !important;
+            font-weight: bold;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .error404 {
+                flex-direction: column;
+                padding: 40px 20px 30px;
+                text-align: center;
+            }
+
+            .img_error img {
+                width: 280px;
+            }
+
+            .content_error h3 {
+                color: #30425B;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                margin: 20px auto;
+                max-width: 250px;
+            }
+        }
+
+        @media only screen and (max-width: 540px) {
+            .error_main {
+                min-height: auto;
+            }
+
+            .error404 {
+                padding: 40px 0 30px;
+            }
+
+            .item_contact a {
+                width: 130px;
+                font-size: 12px;
+                padding: 2px 5px;
+            }
+
+            .text_back {
+                font-size: 12px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>

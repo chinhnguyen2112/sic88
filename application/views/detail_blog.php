@@ -27,8 +27,14 @@
                     <div class="left_blog">
                         <h1 class="title_h1"><?= $blog['title'] ?></h1>
                         <div class="box_author">
-                            <img src="/images/date.svg" alt="Ngày đăng">
-                            <div class="text_author">
+                            <?php if (isset($author) && $author != null) { ?>
+                                <div class="text_author">
+                                    <img src="/<?= ($author['image'] != null) ? $author['image'] : 'images/avt.png' ?>" alt="Tác giả">
+                                    <a class="name_author" href="/<?= $author['alias'] ?>/"><?= $author['name'] ?></a>
+                                </div>
+                            <?php } ?>
+                            <div class="box_date">
+                                <img src="/images/date.svg" alt="Ngày đăng">
                                 <p class="date_blog">Đăng ngày: <?= date('d-m-Y', $blog['created_at']) ?></p>
                             </div>
                         </div>
@@ -51,6 +57,17 @@
                         <?= $blog['content'] ?>
                     </div>
                 </div>
+                <?php
+                if ($blog['tag'] != '') {
+                    $tag = explode(',', $blog['tag']); ?>
+                    <div class="box_tag">
+                        <p class="title_tag"><img src="/images/icons/icon-chu-de.svg" alt="Chủ đề"> Chủ đề:</p>
+                        <?php foreach ($tag as $key_tag => $val) {
+                            $this_tag = tag(['id' => $val]);
+                            echo '<a href="/' . $this_tag[0]['alias'] . '/" class="this_tag">' . $this_tag[0]['name'] . '</a>';
+                        } ?>
+                    </div>
+                <?php } ?>
                 <?php if ($blog_same != null) { ?>
                     <div class="blog_same">
                         <div class="list_blog_same">

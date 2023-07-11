@@ -18,67 +18,63 @@
         <div class="slide_game">
             <div class="slider_all_game">
                 <a class="item_slide" href="/xo-so/" rel="nofollow">
-                  <img src="/images/icons/slider_game/game_slider_01.png" alt="icon xổ số">
-                  <p>XỔ SỐ</p>
+                    <img src="/images/icons/slider_game/game_slider_01.png" alt="icon xổ số">
+                    <p>XỔ SỐ</p>
                 </a>
                 <a class="item_slide" href="/game-bai/" rel="nofollow">
-                  <img src="/images/icons/slider_game/game_slider_01.png" alt="icon đánh bài">
-                  <p>ĐÁNH BÀI</p>
+                    <img src="/images/icons/slider_game/game_slider_01.png" alt="icon đánh bài">
+                    <p>ĐÁNH BÀI</p>
                 </a>
                 <a class="item_slide" href="/casino-online/" rel="nofollow">
-                  <img src="/images/icons/slider_game/game_slider_02.png" alt="icon casino">
-                  <p>CASINO</p>
+                    <img src="/images/icons/slider_game/game_slider_02.png" alt="icon casino">
+                    <p>CASINO</p>
                 </a>
                 <a class="item_slide" href="/the-thao/" rel="nofollow">
-                  <img src="/images/icons/slider_game/game_slider_03.png" alt="icon thể thao">
-                  <p>THỂ THAO</p>
+                    <img src="/images/icons/slider_game/game_slider_03.png" alt="icon thể thao">
+                    <p>THỂ THAO</p>
                 </a>
                 <a class="item_slide" href="/game-dan-gian/" rel="nofollow">
-                  <img src="/images/icons/slider_game/game_slider_04.png" alt="icon dân gian">
-                  <p>DÂN GIAN</p>
+                    <img src="/images/icons/slider_game/game_slider_04.png" alt="icon dân gian">
+                    <p>DÂN GIAN</p>
                 </a>
                 <a class="item_slide" href="/no-hu/" rel="nofollow">
-                  <img src="/images/icons/slider_game/game_slider_05.png" alt="icon nổ hũ">
-                  <p>NỔ HŨ</p>
+                    <img src="/images/icons/slider_game/game_slider_05.png" alt="icon nổ hũ">
+                    <p>NỔ HŨ</p>
                 </a>
             </div>
         </div>
 
         <div class="xoso_lode">
-          <div class="xoso_content">
-            <div class="heading_content">
-                <h3 class="title_content">Xổ Số - Lô Đề</h3>
-                
+            <div class="xoso_content">
+                <div class="heading_content">
+                    <h3 class="title_content">Xổ Số - Lô Đề</h3>
+
+                </div>
+                <div class="all_icons">
+                    <a class="item_all_icons" href="#" rel="nofollow">
+                        <img class="icon_game" src="/images/icons/slider_game/xoso_1s.png" alt="icons xổ số lô đề">
+                        <p>Siêu Tốc</p>
+                    </a>
+                    <a class="item_all_icons" href="#" rel="nofollow">
+                        <img class="icon_game" src="/images/icons/slider_game/xoso_mb.png" alt="icons xổ số lô đề">
+                        <p>Miền Bắc</p>
+                    </a>
+                    <a class="item_all_icons" href="#" rel="nofollow">
+                        <img class="icon_game" src="/images/icons/slider_game/xoso_mn.png" alt="icons xổ số lô đề">
+                        <p>Miền Nam</p>
+                    </a>
+                    <a class="item_all_icons" href="#" rel="nofollow">
+                        <img class="icon_game" src="/images/icons/slider_game/xoso_mt.png" alt="icons xổ số lô đề">
+                        <p>Miền Trung</p>
+                    </a>
+
+                </div>
             </div>
-            <div class="all_icons">
-              <a class="item_all_icons" href="#" rel="nofollow">
-                <img class="icon_game" src="/images/icons/slider_game/xoso_1s.png"
-                    alt="icons xổ số lô đề">
-                <p>Siêu Tốc</p>
-              </a>
-              <a class="item_all_icons" href="#" rel="nofollow">
-                <img class="icon_game" src="/images/icons/slider_game/xoso_mb.png"
-                    alt="icons xổ số lô đề">
-                <p>Miền Bắc</p>
-              </a>
-              <a class="item_all_icons" href="#" rel="nofollow">
-                <img class="icon_game" src="/images/icons/slider_game/xoso_mn.png"
-                    alt="icons xổ số lô đề">
-                <p>Miền Nam</p>
-              </a>
-              <a class="item_all_icons" href="#" rel="nofollow">
-                <img class="icon_game" src="/images/icons/slider_game/xoso_mt.png"
-                    alt="icons xổ số lô đề">
-                <p>Miền Trung</p>
-              </a>
-              
-            </div>
-          </div>
         </div>
 
         <div class="three_step">
             <div class="three_step_content body_width">
-                <a href="#" class="item_step">
+                <a href="https://sic68.com/register/?reg-id=00289180" rel="nofollow" class="item_step">
                     <img src="/images/icons/icon_step_01.png" alt="ảnh step 1">
                     <div class="item_step_content">
                         <p class="first_text_item">ĐĂNG KÝ</p>
@@ -231,7 +227,7 @@
                             <div class="content_tabs_left">
                                 <div class="heading_content">
                                     <h3 class="title_content">Đánh bài Việt Nam</h3>
-                                    
+
                                 </div>
                                 <div class="content_tabs">
                                     <p>Game đánh bài online Sic88 – Sự lựa chọn tuyệt vời dành cho những ai đang muốn
@@ -247,26 +243,22 @@
                                         ngay tại đây.</p>
                                 </div>
                                 <div class="all_icons">
-                                  <a href="/tien-len/" rel="nofollow">
-                                    <img class="icon_game " src="/images/img_all_tabs/gamebai_01.png"
-                                        alt="icons game bài 01">
-                                    <p>Tiến Lên</p>
-                                  </a>
-                                  <a href="/phom-online/" rel="nofollow">
-                                    <img class="icon_game " src="/images/img_all_tabs/gamebai_02.png"
-                                        alt="icons game bài 02">
-                                    <p>Tá Lả</p>
-                                  </a>
-                                  <a href="/mau-binh/" rel="nofollow">
-                                    <img class="icon_game " src="/images/img_all_tabs/gamebai_03.png"
-                                        alt="icons game bài 03">
-                                    <p>Mậu Binh</p>
-                                  </a>
-                                  <a href="/tien-len/" rel="nofollow">
-                                    <img class="icon_game " src="/images/img_all_tabs/gamebai_04.png"
-                                        alt="icons game bài 04">
-                                    <p>Cờ Tướng</p>
-                                  </a>
+                                    <a href="/tien-len/" rel="nofollow">
+                                        <img class="icon_game " src="/images/img_all_tabs/gamebai_01.png" alt="icons game bài 01">
+                                        <p>Tiến Lên</p>
+                                    </a>
+                                    <a href="/phom-online/" rel="nofollow">
+                                        <img class="icon_game " src="/images/img_all_tabs/gamebai_02.png" alt="icons game bài 02">
+                                        <p>Tá Lả</p>
+                                    </a>
+                                    <a href="/mau-binh/" rel="nofollow">
+                                        <img class="icon_game " src="/images/img_all_tabs/gamebai_03.png" alt="icons game bài 03">
+                                        <p>Mậu Binh</p>
+                                    </a>
+                                    <a href="/tien-len/" rel="nofollow">
+                                        <img class="icon_game " src="/images/img_all_tabs/gamebai_04.png" alt="icons game bài 04">
+                                        <p>Cờ Tướng</p>
+                                    </a>
                                 </div>
                                 <div class="btn_join">
                                     <a href="#">Tham gia ngay</a>
@@ -281,7 +273,7 @@
                             <div class="content_tabs_left">
                                 <div class="heading_content">
                                     <h3 class="title_content">CASINO VIỆT NAM</h3>
-                                    
+
                                 </div>
                                 <div class="content_tabs">
                                     <p>Với thời đại 4.0 như hiện nay thì có thể nói Casino online đang trở thành xu
@@ -297,14 +289,10 @@
                                         bạn có thể chơi bất kỳ trò nào mà bạn muốn.</p>
                                 </div>
                                 <div class="all_icons">
-                                    <img class="icon_game" src="/images/img_all_tabs/casino_01.png"
-                                        alt="icons casino 01">
-                                    <img class="icon_game" src="/images/img_all_tabs/casino_02.png"
-                                        alt="icons casino 02">
-                                    <img class="icon_game" src="/images/img_all_tabs/casino_03.png"
-                                        alt="icons casino 03">
-                                    <img class="icon_game" src="/images/img_all_tabs/casino_04.png"
-                                        alt="icons casino 04">
+                                    <img class="icon_game" src="/images/img_all_tabs/casino_01.png" alt="icons casino 01">
+                                    <img class="icon_game" src="/images/img_all_tabs/casino_02.png" alt="icons casino 02">
+                                    <img class="icon_game" src="/images/img_all_tabs/casino_03.png" alt="icons casino 03">
+                                    <img class="icon_game" src="/images/img_all_tabs/casino_04.png" alt="icons casino 04">
                                 </div>
                                 <div class="btn_join">
                                     <a href="#">Tham gia ngay</a>
@@ -319,7 +307,7 @@
                             <div class="content_tabs_left">
                                 <div class="heading_content">
                                     <h3 class="title_content">THỂ THAO VIỆT NAM</h3>
-                                    
+
                                 </div>
                                 <div class="content_tabs">
                                     <p>Cá cược thể thao tại Sic88 vô cùng uy tín sẽ tạo cho người chơi những cảm xúc hồi
@@ -334,14 +322,10 @@
                                         người chơi hiện hữu và có cả chính sách ưu đãi cho các đại lý.</p>
                                 </div>
                                 <div class="all_icons">
-                                    <img class="icon_game" src="/images/img_all_tabs/thethao_01.png"
-                                        alt="icons thể thao 01">
-                                    <img class="icon_game" src="/images/img_all_tabs/thethao_02.png"
-                                        alt="icons thể thao 02">
-                                    <img class="icon_game" src="/images/img_all_tabs/thethao_03.png"
-                                        alt="icons thể thao 03">
-                                    <img class="icon_game" src="/images/img_all_tabs/thethao_04.png"
-                                        alt="icons thể thao 04">
+                                    <img class="icon_game" src="/images/img_all_tabs/thethao_01.png" alt="icons thể thao 01">
+                                    <img class="icon_game" src="/images/img_all_tabs/thethao_02.png" alt="icons thể thao 02">
+                                    <img class="icon_game" src="/images/img_all_tabs/thethao_03.png" alt="icons thể thao 03">
+                                    <img class="icon_game" src="/images/img_all_tabs/thethao_04.png" alt="icons thể thao 04">
                                 </div>
                                 <div class="btn_join">
                                     <a href="#">Tham gia ngay</a>
@@ -356,7 +340,7 @@
                             <div class="content_tabs_left">
                                 <div class="heading_content">
                                     <h3 class="title_content">TRÒ CHƠI DÂN GIAN VIỆT NAM</h3>
-                                    
+
                                 </div>
                                 <div class="content_tabs">
                                     <p>Tại Sic88 chúng tôi có những tựa game dân gian vô cùng ấn tượng mà không phải nhà
@@ -371,27 +355,23 @@
                                         24/7 để giúp đỡ các bạn.</p>
                                 </div>
                                 <div class="all_icons">
-                                  <a href="/bau-cua-tom-ca/" rel="nofollow">
-                                    <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-1.png"
-                                        alt="icons game dân gian 01">
-                                    <p>Bầu Tôm</p>
-                                  </a>
-                                  <a href="/oan-tu-ti/" rel="nofollow">
-                                    <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-2.png"
-                                        alt="icons game dân gian 02">
-                                    <p>Oẳn Tù Tì</p>
-                                  </a>
-                                  <a href="/tai-xiu/" rel="nofollow">
-                                    <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-3.png"
-                                        alt="icons game dân gian 03">
-                                    <p>Tài Xỉu</p>
-                                  </a>
-                                  <a href="/xoc-dia/" rel="nofollow">
-                                    <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-4.png"
-                                        alt="icons game dân gian 04">
-                                    <p>Xóc Đĩa</p>
-                                  </a>
-                                    
+                                    <a href="/bau-cua-tom-ca/" rel="nofollow">
+                                        <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-1.png" alt="icons game dân gian 01">
+                                        <p>Bầu Tôm</p>
+                                    </a>
+                                    <a href="/oan-tu-ti/" rel="nofollow">
+                                        <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-2.png" alt="icons game dân gian 02">
+                                        <p>Oẳn Tù Tì</p>
+                                    </a>
+                                    <a href="/tai-xiu/" rel="nofollow">
+                                        <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-3.png" alt="icons game dân gian 03">
+                                        <p>Tài Xỉu</p>
+                                    </a>
+                                    <a href="/xoc-dia/" rel="nofollow">
+                                        <img class="icon_game icon_game_small" src="/images/img_all_tabs/dan-gian-4.png" alt="icons game dân gian 04">
+                                        <p>Xóc Đĩa</p>
+                                    </a>
+
                                 </div>
                                 <div class="btn_join">
                                     <a href="#">Tham gia ngay</a>
@@ -406,7 +386,7 @@
                             <div class="content_tabs_left">
                                 <div class="heading_content">
                                     <h3 class="title_content">NỔ HŨ VIỆT NAM</h3>
-                                    
+
                                 </div>
                                 <div class="content_tabs">
                                     <p>Sic88 tự hào là một trong những nhà cái cung cấp các game nổ hũ uy tín nhất hiện
@@ -422,31 +402,26 @@
                                         toán bằng nhiều hình thức khác nhau.</p>
                                 </div>
                                 <div class="all_icons">
-                                  <a href="#" rel="nofollow">
-                                    <img class="icon_game" src="/images/img_all_tabs/nohu_01.png"
-                                        alt="icons nổ hũ 01">
-                                      <p>GPI Slot</p>
-                                  </a>
-                                  <a href="#" rel="nofollow">
-                                    <img class="icon_game" src="/images/img_all_tabs/nohu_02.png"
-                                        alt="icons nổ hũ 02">
-                                      <p>MGS Slot</p>
-                                  </a>
-                                  <a href="#" rel="nofollow">
-                                    <img class="icon_game" src="/images/img_all_tabs/nohu_03.png"
-                                        alt="icons nổ hũ 03">
-                                      <p>PP Slots</p>
-                                  </a>
-                                  <a href="#" rel="nofollow">
-                                    <img class="icon_game" src="/images/img_all_tabs/nohu_04.png"
-                                        alt="icons nổ hũ 04">
-                                      <p>Sexy Slot</p>
-                                  </a>
-                                  <a href="#" rel="nofollow">
-                                    <img class="icon_game" src="/images/img_all_tabs/nohu_05.png"
-                                        alt="icons nổ hũ 05">
-                                      <p>PT Slot</p>
-                                  </a>
+                                    <a href="#" rel="nofollow">
+                                        <img class="icon_game" src="/images/img_all_tabs/nohu_01.png" alt="icons nổ hũ 01">
+                                        <p>GPI Slot</p>
+                                    </a>
+                                    <a href="#" rel="nofollow">
+                                        <img class="icon_game" src="/images/img_all_tabs/nohu_02.png" alt="icons nổ hũ 02">
+                                        <p>MGS Slot</p>
+                                    </a>
+                                    <a href="#" rel="nofollow">
+                                        <img class="icon_game" src="/images/img_all_tabs/nohu_03.png" alt="icons nổ hũ 03">
+                                        <p>PP Slots</p>
+                                    </a>
+                                    <a href="#" rel="nofollow">
+                                        <img class="icon_game" src="/images/img_all_tabs/nohu_04.png" alt="icons nổ hũ 04">
+                                        <p>Sexy Slot</p>
+                                    </a>
+                                    <a href="#" rel="nofollow">
+                                        <img class="icon_game" src="/images/img_all_tabs/nohu_05.png" alt="icons nổ hũ 05">
+                                        <p>PT Slot</p>
+                                    </a>
                                 </div>
                                 <div class="btn_join">
                                     <a href="#">Tham gia ngay</a>
@@ -461,7 +436,7 @@
                             <div class="content_tabs_left">
                                 <div class="heading_content">
                                     <h3 class="title_content">ĐÁ GÀ VIỆT NAM</h3>
-                                    
+
                                 </div>
                                 <div class="content_tabs">
                                     <p>Đá gà online hay đá gà trực tuyến là 1 hình thức cá độ đá gà mới xuất hiện vài
@@ -475,22 +450,22 @@
                                         cược online thì cập nhật tài khoản sẽ giúp bạn có khả năng thắng cược.</p>
                                 </div>
                                 <div class="all_icons">
-                                  <a href="/da-ga-truc-tiep/" rel="nofollow">
-                                    <img class="icon_game" src="/images/img_all_tabs/daga_01.png" alt="icons đá gà 01">
-                                    <p>Đá Gà</p>
-                                  </a>
-                                  <a href="#" rel="nofollow">
-                                    <img class="icon_game" src="/images/img_all_tabs/daga_02.png" alt="icons đá gà 01">
-                                    <p>Đá Gà 3D</p>
-                                  </a>
-                                  <a href="#" rel="nofollow">
-                                    <img class="icon_game" src="/images/img_all_tabs/daga_03.png" alt="icons đá gà 01">
-                                    <p>Đua Chó</p>
-                                  </a>
-                                  <a href="#" rel="nofollow">
-                                    <img class="icon_game" src="/images/img_all_tabs/daga_04.png" alt="icons đá gà 01">
-                                    <p>Đua Ngựa</p>
-                                  </a>
+                                    <a href="/da-ga-truc-tiep/" rel="nofollow">
+                                        <img class="icon_game" src="/images/img_all_tabs/daga_01.png" alt="icons đá gà 01">
+                                        <p>Đá Gà</p>
+                                    </a>
+                                    <a href="#" rel="nofollow">
+                                        <img class="icon_game" src="/images/img_all_tabs/daga_02.png" alt="icons đá gà 01">
+                                        <p>Đá Gà 3D</p>
+                                    </a>
+                                    <a href="#" rel="nofollow">
+                                        <img class="icon_game" src="/images/img_all_tabs/daga_03.png" alt="icons đá gà 01">
+                                        <p>Đua Chó</p>
+                                    </a>
+                                    <a href="#" rel="nofollow">
+                                        <img class="icon_game" src="/images/img_all_tabs/daga_04.png" alt="icons đá gà 01">
+                                        <p>Đua Ngựa</p>
+                                    </a>
                                 </div>
                                 <div class="btn_join">
                                     <a href="#">Tham gia ngay</a>

@@ -60,6 +60,23 @@
                             <span class="menu-title">Trang chủ</span>
                         </a>
                     </li>
+                    <?php if (check_admin() == 1) { ?>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#ui-user" aria-expanded="false" aria-controls="ui-user">
+                                <i class="typcn typcn-user menu-icon"></i>
+                                <span class="menu-title">Thành viên</span>
+                                <i class="menu-arrow"></i>
+                            </a>
+                            <div class="collapse" id="ui-user">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"><a class="nav-link" href="/admin/info?id=<?= $_SESSION['admin']['id'] ?>">Hồ sơ</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" href="/admin/info">Thêm thành viên</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/admin/list_author">Danh sách thành viên</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    <?php } ?>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#ui-basicss" aria-expanded="false" aria-controls="ui-basicss">
                             <i class="typcn typcn-document-text menu-icon"></i>

@@ -1,7 +1,7 @@
 <?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
 $count_line = 0;
 if (count($menu_cate_parent) > 2) {
-  $count_line =  count($menu_cate_parent) - 2;
+    $count_line =  count($menu_cate_parent) - 2;
 } ?>
 <div class="footer">
     <div class="footer_width body_width">
@@ -98,10 +98,7 @@ if (count($menu_cate_parent) > 2) {
         <div class="bot_footer">
             <div class="item_ft_04">
                 <div class="div_dmca">
-                    <a
-                        href="https://www.dmca.com/Protection/Status.aspx?ID=edfe211c-add0-4955-8a3c-0b6973cd7020&amp;refurl=https://sic88.org/"><img
-                            src="https://images.dmca.com/Badges/_dmca_premi_badge_2.png?ID=edfe211c-add0-4955-8a3c-0b6973cd7020"
-                            alt="DMCA.com Protection Status"></a>
+                    <a rel="nofollow" href="https://www.dmca.com/Protection/Status.aspx?ID=edfe211c-add0-4955-8a3c-0b6973cd7020&amp;refurl=https://sic88.org/"><img src="https://images.dmca.com/Badges/_dmca_premi_badge_2.png?ID=edfe211c-add0-4955-8a3c-0b6973cd7020" alt="DMCA.com Protection Status"></a>
                 </div>
                 <div class="text_item_04">
                     <p>SIC88 hoạt động hợp pháp tại Phillppines được giám sát bởi tổ chức Gaming Associates.</p>
@@ -127,23 +124,23 @@ if (count($menu_cate_parent) > 2) {
     </div>
     <div class="footer_btn">
         <div class="content_ft_btn">
-            <a class="btn_ft_regis">Đăng Ký Tài Khoản</a>
-            <a class="btn_ft_login">Đăng Nhập</a>
+            <a class="btn_ft_regis" href="https://sic68.com/register/?reg-id=00289180" rel="nofollow">Đăng Ký Tài Khoản</a>
+            <a class="btn_ft_login" href="https://sic68.com/register/?reg-id=00289180" rel="nofollow">Đăng Nhập</a>
         </div>
     </div>
 </div>
 <script>
-$(window).scroll(function() {
-    if ($(this).scrollTop()) {
-        $('#btn_to_top').fadeIn(500);
-    } else {
-        $('#btn_to_top').fadeOut(500);
-    }
-});
-$("#btn_to_top").click(function() {
-    $("html, body").animate({
-        scrollTop: 0
-    }, 2000);
-    document.getElementById("btn_to_top").style.display = 'none';
-});
+    $(window).scroll(function() {
+        if ($(this).scrollTop()) {
+            $('#btn_to_top').fadeIn(500);
+        } else {
+            $('#btn_to_top').fadeOut(500);
+        }
+    });
+    $("#btn_to_top").click(function() {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 2000);
+        document.getElementById("btn_to_top").style.display = 'none';
+    });
 </script>

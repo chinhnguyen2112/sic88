@@ -93,9 +93,10 @@
     .delete_job,
     .del_list {
         background: red;
-        padding: 3px 5px;
+        padding: 5px 5px;
         color: #fff;
         cursor: pointer;
+        height: -webkit-fill-available;
     }
 
     .link_add a {
@@ -110,6 +111,10 @@
         width: 100%;
         height: 100%;
         border: 1px solid #ccc !important;
+    }
+
+    .btn-group {
+        align-items: center;
     }
 
     @media only screen and (max-width: 540px) {
@@ -169,16 +174,21 @@
                                             <td class="text-center"><?= $key; ?></td>
                                             <td class="text-center"><?= $val['id']; ?></td>
                                             <td><?= $val['name'] ?></td>
-                                            <td><a href="/<?= $val['alias'] ?>" target="_blank" rel="noopener noreferrer"><?= $val['alias'] ?></a></td>
+                                            <td><a href="/<?= $val['alias'] ?>/" target="_blank" rel="noopener noreferrer"><?= $val['alias'] ?></a></td>
                                             <td><?php $cate_parent = chuyen_muc(['id' => $val['parent']]);
                                                 echo $cate_parent[0]['name']; ?></td>
-                                            <td class="text-center">
-                                                <div class="btn-group">
-                                                    <a href="/admin/add_chuyenmuc?id=<?= $val['id']; ?>" target="_blank">
-                                                        <button style="font-size: 16px;" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Sửa tài khoản"><i class="fa fa-pencil"></i> Sửa</button>
-                                                    </a>
-                                                </div>
-                                            </td>
+                                            <?php if (check_admin() != 3) { ?>
+                                                <td class="text-center">
+                                                    <div class="btn-group">
+                                                        <a href="/admin/add_chuyenmuc?id=<?= $val['id']; ?>" target="_blank">
+                                                            <button style="font-size: 16px;" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Sửa tài khoản"><i class="fa fa-pencil"></i> Sửa</button>
+                                                        </a>
+                                                        <?php if (check_admin() == 1) { ?>
+                                                            <span class="delete_job" onclick="del_blog(<?= $val['id']; ?>)">Xóa</span>
+                                                        <?php } ?>
+                                                    </div>
+                                                </td>
+                                            <?php } ?>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
@@ -191,3 +201,51 @@
         </div>
     </div>
 </div>
+<link rel="stylesheet" href="/assets/css/sweetalert.css">
+<script src="/assets/js/sweetalert.min.js"></script>
+<script>
+    function filter_ds() {
+        var url_search = $('#url_search').val();
+        var key_search = $('#key_search').val();
+        var cate = $('#cate').val();
+        var url = '/admin/list_blog?key_search=' + key_search + '&cate=' + cate + '&url_search=' + url_search;
+        window.location.href = url;
+    }
+
+    function del_blog(id) {
+        if (confirm('Bạn chắc chắn muốn xóa chuyên mục này?')) {
+            var data = new FormData($("#form")[0]);
+            data.append("id", id);
+            data.append("table", "category");
+            $.ajax({
+                url: '/admin/del_blog',
+                type: "POST",
+                cache: false,
+                contentType: false,
+                processData: false,
+                dataType: "json",
+                data: data,
+                success: function(response) {
+                    if (response.status == 1) {
+                        swal({
+                            title: "Thành Công",
+                            type: "success",
+                            text: "Xóa thành công"
+                        }, function() {
+                            window.location.reload();
+                        });
+                    } else {
+                        swal({
+                            title: "Thất bại",
+                            type: "error",
+                            text: response.msg
+                        });
+                    }
+                },
+                error: function(xhr) {
+                    alert('Thất bại');
+                }
+            });
+        }
+    }
+</script>
