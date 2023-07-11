@@ -263,10 +263,10 @@
 .load_more {
     width: max-content;
     position: relative;
-    background: linear-gradient(90deg, #cc0355 0, #5447a4 0, #ea003a 100%);
+    background: #fff;
     padding: 1px;
     border-radius: 35px;
-    margin: 20px auto 0;
+    margin: 10px auto;
 }
 
 .div_bgr_load {
@@ -741,6 +741,7 @@ a.H4abc {
 
     .btn_heading h1 {
         font-size: 15px;
+        margin: 10px auto;
     }
 
     .btn_heading .heading_table {
@@ -752,7 +753,7 @@ a.H4abc {
     }
 
     .div_bgr_load {
-        padding: 6px 18px;
+        padding: 0;
     }
 
 }
@@ -895,6 +896,6 @@ a.H4abc {
     }
 
     .btn_heading {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }
