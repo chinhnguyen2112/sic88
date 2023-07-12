@@ -9,6 +9,7 @@ $(document).ready(function () {
 		},
 	});
 });
+$(".this_handbook  a img").css("height", height_img);
 var check_click = 0;
 $(".box_title_ml").click(function () {
 	if (check_click % 2 == 0) {
