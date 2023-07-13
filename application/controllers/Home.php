@@ -73,7 +73,7 @@ class Home extends CI_Controller
             if ($chuyenmuc['parent'] == 0) {
                 $count_or['cate_parent'] = $chuyenmuc['id'];
             }
-            $count = $this->Madmin->num_rows_or("type = 0 AND time_post <= $time", $count_or, 'blogs');
+            $count = $this->Madmin->num_rows_or("index_blog = 1 AND type = 0 AND time_post <= $time", $count_or, 'blogs');
             pagination('/' . $chuyenmuc['alias'], $count, $limit);
             $chuyenmuc_parent = $this->Madmin->get_by(['id' => $chuyenmuc['parent']], 'category');
             $title_page = $chuyenmuc['name'];
@@ -85,7 +85,7 @@ class Home extends CI_Controller
                 $title_page = $chuyenmuc_parent['name'] . ' - ' . $chuyenmuc['name'];
             }
             $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 5");
-            $data['blog'] = $this->Madmin->get_limit_or("type = 0 AND time_post <= $time", $count_or, 'blogs', $start, $limit);
+            $data['blog'] = $this->Madmin->get_limit_or("index_blog = 1 AND type = 0 AND time_post <= $time", $count_or, 'blogs', $start, $limit);
             $data['title_page'] = $title_page;
             $data['content_cate'] = $chuyenmuc['content'];
             $data['chuyenmuc'] = $chuyenmuc['id'];
@@ -106,8 +106,8 @@ class Home extends CI_Controller
             if (!admin() && $blog['time_post'] > $time) {
                 redirect('/');
             }
-            $data['blog_same'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE chuyenmuc = {$blog['chuyenmuc']} AND type = 0 AND time_post <= $time AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 6");
-            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE  id != {$blog['id']} AND type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 10");
+            $data['blog_same'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE index_blog = 1 AND chuyenmuc = {$blog['chuyenmuc']} AND type = 0 AND time_post <= $time AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 6");
+            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE  index_blog = 1 AND id != {$blog['id']} AND type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 10");
             $cate = $this->Madmin->query_sql_row("SELECT id,name,alias,parent  FROM category  WHERE id = {$blog['chuyenmuc']} ");
             $data['cate'] = $cate;
             if ($cate['parent'] > 0) {
@@ -149,10 +149,10 @@ class Home extends CI_Controller
             }
             $limit = 18;
             $start = $limit * ($page - 1);
-            $count = $this->Madmin->query_sql("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE time_post <= $time AND ( $where ) ");
+            $count = $this->Madmin->query_sql("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE index_blog = 1 AND type = 0 AND time_post <= $time AND ( $where ) ");
             pagination('/' . $tags['alias'], count($count), $limit);
-            $data['blog'] = $this->Madmin->query_sql("SELECT * FROM blogs  WHERE time_post <= $time AND ( $where ) ORDER BY id DESC LIMIT $start,$limit");
-            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE time_post <= $time  ORDER BY id DESC LIMIT 5");
+            $data['blog'] = $this->Madmin->query_sql("SELECT * FROM blogs  WHERE index_blog = 1 AND type = 0 AND time_post <= $time AND ( $where ) ORDER BY id DESC LIMIT $start,$limit");
+            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 5");
             $data['title_page'] = $tags['name'];
             $data['meta_title'] = $tags['meta_title'];
             $data['meta_des'] = $tags['meta_des'];
@@ -220,8 +220,8 @@ class Home extends CI_Controller
             if ($_SERVER['REQUEST_URI'] != '/' . $author['alias'] . '/') {
                 redirect('/' . $author['alias'] . '/', 'location', 301);
             }
-            $blog = $this->Madmin->query_sql("SELECT * FROM blogs WHERE author_id = '{$author['id']}' LIMIT 20");
-            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE time_post <= $time  ORDER BY id DESC LIMIT 5");
+            $blog = $this->Madmin->query_sql("SELECT * FROM blogs WHERE author_id = '{$author['id']}' AND index_blog = 1 AND type = 0 AND time_post <= $time LIMIT 20");
+            $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 5");
             $data['blog'] = $blog;
             $data['author'] = $author;
             $data['list_js'] = [

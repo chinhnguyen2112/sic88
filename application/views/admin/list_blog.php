@@ -226,7 +226,7 @@
                                                     <a href="/admin/add_blog?id=<?= $val['id']; ?>" target="_blank">
                                                         <button style="font-size: 16px;" class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Sửa tài khoản"><i class="fa fa-pencil"></i> Sửa</button>
                                                     </a>
-                                                    <?php if (check_admin() == 1) { ?>
+                                                    <?php if (check_admin() == 1 || check_admin() == 2) { ?>
                                                         <span class="delete_job" onclick="del_blog(<?= $val['id']; ?>)">Xóa</span>
                                                     <?php } ?>
                                                 </div>

@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>OHS Admin</title>
+    <title>SIC88 Admin</title>
     <!-- base:css -->
     <link rel="stylesheet" href="/assets/css/admin/vendors/typicons/typicons.css">
     <link rel="stylesheet" href="/assets/css/admin/vendors/css/vendor.bundle.base.css">
@@ -32,7 +32,7 @@
                     <div class="col-lg-4 mx-auto">
                         <div class="auth-form-light text-left py-5 px-4 px-sm-5">
                             <div class="brand-logo" style="text-align: center;">
-                                <img src="/images/logo_content_home.png" alt="logo">
+                                <img src="/images/logo.png" alt="logo">
                             </div>
                             <h4>Xin chào Admin</h4>
                             <h6 class="font-weight-light">Đăng nhập để tiếp tục.</h6>

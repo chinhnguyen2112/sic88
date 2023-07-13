@@ -172,7 +172,11 @@
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Keyword</label>
-        <input type="text" name="meta_key" id="meta_key" value="<?= (isset($blog)) ? $blog['meta_key'] : ''; ?>" <?= (isset($blog)) ? '' : 'oninput="show_alias(this.value)"' ?> class="form-control">
+        <input type="text" name="meta_key" id="meta_key" value="<?= (isset($blog)) ? $blog['meta_key'] : ''; ?>" class="form-control">
+    </div>
+    <div class="form-group mb-3">
+        <label class="label" for="name">Meta Title (50 > 60 kí tụ)</label>
+        <input type="text" name="meta_title" value="<?= (isset($blog)) ? $blog['meta_title'] : ''; ?>" <?= (isset($blog)) ? '' : 'oninput="show_alias(this.value)"' ?> class="form-control">
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Đường dẫn thân thiện</label>
@@ -189,9 +193,12 @@
                 $cate_child = chuyen_muc(['parent' => $val['id']]);
                 foreach ($cate_child as $val_child) { ?>
                     <option <?= (isset($blog) &&  $blog['chuyenmuc'] == $val_child['id']) ? 'selected' : '' ?> value="<?= $val_child['id'] ?>"> - <?= $val_child['name'] ?></option>
-            <?php
+                    <?php $cate_child_2 = chuyen_muc(['parent' => $val_child['id']]);
+                    foreach ($cate_child_2 as  $val_child_2) { ?>
+                        <option <?= (isset($blog) &&  $blog['chuyenmuc'] == $val_child_2['id']) ? 'selected' : '' ?> value="<?= $val_child_2['id'] ?>"> -- <?= $val_child_2['name'] ?></option>
+            <?php  }
                 }
-            }  ?>
+            } ?>
         </select>
     </div>
     <div class="form-group mb-3">
@@ -206,10 +213,6 @@
                 <option <?= (isset($blog) &&  in_array($val['id'], $tag_blog)) ? 'selected' : '' ?> value="<?= $val['id'] ?>"><?= $name ?></option>
             <?php } ?>
         </select>
-    </div>
-    <div class="form-group mb-3">
-        <label class="label" for="name">Meta Title (50 > 60 kí tụ)</label>
-        <input type="text" name="meta_title" value="<?= (isset($blog)) ? $blog['meta_title'] : ''; ?>" class="form-control">
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Meta Description</label>
@@ -227,14 +230,22 @@
         <label class="label" for="name">Hẹn giờ đăng </label>
         <input type="datetime-local" name="time_post" id="" value="<?= date("Y-m-d\TH:i:s", $time_post) ?>" class="form-control">
     </div>
-    <div class="form-group mb-3">
-        <select name="type" id="type" class="form-control">
-            <option <?= (isset($blog) &&  $blog['index_blog'] == 0) ? 'selected' : '' ?> value="0">Lưu nháp</option>
-            <?php if (check_admin() != 3) { ?>
-                <option <?= (isset($blog) &&  $blog['index_blog'] == 1) ? 'selected' : '' ?> value="1">Xuất bản</option>
-            <?php } ?>
-        </select>
-    </div>
+    <?php if (check_admin() == 3 && isset($blog) && $blog['index_blog'] == 1) { ?>
+        <div class="form-group mb-3">
+            <select name="index_blog" id="index_blog" class="form-control">
+                <option <?= (isset($blog) &&  $blog['index_blog'] == 1) ? 'selected' : '' ?> value="1">Đã xuất bản</option>
+            </select>
+        </div>
+    <?php } else { ?>
+        <div class="form-group mb-3">
+            <select name="index_blog" id="index_blog" class="form-control">
+                <option <?= (isset($blog) &&  $blog['index_blog'] == 0) ? 'selected' : '' ?> value="0">Lưu nháp</option>
+                <?php if (check_admin() != 3) { ?>
+                    <option <?= (isset($blog) &&  $blog['index_blog'] == 1) ? 'selected' : '' ?> value="1">Xuất bản</option>
+                <?php } ?>
+            </select>
+        </div>
+    <?php } ?>
     <div class="form-group">
         <button type="submit" class="form-control btn btn-primary submit px-3"><?= (isset($id)) ? "Sửa" : "Thêm mới" ?></button>
     </div>

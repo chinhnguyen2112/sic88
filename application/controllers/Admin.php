@@ -24,6 +24,11 @@ class Admin extends CI_Controller
             redirect('/admin/login/');
         }
     }
+    public function logout()
+    {
+        unset($_SESSION['admin']);
+        header('Location: /');
+    }
     public function view_login()
     {
         if (!admin()) {
@@ -65,6 +70,9 @@ class Admin extends CI_Controller
                         $data['time_post'] = $blog['time_post'];
                     }
                     $data['blog'] = $blog;
+                    if (check_admin() == 3 && $_SESSION['admin']['id'] != $blog['author_id']) {
+                        return redirect('/admin/add_blog');
+                    }
                 } else {
                     redirect('/admin/add_blog');
                 }
@@ -91,6 +99,7 @@ class Admin extends CI_Controller
             $data['created_at'] = $time_post;
             $data['updated_at'] = $time;
             $data['author_id'] = $_SESSION['admin']['id'];
+            $data['index_blog'] = $this->input->post('index_blog');
             $cate = chuyen_muc(['id' => $chuyenmuc]);
             if ($cate[0]['parent'] > 0) {
                 $data['cate_parent'] = $cate[0]['parent'];
@@ -102,6 +111,7 @@ class Admin extends CI_Controller
                 mkdir('upload/blog/', 0755, TRUE);
             }
             if ($id > 0) {
+                $blog = $this->Madmin->get_by(['id' => $id], 'blogs');
                 $where_check = [
                     'alias' => $alias,
                     'id !=' => $id
@@ -118,6 +128,9 @@ class Admin extends CI_Controller
                     'msg' => 'đã tồn tại'
                 ];
             } else {
+                if ($id > 0 && $blog['author_id'] > 0) {
+                    $data['author_id'] = $blog['author_id'];
+                }
                 if (isset($_FILES['image']) && $_FILES['image']['name'] !== "") {
                     $filedata         = $_FILES['image']['tmp_name'];
                     $thumb_path        = 'upload/blog/' . $alias . '.jpg';
@@ -168,7 +181,7 @@ class Admin extends CI_Controller
     }
     public function del_blog()
     {
-        if (check_admin() == 1) {
+        if (check_admin() == 1 || check_admin() == 2) {
             $id = $this->input->post('id');
             $table = $this->input->post('table');
             if ($table == 'admin') {
@@ -221,6 +234,9 @@ class Admin extends CI_Controller
     public function view_add_chuyenmuc()
     {
         if (admin()) {
+            if (check_admin() == 3) {
+                return redirect('/admin/');
+            }
             $data['content'] = '/admin/add_chuyenmuc';
             if ($this->input->get('id') > 0) {
                 $data['id'] = $id = $this->input->get('id');
@@ -238,50 +254,59 @@ class Admin extends CI_Controller
     }
     public function ajax_add_chuyenmuc()
     {
-        $id = $this->input->post('id');
-        $data['name'] = $this->input->post('name');
-        $data['alias'] = $alias = $this->input->post('alias');
-        $cate = $this->input->post('category');
-        $data['meta_title'] = $this->input->post('meta_title');
-        $data['meta_des'] = $this->input->post('meta_des');
-        $data['content'] = $this->input->post('content');
-        $data['level'] = 0;
-        $data['parent'] = 0;
-        $where_check = ['alias' => $alias];
-        if ($id > 0) {
-            $where_check['id !='] = $id;
-        }
-        $check = $this->Madmin->get_by($where_check, 'category');
-        if ($check != null) {
-            $response = [
-                'status' => 2,
-                'msg' => 'đã tồn tại'
-            ];
-        } else {
-            if ($cate > 0) {
-                $data['parent'] = $cate;
-                $this->Madmin->update(['id' => $cate], ['level' => 1], 'category');
-            }
+        if (check_admin() != 3) {
+            $id = $this->input->post('id');
+            $data['name'] = $this->input->post('name');
+            $data['alias'] = $alias = $this->input->post('alias');
+            $cate = $this->input->post('category');
+            $data['meta_title'] = $this->input->post('meta_title');
+            $data['meta_des'] = $this->input->post('meta_des');
+            $data['content'] = $this->input->post('content');
+            $data['level'] = 0;
+            $data['parent'] = 0;
+            $where_check = ['alias' => $alias];
             if ($id > 0) {
-                $insert_chuyenmuc = 0;
-                $update_chuyenmuc = $this->Madmin->update(['id' => $id], $data, 'category');
-                if ($update_chuyenmuc) {
-                    $insert_chuyenmuc = $id;
+                $where_check['id !='] = $id;
+            }
+            $check = $this->Madmin->get_by($where_check, 'category');
+            if ($check != null) {
+                $response = [
+                    'status' => 2,
+                    'msg' => 'đã tồn tại'
+                ];
+            } else {
+                if ($cate > 0) {
+                    $data['parent'] = $cate;
+                    $this->Madmin->update(['id' => $cate], ['level' => 1], 'category');
                 }
-            } else {
-                $insert_chuyenmuc = $this->Madmin->insert($data, 'category');
+                if ($id > 0) {
+                    $data['created_at'] = time();
+                    $insert_chuyenmuc = 0;
+                    $update_chuyenmuc = $this->Madmin->update(['id' => $id], $data, 'category');
+                    if ($update_chuyenmuc) {
+                        $insert_chuyenmuc = $id;
+                    }
+                } else {
+                    $insert_chuyenmuc = $this->Madmin->insert($data, 'category');
+                }
+                if ($insert_chuyenmuc > 0) {
+                    $this->sitemap_page();
+                    $response = [
+                        'status' => 1,
+                        'msg' => 'Thành công'
+                    ];
+                } else {
+                    $response = [
+                        'status' => 0,
+                        'msg' => 'Thất bại'
+                    ];
+                }
             }
-            if ($insert_chuyenmuc > 0) {
-                $response = [
-                    'status' => 1,
-                    'msg' => 'Thành công'
-                ];
-            } else {
-                $response = [
-                    'status' => 0,
-                    'msg' => 'Thất bại'
-                ];
-            }
+        } else {
+            $response = [
+                'status' => 0,
+                'msg' => 'Không đủ quyền'
+            ];
         }
         echo json_encode($response);
     }
@@ -306,12 +331,17 @@ class Admin extends CI_Controller
     public function list_blog()
     {
         if (admin()) {
+            $id_admin = $_SESSION['admin']['id'];
             $url_search = str_replace('https://sic88.org/', '', $this->input->get('url_search'));
             $url_search = str_replace('/', '', $url_search);
             $key_search = $this->input->get('key_search');
             $cate = $this->input->get('cate');
             $this_cate = chuyen_muc(['id' => $cate]);
+
             $where = ' id > 0  ';
+            if (check_admin() == 3) {
+                $where .= "AND author_id = $id_admin ";
+            }
             if ($key_search != '') {
                 $where .= "AND title LIKE '%$key_search%' ";
             }
@@ -341,6 +371,9 @@ class Admin extends CI_Controller
     public function view_add_tag()
     {
         if (admin()) {
+            if (check_admin() == 3) {
+                return redirect('/admin/');
+            }
             $data['content'] = '/admin/add_tag';
             if ($this->input->get('id') > 0) {
                 $data['id'] = $id = $this->input->get('id');
@@ -358,49 +391,58 @@ class Admin extends CI_Controller
     }
     public function ajax_add_tag()
     {
-        $id = $this->input->post('id');
-        $data['name'] = $this->input->post('name');
-        $data['alias'] = $alias = $this->input->post('alias');
-        $data['meta_key'] = $this->input->post('meta_key');
-        $data['meta_title'] = $this->input->post('meta_title');
-        $data['meta_des'] = $this->input->post('meta_des');
-        $data['content'] = $this->input->post('content');
-        $cate = $this->input->post('category');
-        $data['parent'] = 0;
-        $where_check = ['alias' => $alias];
-        if ($id > 0) {
-            $where_check['id !='] = $id;
-        }
-        $check = $this->Madmin->get_by($where_check, 'tags');
-        if ($check != null) {
-            $response = [
-                'status' => 2,
-                'msg' => 'đã tồn tại'
-            ];
-        } else {
-            if ($cate > 0) {
-                $data['parent'] = $cate;
-            }
+        if (check_admin() != 3) {
+            $id = $this->input->post('id');
+            $data['name'] = $this->input->post('name');
+            $data['alias'] = $alias = $this->input->post('alias');
+            $data['meta_key'] = $this->input->post('meta_key');
+            $data['meta_title'] = $this->input->post('meta_title');
+            $data['meta_des'] = $this->input->post('meta_des');
+            $data['content'] = $this->input->post('content');
+            $cate = $this->input->post('category');
+            $data['parent'] = 0;
+            $where_check = ['alias' => $alias];
             if ($id > 0) {
-                $insert_tag = 0;
-                $update_tag = $this->Madmin->update(['id' => $id], $data, 'tags');
-                if ($update_tag) {
-                    $insert_tag = $id;
+                $where_check['id !='] = $id;
+            }
+            $check = $this->Madmin->get_by($where_check, 'tags');
+            if ($check != null) {
+                $response = [
+                    'status' => 2,
+                    'msg' => 'đã tồn tại'
+                ];
+            } else {
+                if ($cate > 0) {
+                    $data['parent'] = $cate;
                 }
-            } else {
-                $insert_tag = $this->Madmin->insert($data, 'tags');
+                if ($id > 0) {
+                    $data['created_at'] = time();
+                    $insert_tag = 0;
+                    $update_tag = $this->Madmin->update(['id' => $id], $data, 'tags');
+                    if ($update_tag) {
+                        $insert_tag = $id;
+                    }
+                } else {
+                    $insert_tag = $this->Madmin->insert($data, 'tags');
+                }
+                if ($insert_tag > 0) {
+                    $this->sitemap_page();
+                    $response = [
+                        'status' => 1,
+                        'msg' => 'Thành công'
+                    ];
+                } else {
+                    $response = [
+                        'status' => 0,
+                        'msg' => 'Thất bại'
+                    ];
+                }
             }
-            if ($insert_tag > 0) {
-                $response = [
-                    'status' => 1,
-                    'msg' => 'Thành công'
-                ];
-            } else {
-                $response = [
-                    'status' => 0,
-                    'msg' => 'Thất bại'
-                ];
-            }
+        } else {
+            $response = [
+                'status' => 0,
+                'msg' => 'Không đủ quyền'
+            ];
         }
         echo json_encode($response);
     }
@@ -628,20 +670,37 @@ class Admin extends CI_Controller
     }
     public function sitemap_page()
     {
-        $sql = "SELECT id,alias FROM category ORDER BY id ASC";
-        $blog = $this->Madmin->query_sql($sql);
+        $sql = "SELECT id,alias,created_at FROM category ORDER BY id ASC";
+        $cate = $this->Madmin->query_sql($sql);
+        $tag = $this->Madmin->query_sql("SELECT id,alias,created_at FROM tags ORDER by id");
+        $arr = array_merge($cate, $tag);
         $doc = new DOMDocument("1.0", "utf-8");
         $doc->formatOutput = true;
         $r = $doc->createElement("urlset");
         $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
         $doc->appendChild($r);
-        foreach ($blog as $val) {
+        //sitemap trang chủ
+        $url = $doc->createElement("url");
+        $name = $doc->createElement("loc");
+        $name->appendChild($doc->createTextNode('https://sic88.org/'));
+        $url->appendChild($name);
+        $lastmod = $doc->createElement("lastmod");
+        $lastmod->appendChild($doc->createTextNode('2023-03-02'));
+        $url->appendChild($lastmod);
+        $changefreq = $doc->createElement("changefreq");
+        $changefreq->appendChild($doc->createTextNode('daily'));
+        $url->appendChild($changefreq);
+        $priority = $doc->createElement("priority");
+        $priority->appendChild($doc->createTextNode('1'));
+        $url->appendChild($priority);
+        $r->appendChild($url);
+        foreach ($arr as $val) {
             $url = $doc->createElement("url");
             $name = $doc->createElement("loc");
             $name->appendChild($doc->createTextNode('https://sic88.org/' . $val['alias'] . '/'));
             $url->appendChild($name);
             $lastmod = $doc->createElement("lastmod");
-            $lastmod->appendChild($doc->createTextNode('2023-03-02'));
+            $lastmod->appendChild($doc->createTextNode(date('Y-m-d', $val['created_at'])));
             $url->appendChild($lastmod);
             $changefreq = $doc->createElement("changefreq");
             $changefreq->appendChild($doc->createTextNode('daily'));
