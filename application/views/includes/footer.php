@@ -13,10 +13,7 @@ if (count($menu_cate_parent) > 2) {
                 <div class="introduce">
                     <div class="content_intro">
                         <p class="infor_01">
-                            <a href="/">Sic88</a>
-                            là trung tâm giải trí có trụ sở tại Phillippines, với các trò chơi hấp dẫn như Lô Đề Online,
-                            Casino Live, Cá Độ Bóng Đá, Đá Gà,… thì sic88 hiện đang thực sự là trung tâm giải trí hàng
-                            đầu Đông Nam Á.
+                            <a href="/">Sic88</a> - Supreme Internaltional Casino ( Siêu sòng bạc quốc tế ) có trụ sở tại Philippines. SIC88 là hệ thống nhà cái an toàn và uy tín nhất tại Việt Nam.
                         </p>
                         <p class="infor_01">Địa chỉ: 24 ngõ 18 đường Phan Đình Giót, Tổ 2 La Khê, Hà Đông, Hà Nội</p>
                         <p class="infor_01">Email: nhacaisic88@gmail.com</p>
